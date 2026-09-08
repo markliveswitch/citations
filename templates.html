@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email templates — Citations Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <p class="brand">Citations</p>
+    <p class="brand-sub">internal ops dashboard</p>
+    <nav class="primary-nav">
+      <a href="index.html">Dashboard</a>
+      <a href="sops.html">SOPs</a>
+      <a href="directories.html">Directory links</a>
+      <a href="templates.html" class="active">Email templates</a>
+      <a href="clients.html">Client roster</a>
+    </nav>
+    <div class="sidebar-foot">Bright Dental Marketing<br>Team-internal · not client-facing</div>
+  </aside>
+  <main>
+    <h1>Email templates</h1>
+    <p class="page-lede">Client-facing templates for the claim/verification email, one per verification type. Fill in the merge fields for the real client and site before sending — never paste real client details onto this page, since it's public.</p>
+
+    <div class="placeholder-note">Merge fields are shown as {{like this}}. Copy the template into your email client, replace every merge field, and delete this note before sending. Double-check the verification type actually matches what the directory currently uses — confirm on the directory's own site if you're not sure.</div>
+
+    <h2>Merge fields used</h2>
+    <table>
+      <thead><tr><th>Field</th><th>Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">{{client_contact_name}}</td><td>Person at the practice you're emailing</td></tr>
+        <tr><td class="mono">{{practice_name}}</td><td>Business name as listed</td></tr>
+        <tr><td class="mono">{{directory_name}}</td><td>The citation site being claimed</td></tr>
+        <tr><td class="mono">{{directory_url}}</td><td>Claim/login URL for that directory</td></tr>
+        <tr><td class="mono">{{verification_detail}}</td><td>Where the code/call/mail will be sent — an email address, a phone number, or the practice's mailing address</td></tr>
+        <tr><td class="mono">{{sender_name}}</td><td>Your name</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Variant: Email verification</h2>
+    <div class="card-list">
+      <details class="card" open>
+        <summary>Directory verifies via a code sent to a business email</summary>
+        <div class="body">
+<pre style="white-space:pre-wrap; font-family:'IBM Plex Mono',monospace; font-size:0.85rem;">Subject: Quick action needed — verifying {{practice_name}} on {{directory_name}}
+
+Hi {{client_contact_name}},
+
+We're setting up your {{directory_name}} listing as part of your citation work. This one needs a quick verification step on your end before it can go live.
+
+{{directory_name}} will send a verification code to {{verification_detail}}. Once it arrives, could you forward the code to us or let us know what it is, and we'll complete the setup.
+
+If you don't see it within a few minutes, it's worth checking spam or junk folders.
+
+Thanks,
+{{sender_name}}</pre>
+        </div>
+      </details>
+    </div>
+
+    <h2>Variant: Phone verification</h2>
+    <div class="card-list">
+      <details class="card">
+        <summary>Directory verifies via an automated or live call</summary>
+        <div class="body">
+<pre style="white-space:pre-wrap; font-family:'IBM Plex Mono',monospace; font-size:0.85rem;">Subject: Quick call needed to verify {{practice_name}} on {{directory_name}}
+
+Hi {{client_contact_name}},
+
+We're getting your {{directory_name}} listing set up. This directory verifies by calling {{verification_detail}} with a short code, either as an automated call or a live one, depending on the directory.
+
+Could someone at the practice keep an eye out for that call over the next day or so? Once you have the code, send it our way and we'll finish the listing.
+
+Thanks,
+{{sender_name}}</pre>
+        </div>
+      </details>
+    </div>
+
+    <h2>Variant: Mail / postcard verification</h2>
+    <div class="card-list">
+      <details class="card">
+        <summary>Directory verifies via a physical postcard to the business address</summary>
+        <div class="body">
+<pre style="white-space:pre-wrap; font-family:'IBM Plex Mono',monospace; font-size:0.85rem;">Subject: A postcard is coming for your {{directory_name}} listing
+
+Hi {{client_contact_name}},
+
+We've started the {{directory_name}} listing for {{practice_name}}. This directory verifies ownership by mail, so a postcard with a verification code will be sent to {{verification_detail}}. It typically takes one to two weeks to arrive.
+
+Once it's in, could you send us the code on it so we can complete the listing? It's easy to miss among other mail, so flagging it to your front desk team can help.
+
+Thanks,
+{{sender_name}}</pre>
+        </div>
+      </details>
+    </div>
+
+    <h2>Variant: Practice grants access directly</h2>
+    <div class="card-list">
+      <details class="card">
+        <summary>Directory requires the practice to add us as a manager/admin</summary>
+        <div class="body">
+<pre style="white-space:pre-wrap; font-family:'IBM Plex Mono',monospace; font-size:0.85rem;">Subject: Access needed to manage {{practice_name}} on {{directory_name}}
+
+Hi {{client_contact_name}},
+
+To manage your {{directory_name}} listing, we'll need to be added as a manager on the account rather than verifying it directly ourselves.
+
+If you already have a login at {{directory_url}}, could you add us using the email we'll send separately? If you don't have an account yet, let us know and we can walk you through setting one up first.
+
+Thanks,
+{{sender_name}}</pre>
+        </div>
+      </details>
+    </div>
+  </main>
+</div>
+</body>
+</html>

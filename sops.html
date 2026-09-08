@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOPs — Citations Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <p class="brand">Citations</p>
+    <p class="brand-sub">internal ops dashboard</p>
+    <nav class="primary-nav">
+      <a href="index.html">Dashboard</a>
+      <a href="sops.html" class="active">SOPs</a>
+      <a href="directories.html">Directory links</a>
+      <a href="templates.html">Email templates</a>
+      <a href="clients.html">Client roster</a>
+    </nav>
+    <div class="sidebar-foot">Bright Dental Marketing<br>Team-internal · not client-facing</div>
+  </aside>
+  <main>
+    <h1>SOPs</h1>
+    <p class="page-lede">Standard procedures for citation building, auditing, and cleanup. Click a card to expand it. These are placeholders — replace with your actual process steps.</p>
+
+    <div class="placeholder-note">Draft structure only. Confirm each SOP's real steps before anyone follows these.</div>
+
+    <div class="card-list">
+      <details class="card">
+        <summary>New client citation build</summary>
+        <div class="body">
+          <ol>
+            <li>Confirm NAP source-of-truth with the client (business name, address, phone, website URL — exact formatting).</li>
+            <li>Add the confirmed NAP to the client roster page.</li>
+            <li>Submit to primary directories first (Google Business Profile, Bing Places).</li>
+            <li>Work through the secondary directory list, matching formatting exactly.</li>
+            <li>Log each submission's status back on the roster.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>Quarterly NAP audit</summary>
+        <div class="body">
+          <ol>
+            <li>Pull current listing data for each tracked directory per client.</li>
+            <li>Compare against the roster's source-of-truth NAP.</li>
+            <li>Flag any mismatch on the dashboard with directory + discrepancy noted.</li>
+            <li>Prioritise fixes by directory authority / traffic impact.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>Fixing a NAP mismatch</summary>
+        <div class="body">
+          <ol>
+            <li>Identify whether the fix requires directory-owner edit access or a claim/verification process.</li>
+            <li>Submit correction through the directory's official edit flow — avoid third-party "fix it" services.</li>
+            <li>Note expected turnaround time (varies by directory) on the dashboard.</li>
+            <li>Re-check after the directory's typical processing window and update status.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>Sending the claim/verification email to a client</summary>
+        <div class="body">
+          <ol>
+            <li>Check the <a href="directories.html">directory links page</a> for the directory's typical verification method. If it's marked "confirm on site," check the directory's current process yourself before emailing — don't guess or assume it's the same as last time.</li>
+            <li>Pick the matching variant from the <a href="templates.html">email templates page</a> — email code, phone call, mail/postcard, or direct access grant.</li>
+            <li>Fill in every merge field with the real client's details in your own email draft. Never paste real client details into the public site pages.</li>
+            <li>Send the email, then log the site as "pending — awaiting client verification" on the dashboard.</li>
+            <li>Once the client confirms (code received, access granted, etc.), complete the directory submission and move the status to live on the roster.</li>
+            <li>If a client doesn't respond within about a week, send one follow-up before flagging it as stalled.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>Duplicate listing removal</summary>
+        <div class="body">
+          <ol>
+            <li>Confirm the duplicate is genuinely the same business, not a second location.</li>
+            <li>Use the directory's official duplicate-merge or removal request process.</li>
+            <li>Keep the listing with more reviews / longer history as the primary where possible.</li>
+            <li>Log the removal request date — some directories take weeks to process.</li>
+          </ol>
+        </div>
+      </details>
+    </div>
+  </main>
+</div>
+</body>
+</html>
