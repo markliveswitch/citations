@@ -9,8 +9,10 @@
 //
 //  SETUP:
 //   1. Create a free project at https://supabase.com
-//   2. Project Settings > Data API > copy "Project URL" and
-//      the "anon / public" key into the two fields below
+//   2. Project Settings > API Keys > copy the Project URL and
+//      the PUBLISHABLE key (sb_publishable_...) into the fields below.
+//      NEVER use the secret key (sb_secret_...) here — this repo
+//      is public and that key bypasses Row Level Security.
 //   3. Run the SQL in supabase-setup.sql (SQL Editor > New query)
 //   4. Commit this file
 //
@@ -21,8 +23,8 @@
 //  skip that step, or anyone who views source can wipe the table.
 // ─────────────────────────────────────────────────────────────
 
-const SUPABASE_URL = "";       // e.g. "https://abcdefgh.supabase.co"
-const SUPABASE_ANON_KEY = "";  // the anon / public key
+const SUPABASE_URL = "https://ymcecfebxvzbginngvvj.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_dh7mNnkEgLBgmernBWmRCQ_8pgjsMZn";
 
 // Shared write password. Anyone with the dashboard URL can read;
 // only people who enter this can save. Change it here and in the
