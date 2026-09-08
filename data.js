@@ -1,7 +1,472 @@
 const CITATIONS_DATA = {
  "clients": {
+  "ADP": {
+   "name": "Advanced Dental Practice",
+   "code": "ADP",
+   "key_count": 20,
+   "other_count": 37,
+   "key_live": [
+    {
+     "name": "Apple",
+     "domain": "apple.com",
+     "url": "https://maps.apple.com/place?auid=2975726677299771999",
+     "status": ""
+    },
+    {
+     "name": "Bing",
+     "domain": "bingplaces.com",
+     "url": "https://www.bing.com/maps?ss=ypid.YN3724x5305156170734456806&amp%3Bamp%3Bmkt=en-AU&cp=-33.941829%7E151.101644&lvl=16.0",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Cybo",
+     "domain": "cybo.com",
+     "url": "https://www.cybo.com/AU-biz/advanced-dental-practice",
+     "status": "Complete"
+    },
+    {
+     "name": "Dentist.com.au",
+     "domain": "dentist.com.au",
+     "url": "https://www.dentist.com.au/dentist-detail/nsw/kingsgrove/advanced-dental-practice/A23018924",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Facebook",
+     "domain": "facebook.com",
+     "url": "https://www.facebook.com/advdental.kingsgrove",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Foursquare",
+     "domain": "foursquare.com",
+     "url": "https://foursquare.com/v/advanced-dental-practice/66798b681f9f0d009357fd27",
+     "status": "Complete"
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "url": "https://maps.app.goo.gl/rR3dwXGoGUKfFSuh7",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Health Engine",
+     "domain": "healthengine.com.au",
+     "url": "https://listyourpractice.healthengine.com.au/list-your-practice-confirmation-dental/",
+     "status": "Awaiting Verification"
+    },
+    {
+     "name": "Health Share",
+     "domain": "healthshare.com.au",
+     "url": "https://www.healthshare.com.au/practices/advanced-dental-practice/38099-kingsgrove-2208/#overview",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Healthcare Link",
+     "domain": "healthcarelink.com.au",
+     "url": "https://www.healthcarelink.com.au/professionals-profile/mohamad/104244",
+     "status": "Complete"
+    },
+    {
+     "name": "Here",
+     "domain": "here.com",
+     "url": "https://mapcreator.here.com/dashboard/?l=-33.9418,151.1016,18,normal",
+     "status": "Complete"
+    },
+    {
+     "name": "LinkedIn",
+     "domain": "linkedin.com",
+     "url": "https://www.linkedin.com/company/advdental/about/",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Local Search",
+     "domain": "localsearch.com.au",
+     "url": "https://www.localsearch.com.au/profile/advanced-dental-practice-pty-ltd/clbvonzrg000g08mga9rddllr",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "My Community Directory",
+     "domain": "mycommunitydirectory.com.au",
+     "url": "https://www.mycommunitydirectory.com.au/New_South_Wales/Rockdale/Health_Services/Dental___Oral_Health/103196/229783/Advanced_Dental_Practice",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Top Rated Online",
+     "domain": "top-rated.online",
+     "url": "https://www.top-rated.online/cities/Sydney/place/p/12782195/Advanced+Dental+Practice",
+     "status": "Complete"
+    },
+    {
+     "name": "True Local",
+     "domain": "truelocal.com.au",
+     "url": "https://www.truelocal.com.au/business/advanced-dental-practice/kingsgrove",
+     "status": "Complete"
+    },
+    {
+     "name": "VY Maps",
+     "domain": "vymaps.com",
+     "url": "https://vymaps.com/AU/Advanced-Dental-Practice-281981/",
+     "status": "Complete"
+    },
+    {
+     "name": "Word of Mouth",
+     "domain": "wordofmouth.com.au",
+     "url": "https://www.wordofmouth.com.au/reviews/advanced-dental-practice",
+     "status": "Complete"
+    },
+    {
+     "name": "Yellow Pages",
+     "domain": "yellowpages.com.au",
+     "url": "https://www.yellowpages.com.au/nsw/kingsgrove/advanced-dental-practice-1000002823431-listing.html",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Yelp",
+     "domain": "biz.yelp.com",
+     "url": "https://www.yelp.com/biz/advanced-dental-practice-kingsgrove",
+     "status": "Existing OK"
+    }
+   ],
+   "key_missing": [
+    "American Express",
+    "Aus Health Pages",
+    "Fixed Dental",
+    "Health Direct",
+    "Infobel",
+    "Kompass",
+    "My Health 1st",
+    "Nextdoor",
+    "StartLocal",
+    "Three Best Rated",
+    "TomTom",
+    "What Clinic",
+    "White Pages",
+    "Yahoo"
+   ],
+   "other_live": [
+    {
+     "name": "2 Find Local",
+     "domain": "2findlocal.com",
+     "url": "https://www.2findlocal.com/b/14864303/advanced-dental-practice-kingsgrove-nsw",
+     "status": "Complete"
+    },
+    {
+     "name": "Around Me",
+     "domain": "aroundmeapp.com",
+     "url": "https://www.yext.com/partnerpages/aroundme/advanced-dental-practice-kingsgrove-kingsgrove-nsw-au-7f77f6",
+     "status": ""
+    },
+    {
+     "name": "AussieWeb",
+     "domain": "aussieweb.com.au",
+     "url": "https://www.aussieweb.com.au/business/advanced+dental+practice/3280640",
+     "status": "Complete"
+    },
+    {
+     "name": "Australian Planet",
+     "domain": "australianplanet.com",
+     "url": "https://www.australianplanet.com/advanced-dental-practice-F110CC50718D44D",
+     "status": "Complete"
+    },
+    {
+     "name": "BrownBook",
+     "domain": "brownbook.net",
+     "url": "https://www.brownbook.net/business/51501976/advanced-dental-practice/",
+     "status": "Complete"
+    },
+    {
+     "name": "Business Wiki",
+     "domain": "businesswiki.com.au",
+     "url": "https://www.businesswiki.com.au/listing/advance-dental-practice/kingsgrove-nsw",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Call Up Contact",
+     "domain": "callupcontact.com",
+     "url": "https://www.callupcontact.com/b/businessprofile/Advanced_Dental_Practice/9158580",
+     "status": "Complete"
+    },
+    {
+     "name": "Central Index",
+     "domain": "centralindex.com",
+     "url": "https://au.centralindex.com/company/aa2c58c1cba64d2fa50a8d650a4613a2/advanced-dental-practice-kingsgrove/kingsgrove",
+     "status": "Complete"
+    },
+    {
+     "name": "Cylex",
+     "domain": "cylex-australia.com",
+     "url": "https://www.cylex-australia.com/company/advanced-dental-practice-24818602.html",
+     "status": "Complete"
+    },
+    {
+     "name": "Dentagama",
+     "domain": "dentagama.com",
+     "url": "https://dentagama.com/dentists/advanced-dental-practice1",
+     "status": "Complete"
+    },
+    {
+     "name": "dLook",
+     "domain": "dlook.com.au",
+     "url": "https://www.dlook.com.au/business/dental-clinic-in-kingsgrove-nsw-2208/advanced-dental-practice",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Enroll Business",
+     "domain": "enrollbusiness.com",
+     "url": "https://au.enrollbusiness.com/BusinessProfile/6172293/Advanced-Dental-Practice-Kingsgrove-NSW-2208/Home",
+     "status": "Complete"
+    },
+    {
+     "name": "Find Us Here",
+     "domain": "find-us-here.com",
+     "url": "https://www.find-us-here.com/businesses/Advanced-Dental-Practice-Kingsgrove-New-South-Wales-Australia/34101661/",
+     "status": "Complete"
+    },
+    {
+     "name": "Fyple",
+     "domain": "fyple.biz",
+     "url": "https://www.fyple.biz/company/advanced-dental-practice-9nzr1eu/",
+     "status": "Complete"
+    },
+    {
+     "name": "HotFrog",
+     "domain": "hotfrog.com.au",
+     "url": "https://www.hotfrog.com.au/company/07bc421839377cc45035389fd67e0798/advanced-dental-practice/kingsgrove/dentists",
+     "status": "Complete"
+    },
+    {
+     "name": "I Global",
+     "domain": "iglobal.co",
+     "url": "https://www.iglobal.co/australia/kingsgrove/advanced-dental-practice",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Infols Info",
+     "domain": "cannot find",
+     "url": "https://hurstville.infoisinfo-au.com/card/advanced-dental-practice/1540969",
+     "status": ""
+    },
+    {
+     "name": "Instagram",
+     "domain": "instagram.com",
+     "url": "https://www.instagram.com/explore/locations/106127452298832/",
+     "status": ""
+    },
+    {
+     "name": "Local Business Guide",
+     "domain": "localbusinessguide.com.au",
+     "url": "https://www.localbusinessguide.com.au/business/advanced-dental-practice-1advanced-dental-practice-2/",
+     "status": "Complete"
+    },
+    {
+     "name": "MapQuest",
+     "domain": "mapquest.com",
+     "url": "https://www.mapquest.com/au/new-south-wales/advanced-dental-practice-kingsgrove-708092045",
+     "status": ""
+    },
+    {
+     "name": "Mister What",
+     "domain": "misterwhat-au.com",
+     "url": "https://www.misterwhat-au.com/preview/PsA64y8sPXA",
+     "status": "Complete"
+    },
+    {
+     "name": "NaviMii",
+     "domain": "navmii.com",
+     "url": "https://www.yext.com/partnerpages/navmii/advanced-dental-practice-kingsgrove-kingsgrove-nsw-au-7f77f6",
+     "status": ""
+    },
+    {
+     "name": "Open Di",
+     "domain": "opendi.com.au",
+     "url": "https://www.opendi.com.au/kingsgrove/807605.html",
+     "status": ""
+    },
+    {
+     "name": "Pink Pages",
+     "domain": "pinkpages.com.au",
+     "url": "https://pinkpages.com.au/businesses/advanced-dental-practice-kingsgrove-2-11434288",
+     "status": "Complete"
+    },
+    {
+     "name": "Show Me Local",
+     "domain": "showmelocal.com",
+     "url": "https://au.showmelocal.com/35888067-advanced-dental-practice-kingsgrove",
+     "status": "Complete"
+    },
+    {
+     "name": "StoreBoard",
+     "domain": "storeboard.com",
+     "url": "https://www.storeboard.com/advanceddentalpractice",
+     "status": "Complete"
+    },
+    {
+     "name": "SuperPages",
+     "domain": "superpages.com.au",
+     "url": "https://www.superpages.com.au/company/07bc421839377cc45035389fd67e0798/advanced-dental-practice/kingsgrove/dentists",
+     "status": "Existing OK"
+    },
+    {
+     "name": "SVC Lookup",
+     "domain": "svclookup.com.au",
+     "url": "https://svclookup.com.au/business/Advanced-Dental-Practice-in-Kingsgrove-NSW",
+     "status": "Complete"
+    },
+    {
+     "name": "Tellows",
+     "domain": "tellows.com",
+     "url": "https://www.tellows-au.com/num/0291509029",
+     "status": ""
+    },
+    {
+     "name": "Top4",
+     "domain": "top4.com.au",
+     "url": "https://www.top4.com.au/business/advanced-dental-practice-232759",
+     "status": "Complete"
+    },
+    {
+     "name": "Whats Your Hours",
+     "domain": "whatsyourhours.com",
+     "url": "https://www.brownbook.net/business/51501976/advanced-dental-practice/",
+     "status": "Complete"
+    },
+    {
+     "name": "Where To",
+     "domain": "whereto.com",
+     "url": "https://wheretoapp.com/search?poi=17273227027197760526",
+     "status": ""
+    },
+    {
+     "name": "Whereis",
+     "domain": "whereis.com",
+     "url": "https://www.whereis.com/nsw/kingsgrove-2208/yellowId-1000002823431",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Who Do You",
+     "domain": "whodoyou.com",
+     "url": "https://www.whodoyou.com/biz/2200058/advanced-dental-practice-new-south-wales-au",
+     "status": "Complete"
+    },
+    {
+     "name": "Yalwa",
+     "domain": "yalwa.com.au",
+     "url": "https://nsw.yalwa.com.au/ID_140834043/Advanced-Dental-Practice.html",
+     "status": "Complete"
+    },
+    {
+     "name": "Zenbu",
+     "domain": "zenbu.org",
+     "url": "https://au.zenbu.org/entry/1325843-advanced-dental-practice",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Zip Leaf",
+     "domain": "zipleaf.com",
+     "url": "https://au.zipleaf.com/Companies/Advanced-Dental-Practice",
+     "status": "Complete"
+    }
+   ],
+   "gbp_status": "ok",
+   "gbp_url": "https://maps.app.goo.gl/rR3dwXGoGUKfFSuh7",
+   "pending": false
+  },
+  "ALB": {
+   "name": "ALB (pending citation email creation)",
+   "code": "ALB",
+   "key_count": 0,
+   "other_count": 0,
+   "key_live": [],
+   "key_missing": [
+    "American Express",
+    "Apple",
+    "Aus Health Pages",
+    "Bing",
+    "Cybo",
+    "Dentist.com.au",
+    "Facebook",
+    "Fixed Dental",
+    "Foursquare",
+    "Google",
+    "Health Direct",
+    "Health Engine",
+    "Health Share",
+    "Healthcare Link",
+    "Here",
+    "Infobel",
+    "Kompass",
+    "LinkedIn",
+    "Local Search",
+    "My Community Directory",
+    "My Health 1st",
+    "Nextdoor",
+    "StartLocal",
+    "Three Best Rated",
+    "TomTom",
+    "Top Rated Online",
+    "True Local",
+    "VY Maps",
+    "What Clinic",
+    "White Pages",
+    "Word of Mouth",
+    "Yahoo",
+    "Yellow Pages",
+    "Yelp"
+   ],
+   "other_live": [],
+   "gbp_status": "missing",
+   "gbp_url": "",
+   "pending": true
+  },
+  "ALT": {
+   "name": "ALT (pending citation email creation)",
+   "code": "ALT",
+   "key_count": 0,
+   "other_count": 0,
+   "key_live": [],
+   "key_missing": [
+    "American Express",
+    "Apple",
+    "Aus Health Pages",
+    "Bing",
+    "Cybo",
+    "Dentist.com.au",
+    "Facebook",
+    "Fixed Dental",
+    "Foursquare",
+    "Google",
+    "Health Direct",
+    "Health Engine",
+    "Health Share",
+    "Healthcare Link",
+    "Here",
+    "Infobel",
+    "Kompass",
+    "LinkedIn",
+    "Local Search",
+    "My Community Directory",
+    "My Health 1st",
+    "Nextdoor",
+    "StartLocal",
+    "Three Best Rated",
+    "TomTom",
+    "Top Rated Online",
+    "True Local",
+    "VY Maps",
+    "What Clinic",
+    "White Pages",
+    "Word of Mouth",
+    "Yahoo",
+    "Yellow Pages",
+    "Yelp"
+   ],
+   "other_live": [],
+   "gbp_status": "missing",
+   "gbp_url": "",
+   "pending": true
+  },
   "ARC": {
-   "name": "Burwood Orthodontic Specialists",
+   "name": "Arc Orthodontic Specialists",
    "code": "ARC",
    "key_count": 18,
    "other_count": 32,
@@ -326,7 +791,10 @@ const CITATIONS_DATA = {
      "url": "https://au.zipleaf.com/Companies/Arc-Orthodontic-Specialists",
      "status": "Complete"
     }
-   ]
+   ],
+   "gbp_status": "missing",
+   "gbp_url": "",
+   "pending": false
   },
   "BAL": {
    "name": "Balmain Dental",
@@ -565,7 +1033,10 @@ const CITATIONS_DATA = {
      "url": "https://au.zenbu.org/entry/1360805-balmain-dentist",
      "status": "Complete"
     }
-   ]
+   ],
+   "gbp_status": "missing",
+   "gbp_url": "",
+   "pending": false
   },
   "BSD": {
    "name": "Balanced Smiles Dental Clinic",
@@ -823,7 +1294,10 @@ const CITATIONS_DATA = {
      "url": "https://au.zipleaf.com/Companies/Balanced-Smiles-Dental-Clinic",
      "status": "Complete"
     }
-   ]
+   ],
+   "gbp_status": "not_gbp",
+   "gbp_url": "https://sites.google.com/view/balanced-smiles-dental-clinic/home",
+   "pending": false
   },
   "CAL": {
    "name": "Calderwood Family Dental",
@@ -1055,10 +1529,13 @@ const CITATIONS_DATA = {
      "url": "https://au.zenbu.org/entry/1365680-calderwood-family-dental",
      "status": "Complete"
     }
-   ]
+   ],
+   "gbp_status": "missing",
+   "gbp_url": "",
+   "pending": false
   },
   "CHI": {
-   "name": "Chic Dentists Preston",
+   "name": "Chic Dental | Dentist Preston",
    "code": "CHI",
    "key_count": 20,
    "other_count": 30,
@@ -1381,7 +1858,10 @@ const CITATIONS_DATA = {
      "url": "https://au.zipleaf.com/Companies/Chic-Dental-Dentist-Preston",
      "status": "Complete"
     }
-   ]
+   ],
+   "gbp_status": "not_gbp",
+   "gbp_url": "https://sites.google.com/view/chic-dental--dentist-preston/home",
+   "pending": false
   },
   "CRO": {
    "name": "Cronulla Beach Dental",
@@ -1635,13 +2115,16 @@ const CITATIONS_DATA = {
      "url": "https://au.zenbu.org/entries/1292398-cronulla-beach-dental",
      "status": "Complete"
     }
-   ]
+   ],
+   "gbp_status": "not_gbp",
+   "gbp_url": "https://sites.google.com/view/cronullabeachdental/home",
+   "pending": false
   },
   "DSO": {
-   "name": "Dental Society St Clair",
+   "name": "Dental Society",
    "code": "DSO",
    "key_count": 21,
-   "other_count": 33,
+   "other_count": 34,
    "key_live": [
     {
      "name": "Bing",
@@ -1961,6 +2444,12 @@ const CITATIONS_DATA = {
      "status": "Complete"
     },
     {
+     "name": "whitecoat.com.au",
+     "domain": "whitecoat.com.au",
+     "url": "https://www.whitecoat.com.au/directory/practitioner/dentist/sa/st-clair/bubnic/599316/901",
+     "status": "Complete"
+    },
+    {
      "name": "Who Do You",
      "domain": "whodoyou.com",
      "url": "https://www.whodoyou.com/biz/2169958/dental-society-sa-au",
@@ -1984,7 +2473,10 @@ const CITATIONS_DATA = {
      "url": "https://au.zipleaf.com/Companies/Dental-Society",
      "status": "Complete"
     }
-   ]
+   ],
+   "gbp_status": "ok",
+   "gbp_url": "https://maps.app.goo.gl/tqGxXzW6A37UdhfG8",
+   "pending": false
   },
   "ELV": {
    "name": "Elevate Oral Surgery Kogarah",
@@ -2438,7 +2930,10 @@ const CITATIONS_DATA = {
      "url": "https://au.zipleaf.com/Companies/Elevate-Oral-Jaw-Surgery",
      "status": "Complete"
     }
-   ]
+   ],
+   "gbp_status": "ok",
+   "gbp_url": "https://www.google.com/maps?cid=13526401560788131293",
+   "pending": false
   },
   "GOO": {
    "name": "Goodna Family Dentist",
@@ -2558,7 +3053,10 @@ const CITATIONS_DATA = {
     "Yellow Pages",
     "Yelp"
    ],
-   "other_live": []
+   "other_live": [],
+   "gbp_status": "not_gbp",
+   "gbp_url": "https://sites.google.com/view/goodna-family-dentist/",
+   "pending": false
   },
   "HDS": {
    "name": "Hanly Dental Studio Mackay",
@@ -2678,7 +3176,317 @@ const CITATIONS_DATA = {
     "Yellow Pages",
     "Yelp"
    ],
-   "other_live": []
+   "other_live": [],
+   "gbp_status": "not_gbp",
+   "gbp_url": "https://sites.google.com/view/hanlydentalstudio",
+   "pending": false
+  },
+  "HEN": {
+   "name": "Henley Dental",
+   "code": "HEN",
+   "key_count": 18,
+   "other_count": 28,
+   "key_live": [
+    {
+     "name": "Bing",
+     "domain": "bingplaces.com",
+     "url": "https://www.bing.com/maps?osid=cc95ddd8-10fe-4837-95a6-8cf6186c8d1d&cp=-33.865792~151.067666&lvl=17&pi=0&imgid=802c6612-0c37-49c6-9298-c94dabb5ada1&v=2&sV=2&form=S00027",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Cybo",
+     "domain": "cybo.com",
+     "url": "https://www.cybo.com/AU-biz/henley-dental",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Facebook",
+     "domain": "facebook.com",
+     "url": "https://www.facebook.com/HenleyDentalAU",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Foursquare",
+     "domain": "foursquare.com",
+     "url": "https://foursquare.com/v/henley-dental/6371bde5102c27395046b0f2",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "url": "https://maps.app.goo.gl/qB3RkSgBJGuaTKUR8",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Health Direct",
+     "domain": "healthdirect.gov.au",
+     "url": "https://www.healthdirect.gov.au/australian-health-services/healthcare-service/homebush-west-2140-nsw/henley-dental/dentists/736509f9-18db-4ece-88fe-c2fd44f0c493",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Healthcare Link",
+     "domain": "healthcarelink.com.au",
+     "url": "https://www.healthcarelink.com.au/cpd/providers/profile.php?pid=2345",
+     "status": "Complete"
+    },
+    {
+     "name": "Infobel",
+     "domain": "infobel.com",
+     "url": "https://www.infobel.com/en/australia/henley_dental/homebush_west/AU107086630-0257011312/businessdetails.aspx",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Kompass",
+     "domain": "kompass.com",
+     "url": "https://au.kompass.com/c/henley-dental/aunkc080920232/",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "LinkedIn",
+     "domain": "linkedin.com",
+     "url": "https://www.linkedin.com/in/henley-dental-104a13276?originalSubdomain=auu",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Local Search",
+     "domain": "localsearch.com.au",
+     "url": "https://www.localsearch.com.au/profile/henley-dental/clgeq5k2q001208mlh5bb6e3l",
+     "status": "Existing OK"
+    },
+    {
+     "name": "My Community Directory",
+     "domain": "mycommunitydirectory.com.au",
+     "url": "https://www.mycommunitydirectory.com.au/New_South_Wales/Strathfield/Health_Services/Dental___Oral_Health/112780/235943/Henley_Dental",
+     "status": "Complete"
+    },
+    {
+     "name": "TomTom",
+     "domain": "tomtom.com",
+     "url": "https://www.tomtom.com/mapshare/tools/new/mapshare/#loc=-33.86572,151.07028,19.5",
+     "status": "Awaiting Verification"
+    },
+    {
+     "name": "Top Rated Online",
+     "domain": "top-rated.online",
+     "url": "https://www.top-rated.online/cities/Sydney/place/p/12852799/Henley+Dental",
+     "status": "Complete"
+    },
+    {
+     "name": "True Local",
+     "domain": "truelocal.com.au",
+     "url": "https://www.truelocal.com.au/business/henley-dental-1/homebush-west",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "VY Maps",
+     "domain": "vymaps.com",
+     "url": "https://vymaps.com/AU/Henley-Dental-283520/",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Word of Mouth",
+     "domain": "wordofmouth.com.au",
+     "url": "https://www.wordofmouth.com.au/reviews/henley-dental",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Yelp",
+     "domain": "biz.yelp.com",
+     "url": "https://www.yelp.com/biz/henley-dental-homebush-west-2",
+     "status": "Complete"
+    }
+   ],
+   "key_missing": [
+    "American Express",
+    "Apple",
+    "Aus Health Pages",
+    "Dentist.com.au",
+    "Fixed Dental",
+    "Health Engine",
+    "Health Share",
+    "Here",
+    "My Health 1st",
+    "Nextdoor",
+    "StartLocal",
+    "Three Best Rated",
+    "What Clinic",
+    "White Pages",
+    "Yahoo",
+    "Yellow Pages"
+   ],
+   "other_live": [
+    {
+     "name": "2 Find Local",
+     "domain": "2findlocal.com",
+     "url": "https://www.2findlocal.com/b/14769154/henley-dental-homebush-west-nsw",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Australian Planet",
+     "domain": "australianplanet.com",
+     "url": "https://www.australianplanet.com/henley-dental-dental-services-F110CC2001FD442",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "BirdEye",
+     "domain": "getbirdeye.com.au",
+     "url": "https://reviews.birdeye.com/henley-dental-166503048075430",
+     "status": "Complete"
+    },
+    {
+     "name": "BrownBook",
+     "domain": "brownbook.net",
+     "url": "https://www.brownbook.net/business/51621125/henley-dental/",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Business Wiki",
+     "domain": "businesswiki.com.au",
+     "url": "https://businesswiki.com.au/profile/nsw/homebush-west/henley-dental/",
+     "status": "Complete"
+    },
+    {
+     "name": "Call Up Contact",
+     "domain": "callupcontact.com",
+     "url": "https://www.callupcontact.com/b/businessprofile/Henley_Dental/9187450",
+     "status": "Complete"
+    },
+    {
+     "name": "Cylex",
+     "domain": "cylex-australia.com",
+     "url": "https://www.cylex-australia.com/company/henley-dental-24817552.html",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Dentagama",
+     "domain": "dentagama.com",
+     "url": "https://dentagama.com/dentists/henley-dental",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Doctors.com.au",
+     "domain": "doctors.com.au",
+     "url": "https://doctors.com.au/profile/dentist/nsw/homebush-west-2140/henley-dental/",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Enroll Business",
+     "domain": "enrollbusiness.com",
+     "url": "https://au.enrollbusiness.com/BusinessProfile/6216012/Henley%20Dental",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Find Postcode",
+     "domain": "findpostcode.com.au",
+     "url": "https://findpostcode.com.au/local-listings/nsw/homebush-west/henley-dental",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Find Us Here",
+     "domain": "find-us-here.com",
+     "url": "https://www.find-us-here.com/businesses/Henley-Dental-Homebush-New-South-Wales-Australia/33829084/",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Fyple",
+     "domain": "fyple.biz",
+     "url": "https://www.fyple.biz/company/henley-dental-9n8n862/",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "HotFrog",
+     "domain": "hotfrog.com.au",
+     "url": "https://www.hotfrog.com.au/company/e9a4a90bac365c7f4b266eb814c23dc7/henley-dental/homebush-west/dentists",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Local Business Guide",
+     "domain": "localbusinessguide.com.au",
+     "url": "https://www.localbusinessguide.com.au/business/henley-dental-1/",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Mister What",
+     "domain": "misterwhat-au.com",
+     "url": "https://www.misterwhat-au.com/preview/84868",
+     "status": "Awaiting Verification"
+    },
+    {
+     "name": "Nice Local",
+     "domain": "nicelocal.com.au",
+     "url": "https://nicelocal.com.au/sydney/medical/henley_dental/",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Pink Pages",
+     "domain": "pinkpages.com.au",
+     "url": "https://pinkpages.com.au/home/search?what=henley+dental&where=HOMEBUSH+-+NSW&find=Find",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Seekfind",
+     "domain": "seekfind.com.au",
+     "url": "https://www.seekfind.com.au/businesses/medical/dentists/henley-dental",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Show Me Local",
+     "domain": "showmelocal.com",
+     "url": "https://au.showmelocal.com/36032087-henley-dental-homebush-west",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "StoreBoard",
+     "domain": "storeboard.com",
+     "url": "https://www.storeboard.com/henleydental",
+     "status": "Complete"
+    },
+    {
+     "name": "SuperPages",
+     "domain": "superpages.com.au",
+     "url": "https://www.superpages.com.au/company/e9a4a90bac365c7f4b266eb814c23dc7/henley-dental/homebush-west/dentists",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Top4",
+     "domain": "top4.com.au",
+     "url": "https://www.top4.com.au/business/henley-dental-230795",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Tuugo",
+     "domain": "tuugo.biz",
+     "url": "https://www.tuugo.biz/Companies/henley-dental/0050004140328",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Whats Your Hours",
+     "domain": "whatsyourhours.com",
+     "url": "https://www.whatsyourhours.com/search_results?q=henley+dental",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Who Do You",
+     "domain": "whodoyou.com",
+     "url": "https://www.whodoyou.com/biz/2170962/henley-dental-nsw-au",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Yalwa",
+     "domain": "yalwa.com.au",
+     "url": "https://sydney.yalwa.com.au/ID_140955873/Henley-Dental.html",
+     "status": ""
+    },
+    {
+     "name": "Zenbu",
+     "domain": "zenbu.org",
+     "url": "https://au.zenbu.org/entry/1326055-henley-dental",
+     "status": "Existing Upate"
+    }
+   ],
+   "gbp_status": "ok",
+   "gbp_url": "https://maps.app.goo.gl/qB3RkSgBJGuaTKUR8",
+   "pending": false
   },
   "LFD": {
    "name": "Lily Family Dental Ripley",
@@ -2778,7 +3586,10 @@ const CITATIONS_DATA = {
     "Yellow Pages",
     "Yelp"
    ],
-   "other_live": []
+   "other_live": [],
+   "gbp_status": "not_gbp",
+   "gbp_url": "https://sites.google.com/view/lily-family-dental/",
+   "pending": false
   },
   "LUM": {
    "name": "Luma Dental Clinic Edwardstown",
@@ -2888,10 +3699,13 @@ const CITATIONS_DATA = {
     "Yellow Pages",
     "Yelp"
    ],
-   "other_live": []
+   "other_live": [],
+   "gbp_status": "not_gbp",
+   "gbp_url": "https://sites.google.com/view/luma-dental-clinic-sa",
+   "pending": false
   },
   "MAI": {
-   "name": "Parramatta Oral Surgery",
+   "name": "Dr Mai Dental Surgery Parramatta",
    "code": "MAI",
    "key_count": 13,
    "other_count": 0,
@@ -2998,7 +3812,10 @@ const CITATIONS_DATA = {
     "Yahoo",
     "Yelp"
    ],
-   "other_live": []
+   "other_live": [],
+   "gbp_status": "not_gbp",
+   "gbp_url": "https://sites.google.com/view/drmaidentalsurgeryparramatta",
+   "pending": false
   },
   "MQD": {
    "name": "Macquarie Park Dentists",
@@ -3489,7 +4306,10 @@ const CITATIONS_DATA = {
      "url": "https://au.zipleaf.com/Companies/Macquarie-Dentists",
      "status": "Existing OK"
     }
-   ]
+   ],
+   "gbp_status": "ok",
+   "gbp_url": "https://maps.google.com/maps?cid=3820880163294844339",
+   "pending": false
   },
   "PER": {
    "name": "Perfect Smile Adelaide",
@@ -3960,13 +4780,16 @@ const CITATIONS_DATA = {
      "url": "https://au.zipleaf.com/Companies/Perfect-Smile",
      "status": "Existing OK"
     }
-   ]
+   ],
+   "gbp_status": "ok",
+   "gbp_url": "https://maps.app.goo.gl/L7HLbdzNKZ3QUmr36",
+   "pending": false
   },
   "SWD": {
    "name": "Sherwood Dental Brisbane",
    "code": "SWD",
    "key_count": 22,
-   "other_count": 48,
+   "other_count": 49,
    "key_live": [
     {
      "name": "Aus Health Pages",
@@ -4333,6 +5156,12 @@ const CITATIONS_DATA = {
      "status": "Complete"
     },
     {
+     "name": "SuperPages",
+     "domain": "superpages.com.au",
+     "url": "https://superpages.com.au/company/1072262499569664/sherwood-dental-technician-prosthetist/sherwood/cosmetics",
+     "status": "Complete"
+    },
+    {
      "name": "Tellows",
      "domain": "tellows.com",
      "url": "https://www.tellows-au.com/num/0733799300",
@@ -4404,7 +5233,315 @@ const CITATIONS_DATA = {
      "url": "https://au.zipleaf.com/Companies/Sherwood-Dental",
      "status": "Complete"
     }
-   ]
+   ],
+   "gbp_status": "missing",
+   "gbp_url": "",
+   "pending": false
+  },
+  "WEL": {
+   "name": "Wellness Dental Oakleigh",
+   "code": "WEL",
+   "key_count": 14,
+   "other_count": 31,
+   "key_live": [
+    {
+     "name": "Apple",
+     "domain": "businessconnect.apple.com",
+     "url": "https://maps.apple.com/place?auid=16156232319164421687",
+     "status": "Complete"
+    },
+    {
+     "name": "Bing",
+     "domain": "bingplaces.com",
+     "url": "http://www.bing.com/maps?ss=ypid.YN3724x10571999814438240773&amp;amp;mkt=en-AU",
+     "status": "Complete"
+    },
+    {
+     "name": "Cybo",
+     "domain": "cybo.com",
+     "url": "https://www.cybo.com/AU-biz/wellness-dental-oakleigh",
+     "status": "Complete"
+    },
+    {
+     "name": "Facebook",
+     "domain": "facebook.com",
+     "url": "https://www.facebook.com/429717913561867",
+     "status": "Complete"
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "url": "https://g.co/kgs/RbkGE18",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Healthcare Link",
+     "domain": "healthcarelink.com.au",
+     "url": "https://www.healthcarelink.com.au/employer-profile/29010/wellness-dental-oakleigh/?show_emp_pro=27217",
+     "status": "Complete"
+    },
+    {
+     "name": "Here",
+     "domain": "here.com",
+     "url": "https://mapcreator.here.com/?l=-37.8993,145.0947,20,normal",
+     "status": "Complete"
+    },
+    {
+     "name": "Infobel",
+     "domain": "infobel.com",
+     "url": "https://www.infobel.com/en/australia/wellness_dental/oakleigh/AU107916144-0456106471/businessdetails.aspx",
+     "status": ""
+    },
+    {
+     "name": "My Community Directory",
+     "domain": "mycommunitydirectory.com.au",
+     "url": "https://www.mycommunitydirectory.com.au/Victoria/Monash/Health_Services/Dental___Oral_Health/116593/239347/Wellness_Dental_Oakleigh",
+     "status": "Complete"
+    },
+    {
+     "name": "Nextdoor",
+     "domain": "nextdoor.com",
+     "url": "https://au.nextdoor.com/pages/wellness-dental",
+     "status": "Complete"
+    },
+    {
+     "name": "Top Rated Online",
+     "domain": "top-rated.online",
+     "url": "https://www.top-rated.online/cities/Melbourne/place/p/21466431/Wellness+Dental+-+Oakleigh+Dentist",
+     "status": "Complete"
+    },
+    {
+     "name": "True Local",
+     "domain": "truelocal.com.au",
+     "url": "https://www.truelocal.com.au/business/wellness-dental-oakleigh/oakleigh",
+     "status": "Complete"
+    },
+    {
+     "name": "VY Maps",
+     "domain": "vymaps.com",
+     "url": "https://vymaps.com/AU/Wellness-Dental-Oakleigh-VN61441/?id_new=3af735ccd80781ad5dcfc7b00b977908",
+     "status": "Complete"
+    },
+    {
+     "name": "Word of Mouth",
+     "domain": "wordofmouth.com.au",
+     "url": "https://www.wordofmouth.com.au/reviews/wellness-dental-oakleigh",
+     "status": "Complete"
+    }
+   ],
+   "key_missing": [
+    "American Express",
+    "Aus Health Pages",
+    "Dentist.com.au",
+    "Fixed Dental",
+    "Foursquare",
+    "Health Direct",
+    "Health Engine",
+    "Health Share",
+    "Kompass",
+    "LinkedIn",
+    "Local Search",
+    "My Health 1st",
+    "StartLocal",
+    "Three Best Rated",
+    "TomTom",
+    "What Clinic",
+    "White Pages",
+    "Yahoo",
+    "Yellow Pages",
+    "Yelp"
+   ],
+   "other_live": [
+    {
+     "name": "Around Me",
+     "domain": "aroundmeapp.com",
+     "url": "http://www.yext.com/partnerpages/aroundme/wellness-dental-oakleigh3166-vic-au-10b9d3",
+     "status": "Complete"
+    },
+    {
+     "name": "AussieWeb",
+     "domain": "aussieweb.com.au",
+     "url": "https://www.aussieweb.com.au/business/3304255",
+     "status": "Complete"
+    },
+    {
+     "name": "BrownBook",
+     "domain": "brownbook.net",
+     "url": "https://www.brownbook.net/business/53342702/wellness-dental/",
+     "status": "Complete"
+    },
+    {
+     "name": "Call Up Contact",
+     "domain": "callupcontact.com",
+     "url": "https://www.callupcontact.com/b/businessprofile/Wellness_Dental_Oakleigh/9476751",
+     "status": "Complete"
+    },
+    {
+     "name": "Central Index",
+     "domain": "centralindex.com",
+     "url": "https://au.centralindex.com/company/84cc34ac4b9f4b9bab104ce22f78e3f6",
+     "status": "Complete"
+    },
+    {
+     "name": "Cylex",
+     "domain": "cylex-australia.com",
+     "url": "https://www.cylex-australia.com/company/wellness-dental-24975408.html",
+     "status": "Complete"
+    },
+    {
+     "name": "Dentagama",
+     "domain": "dentagama.com",
+     "url": "https://dentagama.com/dentists/wellness-dental-oakleigh",
+     "status": "Existing OK"
+    },
+    {
+     "name": "dLook",
+     "domain": "dlook.com.au",
+     "url": "https://www.dlook.com.au/business/dental-clinic-in-oakleigh-vic-3166/wellness-dental-oakleigh",
+     "status": "Complete"
+    },
+    {
+     "name": "Enroll Business",
+     "domain": "enrollbusiness.com",
+     "url": "https://au.enrollbusiness.com/BusinessProfile/7035159/Wellness%20Dental%20Oakleigh",
+     "status": "Complete"
+    },
+    {
+     "name": "Find Open",
+     "domain": "find-open.com",
+     "url": "wrong live link on yext https://www.cylex-australia.com/company/wellness-dental-24975408.html",
+     "status": ""
+    },
+    {
+     "name": "Find Postcode",
+     "domain": "findpostcode.com.au",
+     "url": "https://snipboard.io/fUXCSa.jpg",
+     "status": "Awaiting Verification"
+    },
+    {
+     "name": "Find Us Here",
+     "domain": "find-us-here.com",
+     "url": "https://www.find-us-here.com/businesses/Wellness-Dental-Oakleigh-Oakleigh-Victoria-Australia/34202883/",
+     "status": "Complete"
+    },
+    {
+     "name": "HotFrog",
+     "domain": "hotfrog.com.au",
+     "url": "https://www.hotfrog.com.au/company/e2281c92f2c94aaf45c12cee78b45f40",
+     "status": "Complete"
+    },
+    {
+     "name": "I Global",
+     "domain": "iglobal.co",
+     "url": "https://www.iglobal.co/australia/melbourne/wellness-dental",
+     "status": "Complete"
+    },
+    {
+     "name": "Infols Info",
+     "domain": "glen-eira.infoisinfo-au.com",
+     "url": "https://glen-eira.infoisinfo-au.com/",
+     "status": "Complete"
+    },
+    {
+     "name": "Instagram",
+     "domain": "instagram.com",
+     "url": "https://www.instagram.com/explore/locations/429717913561867/",
+     "status": "Complete"
+    },
+    {
+     "name": "Livepages",
+     "domain": "livepages.com.au",
+     "url": "http://www.livepages.com.au/listing.php?list_action=edit",
+     "status": "Complete"
+    },
+    {
+     "name": "Local Business Guide",
+     "domain": "localbusinessguide.com.au",
+     "url": "https://www.localbusinessguide.com.au/business/wellness-dental-oakleigh/",
+     "status": "Complete"
+    },
+    {
+     "name": "MapQuest",
+     "domain": "mapquest.com",
+     "url": "http://www.mapquest.com/places/-775239650/",
+     "status": "Complete"
+    },
+    {
+     "name": "NaviMii",
+     "domain": "navmii.com",
+     "url": "http://www.yext.com/partnerpages/navmii/wellness-dental-oakleigh3166-vic-au-10b9d3",
+     "status": "Complete"
+    },
+    {
+     "name": "Opendi",
+     "domain": "opendi.com.au",
+     "url": "https://www.opendi.com.au/oakleigh/826672.html",
+     "status": "Complete"
+    },
+    {
+     "name": "Pink Pages",
+     "domain": "pinkpages.com.au",
+     "url": "https://pinkpages.com.au/businesses/wellness-dental-11442524",
+     "status": "Complete"
+    },
+    {
+     "name": "Show Me Local",
+     "domain": "showmelocal.com",
+     "url": "https://www.showmelocal.com/profile.aspx?bid=38116639",
+     "status": "Complete"
+    },
+    {
+     "name": "StoreBoard",
+     "domain": "storeboard.com",
+     "url": "https://www.storeboard.com/wellnessdentaloakleigh",
+     "status": "Complete"
+    },
+    {
+     "name": "SuperPages",
+     "domain": "superpages.com.au",
+     "url": "https://www.superpages.com.au/company/e2281c92f2c94aaf45c12cee78b45f400",
+     "status": "Complete"
+    },
+    {
+     "name": "Tellows",
+     "domain": "tellows.com",
+     "url": "https://www.tellows-au.com/num/0242963950/c/8124315",
+     "status": "Complete"
+    },
+    {
+     "name": "Top4",
+     "domain": "top4.com.au",
+     "url": "https://www.top4.com.au/business/wellness-dental-oakleigh-614793",
+     "status": "Complete"
+    },
+    {
+     "name": "Tupalo",
+     "domain": "tupalo.com",
+     "url": "https://www.tupalo.net/en/oakleigh-victoria/wellness-dental",
+     "status": "Complete"
+    },
+    {
+     "name": "Tupalo",
+     "domain": "tupalo.net",
+     "url": "https://www.tupalo.net/en/oakleigh-victoria/wellness-dental",
+     "status": "Complete"
+    },
+    {
+     "name": "Whereto",
+     "domain": "wheretoapp.com",
+     "url": "https://wheretoapp.com/search?poi=6374847f486a3fe0998edb104ff4fd5f",
+     "status": "Complete"
+    },
+    {
+     "name": "Zenbu",
+     "domain": "zenbu.org",
+     "url": "https://au.zenbu.org/entry/1347510-wellness-dental-oakleigh",
+     "status": "Complete"
+    }
+   ],
+   "gbp_status": "ok",
+   "gbp_url": "https://g.co/kgs/RbkGE18",
+   "pending": false
   },
   "WIN": {
    "name": "Winning Smiles Sutherland",
@@ -4514,7 +5651,10 @@ const CITATIONS_DATA = {
     "Yellow Pages",
     "Yelp"
    ],
-   "other_live": []
+   "other_live": [],
+   "gbp_status": "not_gbp",
+   "gbp_url": "https://sites.google.com/view/winningdentalsutherland",
+   "pending": false
   }
  }
 };
