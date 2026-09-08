@@ -45,7 +45,10 @@
   <main>
     <div class="sop-head" style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
       <h1 id="client-name" style="margin-bottom:6px">Client detail</h1>
-      <span class="conn" id="conn">checking…</span>
+      <span>
+        <button class="btn sm" id="name-edit" style="display:none;margin-right:8px">Rename</button>
+        <span class="conn" id="conn">checking…</span>
+      </span>
     </div>
     <p class="page-lede">Select a client to view and edit their citation records.</p>
 
@@ -204,6 +207,7 @@
           var rec = d.payload.data.record;
           if (rec) {
             overrides[ovKey(rec.client_code, rec.site_name)] = { listing_url:rec.listing_url, status:rec.status };
+            refreshPickerLabels();
             if (current) render(current);
           }
         }
@@ -212,6 +216,8 @@
   }
 
   // ── merge base sheet data with overrides ────────────────────
+  function isMeta(site){ return site === '__client_name__'; }
+
   function merged(code, list){
     return list.map(function(x){
       var o = overrides[ovKey(code, x.name)];
@@ -220,6 +226,12 @@
                    status:(o.status != null ? o.status : x.status), edited:true }
                : x;
     });
+  }
+
+  var NAME_ROW = '__client_name__';
+  function nameFor(code){
+    var o = overrides[ovKey(code, NAME_ROW)];
+    return (o && o.listing_url) ? o.listing_url : BASE[code].name;
   }
 
   function gbpFor(code){
@@ -289,7 +301,8 @@
     current = code;
     var c = BASE[code];
     if (!c){ document.getElementById('detail').style.display='none'; return; }
-    document.getElementById('client-name').textContent = c.name;
+    document.getElementById('client-name').textContent = nameFor(code);
+    document.getElementById('name-edit').style.display = hasBackend ? 'inline-block' : 'none';
 
     var kl = merged(code, c.key_live), ol = merged(code, c.other_live);
     document.getElementById('d-key').textContent = kl.length + '/34';
@@ -319,12 +332,29 @@
 
   document.getElementById('gbp-edit').onclick = function(){
     var cur = gbpFor(current);
-    var v = prompt('Google Business Profile share link for ' + BASE[current].name + ':\n\n' +
+    var v = prompt('Google Business Profile share link for ' + nameFor(current) + ':\n\n' +
       'Get it from the GBP dashboard, or open the listing in Google Maps and use Share.', cur || '');
     if (v === null) return;
     saveOverride(current, 'Google', v.trim(), 'Complete')
       .catch(function(e){ alert(e && e.message ? e.message : 'Save failed.'); });
   };
+
+  document.getElementById('name-edit').onclick = function(){
+    var cur = nameFor(current);
+    var v = prompt('Client name:', cur);
+    if (v === null) return;
+    v = v.trim();
+    if (!v){ alert('Name cannot be blank.'); return; }
+    saveOverride(current, NAME_ROW, v, 'name')
+      .then(refreshPickerLabels)
+      .catch(function(e){ alert(e && e.message ? e.message : 'Save failed.'); });
+  };
+
+  function refreshPickerLabels(){
+    Array.prototype.forEach.call(picker.options, function(o){
+      if (o.value && BASE[o.value]) o.textContent = nameFor(o.value);
+    });
+  }
 
   // ── init ────────────────────────────────────────────────────
   var picker = document.getElementById('picker');
@@ -349,7 +379,7 @@
   } else {
     loadOverrides().then(function(){
       online = true; conn.className='conn live'; conn.textContent='live · synced';
-      subscribe(); start();
+      refreshPickerLabels(); subscribe(); start();
     }).catch(function(err){
       conn.className='conn off';
       conn.textContent='backend error';
