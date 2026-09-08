@@ -114,10 +114,12 @@
   var hasBackend = (typeof SUPABASE_URL==='string' && SUPABASE_URL) &&
                    (typeof SUPABASE_ANON_KEY==='string' && SUPABASE_ANON_KEY);
 
+  // New-style sb_publishable_ keys use the apikey header only.
+  // Legacy eyJ... anon keys also accept an Authorization Bearer.
+  var isLegacyKey = /^eyJ/.test(SUPABASE_ANON_KEY || '');
   function headers(withKey){
-    var h = { 'apikey': SUPABASE_ANON_KEY,
-              'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
-              'Content-Type': 'application/json' };
+    var h = { 'apikey': SUPABASE_ANON_KEY, 'Content-Type': 'application/json' };
+    if (isLegacyKey) h['Authorization'] = 'Bearer ' + SUPABASE_ANON_KEY;
     if (withKey) h['x-write-key'] = sessionStorage.getItem(KEY_PW) || '';
     return h;
   }
@@ -125,7 +127,14 @@
   function loadOverrides(){
     if (!hasBackend) return Promise.resolve(false);
     return fetch(SUPABASE_URL + '/rest/v1/citation_overrides?select=*', { headers: headers(false) })
-      .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function(r){
+        if (!r.ok) return r.text().then(function(t){
+          var msg = 'HTTP ' + r.status;
+          try { var j = JSON.parse(t); msg = j.message || j.hint || msg; } catch(e){}
+          throw new Error(msg);
+        });
+        return r.json();
+      })
       .then(function(rows){
         overrides = {};
         rows.forEach(function(r){
@@ -151,7 +160,11 @@
         sessionStorage.removeItem(KEY_PW);
         throw new Error('Passphrase rejected — not saved.');
       }
-      if (!r.ok) throw new Error('Save failed (' + r.status + ')');
+      if (!r.ok) return r.text().then(function(t){
+        var msg = 'Save failed (' + r.status + ')';
+        try { var j = JSON.parse(t); if (j.message) msg = j.message; } catch(e){}
+        throw new Error(msg);
+      });
       overrides[ovKey(code,site)] = { listing_url:url, status:status };
       render(current);
     });
@@ -337,8 +350,11 @@
     loadOverrides().then(function(){
       online = true; conn.className='conn live'; conn.textContent='live · synced';
       subscribe(); start();
-    }).catch(function(){
-      conn.className='conn off'; conn.textContent='backend unreachable';
+    }).catch(function(err){
+      conn.className='conn off';
+      conn.textContent='backend error';
+      conn.title = (err && err.message) ? err.message : 'unknown error';
+      console.error('Supabase load failed:', err);
       start();
     });
   }
