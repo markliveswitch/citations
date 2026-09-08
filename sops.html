@@ -5,6 +5,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SOPs — Citations Dashboard</title>
 <link rel="stylesheet" href="style.css">
+<style>
+  .toolbar { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:24px; }
+  .btn {
+    font-family:'IBM Plex Sans',sans-serif; font-size:0.85rem; padding:7px 14px;
+    background:var(--panel); border:1px solid var(--line); border-radius:3px;
+    cursor:pointer; color:var(--ink);
+  }
+  .btn:hover { background:#fff; }
+  .btn.primary { background:var(--teal-deep); color:#fff; border-color:var(--teal-deep); }
+  .btn.primary:hover { background:var(--teal); }
+  .btn.danger { color:var(--red); border-color:var(--red); }
+  .btn.danger:hover { background:#fff; }
+  .dirty-bar {
+    display:none; background:#fff8e8; border:1px solid var(--amber);
+    border-radius:3px; padding:12px 16px; margin-bottom:22px; font-size:0.88rem;
+  }
+  .dirty-bar.show { display:block; }
+  input[type=text], textarea, select {
+    font-family:'IBM Plex Sans',sans-serif; font-size:0.9rem; width:100%;
+    padding:7px 9px; background:#fff; border:1px solid var(--line);
+    border-radius:3px; color:var(--ink);
+  }
+  textarea { font-family:'IBM Plex Mono',monospace; font-size:0.82rem; line-height:1.6; resize:vertical; }
+  .fld { margin-bottom:14px; }
+  .fld label {
+    display:block; font-family:'IBM Plex Mono',monospace; font-size:0.68rem;
+    text-transform:uppercase; letter-spacing:0.04em; color:var(--ink-soft); margin-bottom:4px;
+  }
+  .sop-head { display:flex; justify-content:space-between; align-items:baseline; gap:12px; }
+  .empty { color:var(--ink-soft); font-style:italic; font-size:0.9rem; }
+  dialog { border:1px solid var(--line); border-radius:4px; padding:0; max-width:640px; width:92%; background:var(--paper); }
+  dialog::backdrop { background:rgba(20,24,28,0.45); }
+  .dlg-body { padding:24px 26px; }
+  .dlg-foot { padding:14px 26px; border-top:1px solid var(--line); display:flex; justify-content:flex-end; gap:8px; }
+</style>
 </head>
 <body>
 <div class="layout">
@@ -17,81 +52,177 @@
       <a href="sops.html" class="active">SOPs</a>
       <a href="directories.html">Directory links</a>
       <a href="templates.html">Email templates</a>
-      
     </nav>
     <div class="sidebar-foot">Bright Dental Marketing<br>Team-internal · not client-facing</div>
   </aside>
   <main>
-    <h1>SOPs</h1>
-    <p class="page-lede">Standard procedures for citation building, auditing, and cleanup. Click a card to expand it. These are placeholders — replace with your actual process steps.</p>
+    <h1>Key citation SOPs</h1>
+    <p class="page-lede">Per-site claim and verification procedures for the 34 key citation sites. Edit here, then export and commit the updated file so the whole team sees your changes.</p>
 
-    <div class="placeholder-note">Draft structure only. Confirm each SOP's real steps before anyone follows these.</div>
-
-    <div class="card-list">
-      <details class="card">
-        <summary>New client citation build</summary>
-        <div class="body">
-          <ol>
-            <li>Confirm NAP source-of-truth with the client (business name, address, phone, website URL — exact formatting).</li>
-            <li>Add the confirmed NAP to the client roster page.</li>
-            <li>Submit to primary directories first (Google Business Profile, Bing Places).</li>
-            <li>Work through the secondary directory list, matching formatting exactly.</li>
-            <li>Log each submission's status back on the roster.</li>
-          </ol>
-        </div>
-      </details>
-
-      <details class="card">
-        <summary>Quarterly NAP audit</summary>
-        <div class="body">
-          <ol>
-            <li>Pull current listing data for each tracked directory per client.</li>
-            <li>Compare against the roster's source-of-truth NAP.</li>
-            <li>Flag any mismatch on the dashboard with directory + discrepancy noted.</li>
-            <li>Prioritise fixes by directory authority / traffic impact.</li>
-          </ol>
-        </div>
-      </details>
-
-      <details class="card">
-        <summary>Fixing a NAP mismatch</summary>
-        <div class="body">
-          <ol>
-            <li>Identify whether the fix requires directory-owner edit access or a claim/verification process.</li>
-            <li>Submit correction through the directory's official edit flow — avoid third-party "fix it" services.</li>
-            <li>Note expected turnaround time (varies by directory) on the dashboard.</li>
-            <li>Re-check after the directory's typical processing window and update status.</li>
-          </ol>
-        </div>
-      </details>
-
-      <details class="card">
-        <summary>Sending the claim/verification email to a client</summary>
-        <div class="body">
-          <ol>
-            <li>Check the <a href="directories.html">directory links page</a> for the directory's typical verification method. If it's marked "confirm on site," check the directory's current process yourself before emailing — don't guess or assume it's the same as last time.</li>
-            <li>Pick the matching variant from the <a href="templates.html">email templates page</a> — email code, phone call, mail/postcard, or direct access grant.</li>
-            <li>Fill in every merge field with the real client's details in your own email draft. Never paste real client details into the public site pages.</li>
-            <li>Send the email, then log the site as "pending — awaiting client verification" on the dashboard.</li>
-            <li>Once the client confirms (code received, access granted, etc.), complete the directory submission and move the status to live on the roster.</li>
-            <li>If a client doesn't respond within about a week, send one follow-up before flagging it as stalled.</li>
-          </ol>
-        </div>
-      </details>
-
-      <details class="card">
-        <summary>Duplicate listing removal</summary>
-        <div class="body">
-          <ol>
-            <li>Confirm the duplicate is genuinely the same business, not a second location.</li>
-            <li>Use the directory's official duplicate-merge or removal request process.</li>
-            <li>Keep the listing with more reviews / longer history as the primary where possible.</li>
-            <li>Log the removal request date — some directories take weeks to process.</li>
-          </ol>
-        </div>
-      </details>
+    <div class="placeholder-note">
+      Edits live in this browser tab only until you export. Nothing is saved to the repo automatically. Click <strong>Export updated file</strong>, then commit the downloaded <span class="mono">sops-data.js</span> to the repo to publish your changes to the team.
     </div>
+
+    <div class="dirty-bar" id="dirty">
+      <strong>Unsaved changes.</strong> Export and commit <span class="mono">sops-data.js</span> or your edits are lost when you close this tab.
+    </div>
+
+    <div class="toolbar">
+      <button class="btn primary" id="btn-export">Export updated file</button>
+      <button class="btn" id="btn-add">Add a site</button>
+      <input type="text" id="search" placeholder="Filter sites…" style="width:auto;flex:1;min-width:180px">
+    </div>
+
+    <div id="list" class="card-list"></div>
   </main>
 </div>
+
+<dialog id="dlg">
+  <div class="dlg-body">
+    <h2 style="margin-top:0" id="dlg-title">Edit SOP</h2>
+    <div class="fld"><label>Site name</label><input type="text" id="f-name"></div>
+    <div class="fld"><label>Directory URL</label><input type="text" id="f-url" placeholder="example.com.au"></div>
+    <div class="fld"><label>Verification method</label>
+      <select id="f-ver">
+        <option value="">Not recorded</option>
+        <option>No Verification</option>
+        <option>Email Verification</option>
+        <option>BDM Email Verification</option>
+        <option>Phone Verification</option>
+        <option>Phone &amp; Email</option>
+        <option>Postcard / Mail Verification</option>
+        <option>Payment Needed</option>
+      </select>
+    </div>
+    <div class="fld"><label>Steps (one per line)</label>
+      <textarea id="f-steps" rows="9" placeholder="Go to the directory's claim page&#10;Search for the practice by name and suburb&#10;…"></textarea>
+    </div>
+    <div class="fld"><label>Notes / gotchas</label><textarea id="f-notes" rows="3"></textarea></div>
+  </div>
+  <div class="dlg-foot">
+    <button class="btn" id="dlg-cancel">Cancel</button>
+    <button class="btn primary" id="dlg-save">Save</button>
+  </div>
+</dialog>
+
+<script src="sops-data.js"></script>
+<script>
+(function(){
+  var data = JSON.parse(JSON.stringify(SOPS_DATA));
+  var dirty = false, editingKey = null;
+  var list = document.getElementById('list');
+  var dlg = document.getElementById('dlg');
+
+  function esc(s){
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function(m){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m];
+    });
+  }
+
+  function markDirty(){
+    dirty = true;
+    document.getElementById('dirty').classList.add('show');
+  }
+
+  function render(){
+    var q = document.getElementById('search').value.trim().toLowerCase();
+    var keys = Object.keys(data.sites).sort();
+    list.innerHTML = '';
+    var shown = 0;
+
+    keys.forEach(function(k){
+      var s = data.sites[k];
+      if (q && s.name.toLowerCase().indexOf(q) === -1) return;
+      shown++;
+
+      var d = document.createElement('details');
+      d.className = 'card';
+
+      var stepsHtml = (s.steps && s.steps.length)
+        ? '<ol>' + s.steps.map(function(x){ return '<li>' + esc(x) + '</li>'; }).join('') + '</ol>'
+        : '<p class="empty">No steps documented yet.</p>';
+
+      d.innerHTML =
+        '<summary><span>' + esc(s.name) +
+          (s.verification ? ' <span class="tag" style="margin-left:8px">' + esc(s.verification) + '</span>' : '') +
+        '</span></summary>' +
+        '<div class="body">' +
+          (s.url ? '<p class="mono" style="margin-top:0">' + esc(s.url) + '</p>' : '') +
+          stepsHtml +
+          (s.notes ? '<p><strong>Notes:</strong> ' + esc(s.notes) + '</p>' : '') +
+          '<div class="toolbar" style="margin:14px 0 0">' +
+            '<button class="btn" data-edit="' + esc(k) + '">Edit</button>' +
+            '<button class="btn danger" data-del="' + esc(k) + '">Delete</button>' +
+          '</div>' +
+        '</div>';
+      list.appendChild(d);
+    });
+
+    if (!shown) list.innerHTML = '<p class="empty">No sites match that filter.</p>';
+  }
+
+  list.addEventListener('click', function(e){
+    var ed = e.target.getAttribute('data-edit');
+    var dl = e.target.getAttribute('data-del');
+    if (ed) openDlg(ed);
+    if (dl){
+      if (confirm('Delete the SOP for ' + data.sites[dl].name + '? This removes the whole entry.')){
+        delete data.sites[dl];
+        markDirty(); render();
+      }
+    }
+  });
+
+  function openDlg(key){
+    editingKey = key;
+    var s = key ? data.sites[key] : { name:'', url:'', verification:'', steps:[], notes:'' };
+    document.getElementById('dlg-title').textContent = key ? 'Edit SOP' : 'Add a site';
+    document.getElementById('f-name').value = s.name || '';
+    document.getElementById('f-url').value = s.url || '';
+    document.getElementById('f-ver').value = s.verification || '';
+    document.getElementById('f-steps').value = (s.steps || []).join('\n');
+    document.getElementById('f-notes').value = s.notes || '';
+    dlg.showModal();
+  }
+
+  document.getElementById('dlg-save').addEventListener('click', function(){
+    var name = document.getElementById('f-name').value.trim();
+    if (!name){ alert('Site name is required.'); return; }
+    var rec = {
+      name: name,
+      url: document.getElementById('f-url').value.trim(),
+      verification: document.getElementById('f-ver').value,
+      steps: document.getElementById('f-steps').value.split('\n')
+               .map(function(x){ return x.trim(); }).filter(Boolean),
+      notes: document.getElementById('f-notes').value.trim()
+    };
+    if (editingKey && editingKey !== name) delete data.sites[editingKey];
+    data.sites[name] = rec;
+    markDirty(); dlg.close(); render();
+  });
+
+  document.getElementById('dlg-cancel').addEventListener('click', function(){ dlg.close(); });
+  document.getElementById('btn-add').addEventListener('click', function(){ openDlg(null); });
+  document.getElementById('search').addEventListener('input', render);
+
+  document.getElementById('btn-export').addEventListener('click', function(){
+    var txt = 'const SOPS_DATA = ' + JSON.stringify(data, null, 1) + ';\n';
+    var blob = new Blob([txt], {type:'text/javascript'});
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'sops-data.js';
+    a.click();
+    URL.revokeObjectURL(a.href);
+    dirty = false;
+    document.getElementById('dirty').classList.remove('show');
+  });
+
+  window.addEventListener('beforeunload', function(e){
+    if (dirty){ e.preventDefault(); e.returnValue = ''; }
+  });
+
+  render();
+})();
+</script>
 </body>
 </html>
