@@ -70,7 +70,8 @@
     tk += c.key_count; to += c.other_count;
     var tr = document.createElement('tr');
     tr.innerHTML =
-      '<td><a href="client.html?c=' + c.code + '">' + c.name + '</a></td>' +
+      '<td><a href="client.html?c=' + c.code + '">' + c.name + '</a>' +
+        (c.pending ? ' <span class="tag pending">not started</span>' : '') + '</td>' +
       '<td class="mono">' + c.key_count + ' / 34</td>' +
       '<td class="mono">' + c.other_count + '</td>' +
       '<td>' + gbpTag(c) + '</td>';
