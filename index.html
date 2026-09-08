@@ -52,28 +52,122 @@
     </div>
   </main>
 </div>
+<script src="config.js"></script>
 <script src="data.js"></script>
 <script>
 (function(){
+  var BASE = CITATIONS_DATA.clients;
+  var names = {};
+
+  var hasBackend = (typeof SUPABASE_URL==='string' && SUPABASE_URL) &&
+                   (typeof SUPABASE_ANON_KEY==='string' && SUPABASE_ANON_KEY);
+  var isLegacyKey = /^eyJ/.test(SUPABASE_ANON_KEY || '');
+
+  var overrides = {};   // "CODE||Site" -> {listing_url,status}
+  function ovKey(c,s){ return c+'||'+s; }
+
+  function hdrs(){
+    var h = { 'apikey': SUPABASE_ANON_KEY };
+    if (isLegacyKey) h['Authorization'] = 'Bearer ' + SUPABASE_ANON_KEY;
+    return h;
+  }
+
+  // Pull EVERY override, not just names — the GBP column and the
+  // live/other counts all depend on edits made in the client page.
+  function loadNames(){
+    if (!hasBackend) return Promise.resolve();
+    return fetch(SUPABASE_URL + '/rest/v1/citation_overrides?select=*', { headers: hdrs() })
+      .then(function(r){ return r.ok ? r.json() : []; })
+      .then(function(rows){
+        names = {}; overrides = {};
+        rows.forEach(function(r){
+          if (r.site_name === '__client_name__'){
+            if (r.listing_url) names[r.client_code] = r.listing_url;
+          } else {
+            overrides[ovKey(r.client_code, r.site_name)] =
+              { listing_url: r.listing_url, status: r.status };
+          }
+        });
+      })
+      .catch(function(){});
+  }
+
+  function gbpUrlFor(c){
+    var o = overrides[ovKey(c.code, 'Google')];
+    if (o && o.listing_url) return o.listing_url;
+    var g = c.key_live.filter(function(x){ return x.name === 'Google'; });
+    return g.length ? g[0].url : '';
+  }
+
+  function gbpStateFor(c){
+    var u = gbpUrlFor(c);
+    if (!u) return 'missing';
+    if (u.indexOf('sites.google.com') > -1) return 'not_gbp';
+    if (/maps\.app\.goo\.gl|google\.[a-z.]+\/maps|g\.co\/kgs/.test(u)) return 'ok';
+    return 'unclear';
+  }
+
+  function subscribe(){
+    if (!hasBackend || !window.WebSocket) return;
+    var ws;
+    try {
+      ws = new WebSocket(SUPABASE_URL.replace(/^http/,'ws') +
+        '/realtime/v1/websocket?apikey=' + SUPABASE_ANON_KEY + '&vsn=1.0.0');
+    } catch(e){ return; }
+    ws.onopen = function(){
+      ws.send(JSON.stringify({ topic:'realtime:public:citation_overrides', event:'phx_join',
+        payload:{ config:{ postgres_changes:[{event:'*',schema:'public',table:'citation_overrides'}] } }, ref:'1' }));
+      setInterval(function(){
+        if (ws.readyState===1) ws.send(JSON.stringify({topic:'phoenix',event:'heartbeat',payload:{},ref:'hb'}));
+      }, 25000);
+    };
+    ws.onmessage = function(m){
+      try {
+        var d = JSON.parse(m.data);
+        if (d.event === 'postgres_changes' && d.payload && d.payload.data){
+          var r = d.payload.data.record;
+          if (!r) return;
+          if (r.site_name === '__client_name__'){ names[r.client_code] = r.listing_url; }
+          else { overrides[ovKey(r.client_code, r.site_name)] =
+                   { listing_url:r.listing_url, status:r.status }; }
+          draw();
+        }
+      } catch(e){}
+    };
+  }
+
+  function draw(){
   var cs = Object.values(CITATIONS_DATA.clients).sort(function(a,b){
     return (b.key_count + b.other_count) - (a.key_count + a.other_count);
   });
   function gbpTag(c){
-    if (c.gbp_status === 'ok') return '<span class="tag live">ok</span>';
-    if (c.gbp_status === 'not_gbp') return '<span class="tag mismatch">not a GBP</span>';
-    if (c.gbp_status === 'missing') return '<span class="tag pending">missing</span>';
+    var st = gbpStateFor(c);
+    if (st === 'ok') return '<span class="tag live">ok</span>';
+    if (st === 'not_gbp') return '<span class="tag mismatch">not a GBP</span>';
+    if (st === 'missing') return '<span class="tag pending">missing</span>';
     return '<span class="tag pending">check</span>';
   }
   var tb = document.getElementById('summary-body');
+  tb.innerHTML = '';
   var tk = 0, to = 0;
+  function liveCount(c, list){
+    return list.filter(function(x){
+      var o = overrides[ovKey(c.code, x.name)];
+      var u = (o && o.listing_url != null) ? o.listing_url : x.url;
+      return !!(u && String(u).trim());
+    }).length;
+  }
+
   cs.forEach(function(c){
-    tk += c.key_count; to += c.other_count;
+    c._k = liveCount(c, c.key_live);
+    c._o = liveCount(c, c.other_live);
+    tk += c._k; to += c._o;
     var tr = document.createElement('tr');
     tr.innerHTML =
-      '<td><a href="client.html?c=' + c.code + '">' + c.name + '</a>' +
+      '<td><a href="client.html?c=' + c.code + '">' + (names[c.code] || c.name) + '</a>' +
         (c.pending ? ' <span class="tag pending">not started</span>' : '') + '</td>' +
-      '<td class="mono">' + c.key_count + ' / 34</td>' +
-      '<td class="mono">' + c.other_count + '</td>' +
+      '<td class="mono">' + c._k + ' / 34</td>' +
+      '<td class="mono">' + c._o + '</td>' +
       '<td>' + gbpTag(c) + '</td>';
     tb.appendChild(tr);
   });
@@ -84,7 +178,10 @@
   document.getElementById('s-key').textContent = tk;
   document.getElementById('s-other').textContent = to;
   document.getElementById('s-gbp').textContent =
-    cs.filter(function(c){ return c.gbp_status !== 'ok'; }).length;
+    cs.filter(function(c){ return gbpStateFor(c) !== 'ok'; }).length;
+  }
+
+  loadNames().then(function(){ draw(); subscribe(); });
 })();
 </script>
 </body>
