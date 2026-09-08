@@ -28,7 +28,7 @@
       <div class="stat good"><span class="num" id="s-clients">—</span><span class="label">clients tracked</span></div>
       <div class="stat"><span class="num" id="s-key">—</span><span class="label">key citations live</span></div>
       <div class="stat"><span class="num" id="s-other">—</span><span class="label">other citations live</span></div>
-      <div class="stat flag"><span class="num" id="s-gap">—</span><span class="label">key gaps remaining</span></div>
+      <div class="stat risk"><span class="num" id="s-gbp">—</span><span class="label">GBP links wrong or missing</span></div>
     </div>
 
     <h2>By client</h2>
@@ -38,6 +38,7 @@
           <th>Client</th>
           <th>Key citations (of 34)</th>
           <th>Other citations</th>
+          <th>GBP link</th>
         </tr>
       </thead>
       <tbody id="summary-body"></tbody>
@@ -45,7 +46,9 @@
     </table>
 
     <div class="placeholder-note">
-      Client names were derived from listing URLs in the tracker sheets and may need correcting — edit the name map at the top of <span class="mono">data.js</span>. Counts come from the uploaded Citations Tracker sheets and are a point-in-time snapshot, not live data; re-run the export to refresh.
+      <strong>Google Business Profile links need attention.</strong> 9 clients have a <span class="mono">sites.google.com</span> microsite recorded as their Google citation — that is not a GBP listing and should not be counted as one. 6 more have no Google link at all. Pull the correct share link from each client's GBP dashboard and update the tracker sheet.
+      <br><br>
+      Counts come from the uploaded Citations Tracker sheets and are a point-in-time snapshot, not live data. A citation counts as complete when a live listing URL exists, regardless of status label.
     </div>
   </main>
 </div>
@@ -55,6 +58,12 @@
   var cs = Object.values(CITATIONS_DATA.clients).sort(function(a,b){
     return (b.key_count + b.other_count) - (a.key_count + a.other_count);
   });
+  function gbpTag(c){
+    if (c.gbp_status === 'ok') return '<span class="tag live">ok</span>';
+    if (c.gbp_status === 'not_gbp') return '<span class="tag mismatch">not a GBP</span>';
+    if (c.gbp_status === 'missing') return '<span class="tag pending">missing</span>';
+    return '<span class="tag pending">check</span>';
+  }
   var tb = document.getElementById('summary-body');
   var tk = 0, to = 0;
   cs.forEach(function(c){
@@ -63,16 +72,18 @@
     tr.innerHTML =
       '<td><a href="client.html?c=' + c.code + '">' + c.name + '</a></td>' +
       '<td class="mono">' + c.key_count + ' / 34</td>' +
-      '<td class="mono">' + c.other_count + '</td>';
+      '<td class="mono">' + c.other_count + '</td>' +
+      '<td>' + gbpTag(c) + '</td>';
     tb.appendChild(tr);
   });
   document.getElementById('summary-foot').innerHTML =
     '<tr><th>Total</th><th class="mono">' + tk + ' / ' + (cs.length * 34) +
-    '</th><th class="mono">' + to + '</th></tr>';
+    '</th><th class="mono">' + to + '</th><th></th></tr>';
   document.getElementById('s-clients').textContent = cs.length;
   document.getElementById('s-key').textContent = tk;
   document.getElementById('s-other').textContent = to;
-  document.getElementById('s-gap').textContent = (cs.length * 34) - tk;
+  document.getElementById('s-gbp').textContent =
+    cs.filter(function(c){ return c.gbp_status !== 'ok'; }).length;
 })();
 </script>
 </body>
