@@ -39,6 +39,8 @@
         <div class="stat"><span class="num" id="d-total">—</span><span class="label">total live citations</span></div>
       </div>
 
+      <div id="gbp-warn" class="placeholder-note" style="display:none"></div>
+
       <h2>Key citations — live</h2>
       <table><thead><tr><th>Site</th><th>Listing URL</th><th>Status</th></tr></thead>
       <tbody id="t-key"></tbody></table>
@@ -109,6 +111,14 @@
     document.getElementById('d-gap').textContent = c.key_missing.length;
     document.getElementById('d-other').textContent = c.other_count;
     document.getElementById('d-total').textContent = c.key_count + c.other_count;
+    var gw = document.getElementById('gbp-warn');
+    if (c.gbp_status === 'not_gbp'){
+      gw.innerHTML = '<strong>Google link is not a Business Profile.</strong> The recorded URL is a sites.google.com microsite, not a GBP listing. Replace it with the share link from the client\'s Google Business Profile.';
+      gw.style.display = 'block';
+    } else if (c.gbp_status === 'missing'){
+      gw.innerHTML = '<strong>No Google link recorded.</strong> Add the client\'s Google Business Profile share link to the tracker sheet.';
+      gw.style.display = 'block';
+    } else { gw.style.display = 'none'; }
     rows(document.getElementById('t-key'), c.key_live);
     rows(document.getElementById('t-other'), c.other_live);
     document.getElementById('p-missing').innerHTML = c.key_missing.length
