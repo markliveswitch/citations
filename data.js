@@ -372,7 +372,7 @@ const CITATIONS_DATA = {
    "pending": false
   },
   "ALB": {
-   "name": "ALB (pending citation email creation)",
+   "name": "Albany Place Dental Practice",
    "code": "ALB",
    "key_count": 0,
    "other_count": 0,
@@ -419,7 +419,7 @@ const CITATIONS_DATA = {
    "pending": true
   },
   "ALT": {
-   "name": "ALT (pending citation email creation)",
+   "name": "Altona Meadows Dental Clinic",
    "code": "ALT",
    "key_count": 0,
    "other_count": 0,
