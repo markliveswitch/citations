@@ -43,7 +43,15 @@ create policy "write_with_passphrase"
   );
 
 -- Broadcast changes to every open dashboard so edits appear live.
-alter publication supabase_realtime add table citation_overrides;
+-- Wrapped so re-running this script does not error with
+-- "already member of publication".
+do $$
+begin
+  alter publication supabase_realtime add table citation_overrides;
+exception
+  when duplicate_object then null;
+  when others then null;
+end $$;
 
 -- ─────────────────────────────────────────────────────────────
 --  NOTE ON THE PASSPHRASE
