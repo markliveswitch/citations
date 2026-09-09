@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search performance — Citations Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .conn { font-family:'IBM Plex Mono',monospace; font-size:0.7rem; padding:3px 8px;
+    border-radius:2px; border:1px solid var(--line); color:var(--ink-soft); }
+  .conn.live { border-color:var(--teal); color:var(--teal-deep); }
+  .conn.off  { border-color:var(--amber); color:var(--amber); }
+  .btn { font-family:'IBM Plex Sans',sans-serif; font-size:0.82rem; padding:6px 12px;
+    background:var(--panel); border:1px solid var(--line); border-radius:3px; cursor:pointer; color:var(--ink); }
+  .btn.sm { font-size:0.74rem; padding:4px 9px; }
+  .delta { font-family:'IBM Plex Mono',monospace; font-size:0.76rem; display:block; margin-top:2px; }
+  .up   { color:var(--teal-deep); }
+  .down { color:var(--red); }
+  .flat { color:var(--ink-soft); }
+  td.num, th.num { text-align:right; font-family:'IBM Plex Mono',monospace; }
+  select { font-family:'IBM Plex Sans',sans-serif; font-size:0.85rem; padding:5px 7px;
+    background:#fff; border:1px solid var(--line); border-radius:3px; }
+  .win { font-family:'IBM Plex Mono',monospace; font-size:0.74rem; color:var(--ink-soft); }
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <p class="brand">Citations</p>
+    <p class="brand-sub">internal ops dashboard</p>
+    <nav class="primary-nav">
+      <a href="index.html">Dashboard</a>
+      <a href="client.html">Client detail</a>
+      <a href="search.html" class="active">Search performance</a>
+      <a href="sops.html">SOPs</a>
+      <a href="directories.html">Directory links</a>
+      <a href="templates.html">Email templates</a>
+    </nav>
+    <div class="sidebar-foot">Bright Dental Marketing<br>Team-internal · not client-facing</div>
+  </aside>
+  <main>
+    <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
+      <h1 style="margin-bottom:6px">Search performance</h1>
+      <span class="conn" id="conn">checking…</span>
+    </div>
+    <p class="page-lede">Google Search Console, last 28 complete days against the previous 28. Both windows end three days back because Search Console finalises data on a lag; without that offset the current period is always short and every client looks like it is falling.</p>
+
+    <p class="win" id="windows"></p>
+
+    <div id="empty" class="placeholder-note" style="display:none">
+      No data yet. Run the <span class="mono">gsc-sync</span> edge function once, then map each property to a client below.
+    </div>
+
+    <h2>By client</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Client</th>
+          <th class="num">Clicks</th>
+          <th class="num">Impressions</th>
+          <th class="num">CTR</th>
+          <th class="num">Avg position</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+      <tfoot id="foot"></tfoot>
+    </table>
+
+    <h2>Property mapping</h2>
+    <p class="page-lede" style="margin-bottom:16px">Each Search Console property has to be assigned to a client before it shows above. Unmapped properties are listed here.</p>
+    <table>
+      <thead><tr><th>Search Console property</th><th style="width:38%">Client</th></tr></thead>
+      <tbody id="map-rows"></tbody>
+    </table>
+  </main>
+</div>
+
+<script src="config.js"></script>
+<script src="data.js"></script>
+<script>
+(function(){
+  var BASE = CITATIONS_DATA.clients;
+  var props = [], metrics = {}, names = {};
+  var KEY_PW = 'bdm_write_key';
+
+  var hasBackend = (typeof SUPABASE_URL==='string' && SUPABASE_URL) &&
+                   (typeof SUPABASE_ANON_KEY==='string' && SUPABASE_ANON_KEY);
+  var isLegacy = /^eyJ/.test(SUPABASE_ANON_KEY || '');
+
+  function hdrs(withKey){
+    var h = { 'apikey': SUPABASE_ANON_KEY, 'Content-Type':'application/json' };
+    if (isLegacy) h['Authorization'] = 'Bearer ' + SUPABASE_ANON_KEY;
+    if (withKey) h['x-write-key'] = sessionStorage.getItem(KEY_PW) || '';
+    return h;
+  }
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(m){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]; }); }
+  function nameFor(code){ return names[code] || (BASE[code] ? BASE[code].name : code); }
+
+  function load(){
+    if (!hasBackend) return Promise.reject(new Error('no backend configured'));
+    return Promise.all([
+      fetch(SUPABASE_URL+'/rest/v1/gsc_properties?select=*', {headers:hdrs()}).then(function(r){return r.ok?r.json():[];}),
+      fetch(SUPABASE_URL+'/rest/v1/gsc_metrics?select=*',    {headers:hdrs()}).then(function(r){return r.ok?r.json():[];}),
+      fetch(SUPABASE_URL+'/rest/v1/citation_overrides?select=client_code,listing_url&site_name=eq.__client_name__',
+            {headers:hdrs()}).then(function(r){return r.ok?r.json():[];})
+    ]).then(function(res){
+      props = res[0];
+      metrics = {};
+      res[1].forEach(function(m){
+        metrics[m.property_url] = metrics[m.property_url] || {};
+        metrics[m.property_url][m.period] = m;
+      });
+      names = {};
+      res[2].forEach(function(r){ if (r.listing_url) names[r.client_code] = r.listing_url; });
+    });
+  }
+
+  function pct(cur, prev){
+    if (prev === 0) return cur === 0 ? null : null;   // undefined growth from zero
+    return ((cur - prev) / prev) * 100;
+  }
+
+  function deltaCell(cur, prev, opts){
+    opts = opts || {};
+    var d = pct(cur, prev);
+    var body = opts.fmt ? opts.fmt(cur) : cur.toLocaleString();
+    if (d === null) return body + '<span class="delta flat">—</span>';
+    // For average position, lower is better, so invert the colour.
+    var good = opts.lowerIsBetter ? d < 0 : d > 0;
+    var cls = Math.abs(d) < 0.05 ? 'flat' : (good ? 'up' : 'down');
+    var sign = d > 0 ? '+' : '';
+    return body + '<span class="delta '+cls+'">'+sign+d.toFixed(1)+'%</span>';
+  }
+
+  function render(){
+    var mapped = props.filter(function(p){ return p.client_code; });
+    var tb = document.getElementById('rows'); tb.innerHTML='';
+
+    var withData = mapped.filter(function(p){
+      var m = metrics[p.property_url]; return m && m.current && m.previous;
+    });
+
+    document.getElementById('empty').style.display = withData.length ? 'none' : 'block';
+
+    var any = withData[0] && metrics[withData[0].property_url];
+    document.getElementById('windows').textContent = any
+      ? 'Current ' + any.current.start_date + ' to ' + any.current.end_date +
+        '   ·   Previous ' + any.previous.start_date + ' to ' + any.previous.end_date
+      : '';
+
+    var tot = {c:0,i:0,pc:0,pi:0};
+    withData.sort(function(a,b){
+      return metrics[b.property_url].current.clicks - metrics[a.property_url].current.clicks;
+    }).forEach(function(p){
+      var c = metrics[p.property_url].current, v = metrics[p.property_url].previous;
+      tot.c += c.clicks; tot.i += c.impressions; tot.pc += v.clicks; tot.pi += v.impressions;
+      var tr = document.createElement('tr');
+      tr.innerHTML =
+        '<td>'+esc(nameFor(p.client_code))+'<br><span class="win">'+esc(p.property_url)+'</span></td>'+
+        '<td class="num">'+deltaCell(c.clicks, v.clicks)+'</td>'+
+        '<td class="num">'+deltaCell(c.impressions, v.impressions)+'</td>'+
+        '<td class="num">'+deltaCell(c.ctr, v.ctr, {fmt:function(x){return (x*100).toFixed(2)+'%';}})+'</td>'+
+        '<td class="num">'+deltaCell(c.position, v.position, {lowerIsBetter:true, fmt:function(x){return x.toFixed(1);}})+'</td>';
+      tb.appendChild(tr);
+    });
+
+    if (!withData.length) tb.innerHTML = '<tr><td colspan="5" style="color:var(--ink-soft)">Nothing mapped with data yet.</td></tr>';
+
+    document.getElementById('foot').innerHTML = withData.length
+      ? '<tr><th>Total</th><th class="num">'+deltaCell(tot.c, tot.pc)+'</th>'+
+        '<th class="num">'+deltaCell(tot.i, tot.pi)+'</th><th></th><th></th></tr>'
+      : '';
+
+    // mapping table
+    var mr = document.getElementById('map-rows'); mr.innerHTML='';
+    if (!props.length){
+      mr.innerHTML = '<tr><td colspan="2" style="color:var(--ink-soft)">No properties discovered yet — run the sync function.</td></tr>';
+      return;
+    }
+    props.slice().sort(function(a,b){ return a.property_url.localeCompare(b.property_url); }).forEach(function(p){
+      var tr = document.createElement('tr');
+      var opts = '<option value="">— unassigned —</option>' +
+        Object.keys(BASE).sort(function(a,b){ return nameFor(a).localeCompare(nameFor(b)); })
+          .map(function(k){ return '<option value="'+esc(k)+'"'+(p.client_code===k?' selected':'')+'>'+esc(nameFor(k))+'</option>'; }).join('');
+      tr.innerHTML = '<td class="mono">'+esc(p.property_url)+'</td><td><select>'+opts+'</select></td>';
+      tr.querySelector('select').onchange = function(){ assign(p.property_url, this.value, this); };
+      mr.appendChild(tr);
+    });
+  }
+
+  function assign(url, code, el){
+    if (!sessionStorage.getItem(KEY_PW)){
+      var pw = prompt('Write passphrase (needed once per browser):');
+      if (pw === null) { render(); return; }
+      sessionStorage.setItem(KEY_PW, pw);
+    }
+    el.disabled = true;
+    fetch(SUPABASE_URL+'/rest/v1/gsc_properties?property_url=eq.'+encodeURIComponent(url), {
+      method:'PATCH',
+      headers: Object.assign(hdrs(true), {'Prefer':'return=minimal'}),
+      body: JSON.stringify({ client_code: code || null })
+    }).then(function(r){
+      if (r.status===401 || r.status===403){ sessionStorage.removeItem(KEY_PW); throw new Error('Passphrase rejected.'); }
+      if (!r.ok) throw new Error('Save failed ('+r.status+')');
+      props.forEach(function(p){ if (p.property_url===url) p.client_code = code || null; });
+      render();
+    }).catch(function(e){ alert(e.message); el.disabled=false; });
+  }
+
+  var conn = document.getElementById('conn');
+  if (!hasBackend){
+    conn.className='conn off'; conn.textContent='no backend'; render();
+  } else {
+    load().then(function(){
+      conn.className='conn live'; conn.textContent='connected'; render();
+    }).catch(function(e){
+      conn.className='conn off'; conn.textContent='backend error';
+      conn.title = e.message; console.error(e); render();
+    });
+  }
+})();
+</script>
+</body>
+</html>
