@@ -1,5 +1,486 @@
 const CITATIONS_DATA = {
  "clients": {
+  "ART": {
+   "name": "Dental Art Clinic",
+   "code": "ART",
+   "key_count": 24,
+   "other_count": 52,
+   "key_live": [
+    {
+     "name": "Apple",
+     "domain": "businessconnect.apple.com",
+     "url": "https://maps.apple.com/place?auid=6490167748949831158",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Bing",
+     "domain": "bingplaces.com",
+     "url": "https://www.bing.com/local/details.aspx?lid=YN44D6CA5F71C573A0",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Cybo",
+     "domain": "cybo.com",
+     "url": "https://www.cybo.com/AU-biz/dental-art-clinic_50",
+     "status": "Complete"
+    },
+    {
+     "name": "Dentist.com.au",
+     "domain": "dentist.com.au",
+     "url": "https://www.dentist.com.au/dentist-detail/nsw/macquarie-fields/dental-art-clinic/A15012944",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Facebook",
+     "domain": "facebook.com",
+     "url": "https://www.facebook.com/dentalart.clinic.nsw",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Foursquare",
+     "domain": "foursquare.com",
+     "url": "https://business.foursquare.com/places/75eafe22cba44b0f4948b518",
+     "status": "Complete"
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "url": "https://maps.google.com/maps?cid=15311104463922577460",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Health Direct",
+     "domain": "healthdirect.gov.au",
+     "url": "https://www.healthdirect.gov.au/australian-health-services/healthcare-service/macquarie-fields-2564-nsw/dental-art-clinic/dentists/0f1db13b-1f6f-4a56-b0a8-6a7bf6f430a2?search_method=Details+-+search+results+list",
+     "status": "Complete"
+    },
+    {
+     "name": "Health Engine",
+     "domain": "healthengine.com.au",
+     "url": "https://healthengine.com.au/dentist/nsw/macquarie-fields/dr-daljeet-sodhi/p66409",
+     "status": "Complete"
+    },
+    {
+     "name": "Health Share",
+     "domain": "healthshare.com.au",
+     "url": "https://www.healthshare.com.au/practices/dental-art-clinic/28373-macquarie-fields-2564/",
+     "status": "Complete"
+    },
+    {
+     "name": "Healthcare Link",
+     "domain": "healthcarelink.com.au",
+     "url": "https://www.healthcarelink.com.au/employer-profile/30935/dental-art-clinic/?show_emp_pro=28090",
+     "status": "Complete"
+    },
+    {
+     "name": "Here",
+     "domain": "here.com",
+     "url": "https://share.here.com/p/s-Yz1EZW50aXN0JTJGRGVudGFsJTIwT2ZmaWNlO2lkPTAzNnIzZ3E5LWJlOTM5MGY4MWI0ZDRjZWM5N2FiMTUwN2Y5ZjE5YzMyO2xhdD0tMzMuOTg5Mjc7bG9uPTE1MC44ODMwNjtuPURlbnRhbCtBcnQrQ2xpbmljO3BoPSs2MTI5NjA1NTA0Mg==?z=16&t=normal",
+     "status": "Complete"
+    },
+    {
+     "name": "Infobel",
+     "domain": "infobel.com",
+     "url": "https://www.infobel.com/en/australia/dental_art_clinic/macquarie_fields/AU107742577-0296055042/businessdetails.aspx",
+     "status": "Existing OK"
+    },
+    {
+     "name": "LinkedIn",
+     "domain": "linkedin.com",
+     "url": "https://www.linkedin.com/company/dental-art-clinic-macquarie-fields/",
+     "status": "Complete"
+    },
+    {
+     "name": "Local Search",
+     "domain": "localsearch.com.au",
+     "url": "https://www.localsearch.com.au/profile/dental-art-clinic/cmdq3kdfe000108jn3bve1l54",
+     "status": "Complete"
+    },
+    {
+     "name": "My Community Directory",
+     "domain": "mycommunitydirectory.com.au",
+     "url": "https://www.mycommunitydirectory.com.au/Organisation/203346/Dental_Art_Clinic",
+     "status": "Complete"
+    },
+    {
+     "name": "Nextdoor",
+     "domain": "nextdoor.com",
+     "url": "https://au.nextdoor.com/pages/dental-art-clinic-dr-daljeet-sodhi",
+     "status": "Existing OK"
+    },
+    {
+     "name": "TomTom",
+     "domain": "tomtom.com",
+     "url": "https://plan.tomtom.com/en/location/id/__H11UMTZ5XMBVmJTiYLjg?p=-33.9893,150.88213,16z&q=Dental%20Art%20Clinic",
+     "status": "Complete"
+    },
+    {
+     "name": "Top Rated Online",
+     "domain": "top-rated.online",
+     "url": "https://www.top-rated.online/cities/Sydney/place/p/15056941/Dental+Art+Clinic",
+     "status": "Complete"
+    },
+    {
+     "name": "True Local",
+     "domain": "truelocal.com.au",
+     "url": "https://www.truelocal.com.au/nsw/macquarie-fields/dental-art-clinic-1000003001383",
+     "status": "Complete"
+    },
+    {
+     "name": "VY Maps",
+     "domain": "vymaps.com",
+     "url": "https://vymaps.com/AU/Dental-Art-Clinic-VN105937/?id_new=7ebd071f90ef716f5f4f141adc2e02e6",
+     "status": "Complete"
+    },
+    {
+     "name": "Word of Mouth",
+     "domain": "wordofmouth.com.au",
+     "url": "https://www.wordofmouth.com.au/reviews/dental-art-clinic-macquarie-fields-nsw",
+     "status": ""
+    },
+    {
+     "name": "Yellow Pages",
+     "domain": "yellowpages.com.au",
+     "url": "https://www.yellowpages.com.au/nsw/macquarie-fields/dental-art-clinic-1000003001383-listing.html",
+     "status": "Complete"
+    },
+    {
+     "name": "Yelp",
+     "domain": "biz.yelp.com",
+     "url": "https://www.yelp.com.au/biz/dental-art-clinic-chatswood",
+     "status": "Awaiting Verification"
+    }
+   ],
+   "key_missing": [
+    "American Express",
+    "Aus Health Pages",
+    "Fixed Dental",
+    "Kompass",
+    "My Health 1st",
+    "StartLocal",
+    "Three Best Rated",
+    "What Clinic",
+    "White Pages",
+    "Yahoo"
+   ],
+   "other_live": [
+    {
+     "name": "2 Find Local",
+     "domain": "2findlocal.com",
+     "url": "https://www.2findlocal.com/b/15285710/dental-art-clinic-macquarie-fields-nsw",
+     "status": "Complete"
+    },
+    {
+     "name": "a-zbusinessfinder",
+     "domain": "a-zbusinessfinder.com",
+     "url": "https://www.a-zbusinessfinder.com/business-directory/Dental-Art-Clinic-Macquarie-Fields-New-South-Wales-Australia/34471122/",
+     "status": "Complete"
+    },
+    {
+     "name": "adlandpro",
+     "domain": "adlandpro.com",
+     "url": "https://australia.adlandpro.com/listing/comprehensive-dental-care-at-dental-art-clinic-in-macquarie-fields/",
+     "status": "Complete"
+    },
+    {
+     "name": "Around Me",
+     "domain": "aroundmeapp.com",
+     "url": "http://www.yext.com/partnerpages/aroundme/dental-art-clinic-macquarie-fields-nsw-au-0bfc8a",
+     "status": "Existing OK"
+    },
+    {
+     "name": "AussieWeb",
+     "domain": "aussieweb.com.au",
+     "url": "https://www.aussieweb.com.au/business/3275729",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Australian Planet",
+     "domain": "australianplanet.com",
+     "url": "https://www.australianplanet.com/dental-art-clinic-F110CC80713D047",
+     "status": "Complete"
+    },
+    {
+     "name": "az-australia",
+     "domain": "az-australia.com",
+     "url": "https://www.az-australia.com/company/dental_art_clinic_macquarie_fields_nsw_10_parliament_road",
+     "status": "Complete"
+    },
+    {
+     "name": "BirdEye",
+     "domain": "getbirdeye.com.au",
+     "url": "https://reviews.birdeye.com/dental-art-clinic-177735131236568",
+     "status": "Complete"
+    },
+    {
+     "name": "BrownBook",
+     "domain": "brownbook.net",
+     "url": "https://www.brownbook.net/business/51205953/dental-art-clinic/",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Call Up Contact",
+     "domain": "callupcontact.com",
+     "url": "https://www.callupcontact.com/b/businessprofile/Dental_Art_Clinic/9699689",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Cataloxy",
+     "domain": "cataloxy.net",
+     "url": "https://nsw-state.cataloxy.net/firms/macquarie-fields/dentalartclinic.com.au.htm",
+     "status": "Complete"
+    },
+    {
+     "name": "Central Index",
+     "domain": "centralindex.com",
+     "url": "https://au.centralindex.com/company/ddae6950da57486ab87f33588883bae2",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Cylex",
+     "domain": "cylex-australia.com",
+     "url": "https://www.cylex-australia.com/company/dental-art-clinic-24709581.html",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Dentagama",
+     "domain": "dentagama.com",
+     "url": "https://dentagama.com/dentists/dental-art-clinic1",
+     "status": "Complete"
+    },
+    {
+     "name": "Enroll Business",
+     "domain": "enrollbusiness.com",
+     "url": "https://au.enrollbusiness.com/BusinessProfile/7438438/Dental-Art-Clinic-Macquarie-Fields-NSW-2564/Home",
+     "status": "Complete"
+    },
+    {
+     "name": "Find Open",
+     "domain": "find-open.com",
+     "url": "https://find-open.biz/macquarie-fields/dental-art-clinic-1027860",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Find Postcode",
+     "domain": "findpostcode.com.au",
+     "url": "https://findpostcode.com.au/local-listings/nsw/macquarie-fields/dental-art-clinic",
+     "status": "Complete"
+    },
+    {
+     "name": "Find Us Here",
+     "domain": "find-us-here.com",
+     "url": "https://www.find-us-here.com/businesses/Dental-Art-Clinic-Macquarie-Fields-New-South-Wales-Australia/34305166/",
+     "status": "Complete"
+    },
+    {
+     "name": "freelistingaustralia",
+     "domain": "freelistingaustralia.com",
+     "url": "https://www.freelistingaustralia.com/listings/dental-art-clinic",
+     "status": "Complete"
+    },
+    {
+     "name": "HotFrog",
+     "domain": "hotfrog.com.au",
+     "url": "https://www.hotfrog.com.au/company/1072256773607424",
+     "status": "Complete"
+    },
+    {
+     "name": "I Global",
+     "domain": "iglobal.co",
+     "url": "https://www.iglobal.co/australia/macquarie-fields/dental-art-clinic",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Infols Info",
+     "domain": "liverpool.infoisinfo-au.com",
+     "url": "https://liverpool.infoisinfo-au.com/card/dental-art-clinic/1525753",
+     "status": "Existing OK"
+    },
+    {
+     "name": "linkcentre",
+     "domain": "linkcentre.com",
+     "url": "https://www.linkcentre.com/profile/dentalartclinicau/",
+     "status": "Complete"
+    },
+    {
+     "name": "MapQuest",
+     "domain": "mapquest.com",
+     "url": "https://www.mapquest.com/au/new-south-wales/dental-art-clinic-795240705",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Mister What",
+     "domain": "misterwhat-au.com",
+     "url": "https://www.misterwhat-au.com/preview/hUD6819Yj2A",
+     "status": "Awaiting Verification"
+    },
+    {
+     "name": "NaviMii",
+     "domain": "navmii.com",
+     "url": "http://www.yext.com/partnerpages/navmii/dental-art-clinic-macquarie-fields-nsw-au-0bfc8a",
+     "status": "Existing OK"
+    },
+    {
+     "name": "nearfinderau",
+     "domain": "nearfinderau.com",
+     "url": "https://nearfinderau.com/en/business/nsw/macquarie-fields/category_dentist/dental-art-clinic_2571691+2.html",
+     "status": "Complete"
+    },
+    {
+     "name": "NextBizMaker",
+     "domain": "nextbizmaker.com",
+     "url": "https://www.nextbizmaker.com/australia/macquarie-fields/healthcare-pharmaceuticals-biotech/dental-art-clinic",
+     "status": "Complete"
+    },
+    {
+     "name": "nextbizthing",
+     "domain": "nextbizthing.com",
+     "url": "https://www.nextbizthing.com/australia/macquarie-fields/health-20-medicine/dental-art-clinic",
+     "status": "Complete"
+    },
+    {
+     "name": "Open Di",
+     "domain": "opendi.com.au",
+     "url": "https://www.opendi.com.au/macquarie-fields/789756.html",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Pink Pages",
+     "domain": "pinkpages.com.au",
+     "url": "https://pinkpages.com.au/businesses/dental-art-clinic-7423114",
+     "status": "Complete"
+    },
+    {
+     "name": "Place123",
+     "domain": "place123.net",
+     "url": "http://www.place123.net/place/dental-art-clinic-macquarie-fields-nsw-australia",
+     "status": "Complete"
+    },
+    {
+     "name": "Poter",
+     "domain": "poter.com.au",
+     "url": "https://www.poter.com.au/store/preview/1029151",
+     "status": "Complete"
+    },
+    {
+     "name": "Seekfind",
+     "domain": "seekfind.com.au",
+     "url": "https://www.seekfind.com.au/businesses/medical/dentists/dental-art-clinic",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Show Me Local",
+     "domain": "showmelocal.com",
+     "url": "https://au.showmelocal.com/35544681-dental-art-clinic-macquarie-fields",
+     "status": "Complete"
+    },
+    {
+     "name": "Snapchat",
+     "domain": "snapchat.com",
+     "url": "https://www.snapchat.com/place/dental-art-clinic/d64e2884-6bec-11ed-9805-1b4574c631a5",
+     "status": "Existing OK"
+    },
+    {
+     "name": "StoreBoard",
+     "domain": "storeboard.com",
+     "url": "https://www.storeboard.com/dentalartclinic1",
+     "status": "Complete"
+    },
+    {
+     "name": "storeboard",
+     "domain": "storeboard.com",
+     "url": "https://www.storeboard.com/dentalartclinic1",
+     "status": "Complete"
+    },
+    {
+     "name": "SuperPages",
+     "domain": "superpages.com.au",
+     "url": "https://www.superpages.com.au/company/1072256773607424  - Duplicate SS: before: https://prnt.sc/7VH0TSBzoPss, after: https://prnt.sc/P67EayrUMrKA\nhttps://www.superpages.com.au/company/1072256773607424/dental-art-clinic/macquarie-fields/dentists - Retain listing.",
+     "status": "Complete"
+    },
+    {
+     "name": "supplyautonomy",
+     "domain": "supplyautonomy.com",
+     "url": "https://supplyautonomy.com/dentalartclinic.au",
+     "status": "Complete"
+    },
+    {
+     "name": "Tellows",
+     "domain": "tellows.com",
+     "url": "https://www.tellows-au.com/num/0296055042/c/7103878",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Top4",
+     "domain": "top4.com.au",
+     "url": "https://www.top4.com.au/business/dental-art-clinic-622577",
+     "status": "Complete"
+    },
+    {
+     "name": "TripAdvisor",
+     "domain": "tripadvisor.com",
+     "url": "https://www.tripadvisor.com/Profile/dentalartclinic",
+     "status": "Complete"
+    },
+    {
+     "name": "True Finders",
+     "domain": "truefinders.com.au",
+     "url": "https://truefinders.com.au/business/dentalartclinic.com.au",
+     "status": "Complete"
+    },
+    {
+     "name": "trueen",
+     "domain": "trueen.com",
+     "url": "https://trueen.com/business/listing/dental-art-clinic/717852",
+     "status": "Complete"
+    },
+    {
+     "name": "Tupalo",
+     "domain": "tupalo.com",
+     "url": "https://www.tupalo.net/en/macquarie-fields-new-south-wales/dental-art-clinic",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Waze",
+     "domain": "waze.com",
+     "url": "https://www.waze.com/?from=place.ChIJWbmjHkDrEmsRNMAAY2P4e9Q",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Whats Your Hours",
+     "domain": "whatsyourhours.com",
+     "url": "https://www.whatsyourhours.com/aus/macquarie-fields/dentists-1/dental-art-clinic",
+     "status": "Complete"
+    },
+    {
+     "name": "Whitecoat",
+     "domain": "whitecoat.com.au",
+     "url": "https://www.whitecoat.com.au/directory/practitioner/dentist/nsw/macquarie-fields/sodhi/574302/901",
+     "status": "Complete"
+    },
+    {
+     "name": "zeemaps",
+     "domain": "zeemaps.com",
+     "url": "https://www.zeemaps.com/map?group=7008950",
+     "status": "Complete"
+    },
+    {
+     "name": "Zenbu",
+     "domain": "zenbu.org",
+     "url": "https://au.zenbu.org/entry/1360757-dental-art-clinic",
+     "status": "Complete"
+    },
+    {
+     "name": "Zip Leaf",
+     "domain": "zipleaf.com",
+     "url": "https://au.zipleaf.com/Companies/Dental-Art-Clinic",
+     "status": "Complete"
+    }
+   ],
+   "gbp_status": "ok",
+   "gbp_url": "https://maps.google.com/maps?cid=15311104463922577460",
+   "pending": false
+  },
   "ADP": {
    "name": "Advanced Dental Practice",
    "code": "ADP",
@@ -3815,6 +4296,205 @@ const CITATIONS_DATA = {
    "other_live": [],
    "gbp_status": "not_gbp",
    "gbp_url": "https://sites.google.com/view/drmaidentalsurgeryparramatta",
+   "pending": false
+  },
+  "MAR": {
+   "name": "Mary St Dental Health",
+   "code": "MAR",
+   "key_count": 12,
+   "other_count": 15,
+   "key_live": [
+    {
+     "name": "Apple",
+     "domain": "businessconnect.apple.com",
+     "url": "https://maps.apple.com/place?auid=13654194336171818117",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Bing",
+     "domain": "bingplaces.com",
+     "url": "bing.com/maps/search?amp%3Bamp%3Bmkt=en-AU&ss=id.ypid%3AYN3724x4720099190053198492&cp=14.594600~123.483391&lvl=7&style=r",
+     "status": "Complete"
+    },
+    {
+     "name": "Cybo",
+     "domain": "cybo.com",
+     "url": "https://www.cybo.com/AU-biz/mary-st-dental-health",
+     "status": "Complete"
+    },
+    {
+     "name": "Dentist.com.au",
+     "domain": "dentist.com.au",
+     "url": "https://www.dentist.com.au/dentist-detail/mary-st-dental-health/A13011816",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "url": "https://maps.app.goo.gl/gpzshNfsrHUxraMD8",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Health Direct",
+     "domain": "healthdirect.gov.au",
+     "url": "https://www.healthdirect.gov.au/australian-health-services/healthcare-service/lidcombe-2141-nsw/mary-st-dental-health/dentists/ee33e121-6bd7-4999-946b-5b5adde2972f",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Health Engine",
+     "domain": "healthengine.com.au",
+     "url": "https://healthengine.com.au/dentist/nsw/lidcombe/mary-st-dental-health/s88897",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Health Share",
+     "domain": "healthshare.com.au",
+     "url": "https://www.healthshare.com.au/profile/professional/391404-dr-huy-nguyen/",
+     "status": "Complete"
+    },
+    {
+     "name": "Healthcare Link",
+     "domain": "healthcarelink.com.au",
+     "url": "https://www.healthcarelink.com.au/cpd/provider-profile/2830/mary-st-dental-health/",
+     "status": "Complete"
+    },
+    {
+     "name": "Local Search",
+     "domain": "localsearch.com.au",
+     "url": "https://www.localsearch.com.au/profile/mary-st-dental-health/clsyc0u1u00rc08leewcuff9t",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Top Rated Online",
+     "domain": "top-rated.online",
+     "url": "https://www.top-rated.online/cities/Sydney/place/p/17330785/Mary+St+Dental+Health",
+     "status": "Complete"
+    },
+    {
+     "name": "Word of Mouth",
+     "domain": "wordofmouth.com.au",
+     "url": "https://www.wordofmouth.com.au/reviews/mary-st-dental-health-lidcombe-nsw",
+     "status": "Complete"
+    }
+   ],
+   "key_missing": [
+    "American Express",
+    "Aus Health Pages",
+    "Facebook",
+    "Fixed Dental",
+    "Foursquare",
+    "Here",
+    "Infobel",
+    "Kompass",
+    "LinkedIn",
+    "My Community Directory",
+    "My Health 1st",
+    "Nextdoor",
+    "StartLocal",
+    "Three Best Rated",
+    "TomTom",
+    "True Local",
+    "VY Maps",
+    "What Clinic",
+    "White Pages",
+    "Yahoo",
+    "Yellow Pages",
+    "Yelp"
+   ],
+   "other_live": [
+    {
+     "name": "2 Find Local",
+     "domain": "2findlocal.com",
+     "url": "https://www.2findlocal.com/b/15285813/mary-st-dental-health-lidcombe-nsw",
+     "status": "Complete"
+    },
+    {
+     "name": "Australian Planet",
+     "domain": "australianplanet.com",
+     "url": "https://www.australianplanet.com/mary-st-dental-health-F110CC8041ED840",
+     "status": "Complete"
+    },
+    {
+     "name": "BrownBook",
+     "domain": "brownbook.net",
+     "url": "https://www.brownbook.net/business/54307284/mary-st-dental-health",
+     "status": "Complete"
+    },
+    {
+     "name": "Call Up Contact",
+     "domain": "callupcontact.com",
+     "url": "https://www.callupcontact.com/b/businessprofile/Mary_St_Dental_Health/9853977",
+     "status": "Complete"
+    },
+    {
+     "name": "Dentagama",
+     "domain": "dentagama.com",
+     "url": "https://dentagama.com/dentists/mary-street-dental-health",
+     "status": "Complete"
+    },
+    {
+     "name": "dLook",
+     "domain": "dlook.com.au",
+     "url": "https://www.dlook.com.au/business/dental-clinic-in-lidcombe-nsw-2141/mary-st-dental-health",
+     "status": "Complete"
+    },
+    {
+     "name": "Enroll Business",
+     "domain": "enrollbusiness.com",
+     "url": "https://au.enrollbusiness.com/BusinessProfile/7620995/Mary-St-Dental-Health-Lidcombe-NSW-2141",
+     "status": "Complete"
+    },
+    {
+     "name": "Find Us Here",
+     "domain": "find-us-here.com",
+     "url": "https://www.find-us-here.com/businesses/Mary-St-Dental-Health-Lidcombe-New-South-Wales-Australia/34387704/",
+     "status": "Complete"
+    },
+    {
+     "name": "HotFrog",
+     "domain": "hotfrog.com.au",
+     "url": "https://www.hotfrog.com.au/company/e9a675afc94d6952531e8ab742391f26/mary-st-dental-health/lidcombe/dentists",
+     "status": "Complete"
+    },
+    {
+     "name": "I Global",
+     "domain": "iglobal.co",
+     "url": "https://www.iglobal.co/australia/lidcombe/mary-st-dental-health",
+     "status": "Complete"
+    },
+    {
+     "name": "Local Business Guide",
+     "domain": "localbusinessguide.com.au",
+     "url": "https://www.localbusinessguide.com.au/business/mary-st-dental-health/",
+     "status": "Complete"
+    },
+    {
+     "name": "Show Me Local",
+     "domain": "showmelocal.com",
+     "url": "https://au.showmelocal.com/39115525-mary-st-dental-health-lidcombe",
+     "status": "Complete"
+    },
+    {
+     "name": "Tupalo",
+     "domain": "tupalo.com",
+     "url": "https://www.tupalo.net/en/lidcombe-new-south-wales/mary-st-dental-health",
+     "status": "Complete"
+    },
+    {
+     "name": "Whats Your Hours",
+     "domain": "whatsyourhours.com",
+     "url": "https://www.whatsyourhours.com/australia/lidcombe/dentists-1/mary-st-dental-health",
+     "status": "Complete"
+    },
+    {
+     "name": "Zenbu",
+     "domain": "zenbu.org",
+     "url": "https://au.zenbu.org/entry/1360820-mary-st-dental-health",
+     "status": "Complete"
+    }
+   ],
+   "gbp_status": "ok",
+   "gbp_url": "https://maps.app.goo.gl/gpzshNfsrHUxraMD8",
    "pending": false
   },
   "MQD": {
