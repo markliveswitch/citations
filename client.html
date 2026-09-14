@@ -47,6 +47,9 @@
     <div class="sop-head" style="display:flex;justify-content:space-between;align-items:baseline;gap:12px">
       <h1 id="client-name" style="margin-bottom:6px">Client detail</h1>
       <span>
+        <a class="btn sm" id="sheet-link" target="_blank" rel="noopener noreferrer"
+           style="display:none;margin-right:8px;text-decoration:none">Open sheet</a>
+        <button class="btn sm" id="sync-btn" style="display:none;margin-right:8px">Sync from sheet</button>
         <button class="btn sm" id="name-edit" style="display:none;margin-right:8px">Rename</button>
         <span class="conn" id="conn">checking…</span>
       </span>
@@ -126,6 +129,42 @@
     if (isLegacyKey) h['Authorization'] = 'Bearer ' + SUPABASE_ANON_KEY;
     if (withKey) h['x-write-key'] = sessionStorage.getItem(KEY_PW) || '';
     return h;
+  }
+
+  var snapshot = {};   // CODE -> {key_live:[], other_live:[]}
+  var syncInfo = {};   // CODE -> {last_synced, sync_error}
+
+  // The nightly Action writes a snapshot of each Google Sheet.
+  // When present it replaces the static data.js baseline, so the
+  // dashboard reflects the sheets without a redeploy.
+  function loadSnapshot(){
+    if (!hasBackend) return Promise.resolve();
+    return Promise.all([
+      fetch(SUPABASE_URL + '/rest/v1/citation_rows?select=*', { headers: headers(false) })
+        .then(function(r){ return r.ok ? r.json() : []; }),
+      fetch(SUPABASE_URL + '/rest/v1/citation_sheets?select=*', { headers: headers(false) })
+        .then(function(r){ return r.ok ? r.json() : []; })
+    ]).then(function(res){
+      snapshot = {}; syncInfo = {};
+      res[0].forEach(function(r){
+        var s = snapshot[r.client_code] || (snapshot[r.client_code] = {key_live:[], other_live:[]});
+        var rec = { name:r.site_name, domain:r.domain, url:r.listing_url, status:r.status };
+        (r.category === 'key' ? s.key_live : s.other_live).push(rec);
+      });
+      Object.keys(snapshot).forEach(function(k){
+        snapshot[k].key_live.sort(function(a,b){ return a.name.localeCompare(b.name); });
+        snapshot[k].other_live.sort(function(a,b){ return a.name.localeCompare(b.name); });
+      });
+      res[1].forEach(function(r){
+        syncInfo[r.client_code] = { last_synced:r.last_synced, sync_error:r.sync_error };
+      });
+    }).catch(function(){});
+  }
+
+  function baseFor(code){
+    var s = snapshot[code];
+    if (s && (s.key_live.length || s.other_live.length)) return s;
+    return { key_live: BASE[code].key_live, other_live: BASE[code].other_live };
   }
 
   function loadOverrides(){
@@ -229,6 +268,13 @@
     });
   }
 
+  var KEY_34 = ["American Express","Apple","Aus Health Pages","Bing","Cybo",
+    "Dentist.com.au","Facebook","Fixed Dental","Foursquare","Google","Health Direct",
+    "Health Engine","Health Share","Healthcare Link","Here","Infobel","Kompass",
+    "LinkedIn","Local Search","My Community Directory","My Health 1st","Nextdoor",
+    "StartLocal","Three Best Rated","TomTom","Top Rated Online","True Local","VY Maps",
+    "What Clinic","White Pages","Word of Mouth","Yahoo","Yellow Pages","Yelp"];
+
   var NAME_ROW = '__client_name__';
   function nameFor(code){
     var o = overrides[ovKey(code, NAME_ROW)];
@@ -238,8 +284,7 @@
   function gbpFor(code){
     var o = overrides[ovKey(code,'Google')];
     if (o && o.listing_url) return o.listing_url;
-    var c = BASE[code];
-    var g = c.key_live.filter(function(x){ return x.name==='Google'; });
+    var g = baseFor(code).key_live.filter(function(x){ return x.name==='Google'; });
     return g.length ? g[0].url : '';
   }
 
@@ -304,8 +349,13 @@
     if (!c){ document.getElementById('detail').style.display='none'; return; }
     document.getElementById('client-name').textContent = nameFor(code);
     document.getElementById('name-edit').style.display = hasBackend ? 'inline-block' : 'none';
+    var sl = document.getElementById('sheet-link');
+    if (c.sheet_url){ sl.href = c.sheet_url; sl.style.display = 'inline-block'; }
+    else { sl.style.display = 'none'; }
+    document.getElementById('sync-btn').style.display = c.sheet_id ? 'inline-block' : 'none';
 
-    var kl = merged(code, c.key_live), ol = merged(code, c.other_live);
+    var b = baseFor(code);
+    var kl = merged(code, b.key_live), ol = merged(code, b.other_live);
     document.getElementById('d-key').textContent = kl.length + '/34';
     document.getElementById('d-gap').textContent = 34 - kl.length;
     document.getElementById('d-other').textContent = ol.length;
@@ -323,7 +373,7 @@
     fill('t-other', code, ol, 'o');
 
     var have = {}; kl.forEach(function(x){ have[x.name]=1; });
-    var miss = c.key_missing.filter(function(m){ return !have[m]; });
+    var miss = KEY_34.filter(function(m){ return !have[m]; });
     document.getElementById('p-missing').innerHTML = miss.length
       ? miss.map(function(m){ return '<span class="tag mismatch" style="margin:0 6px 6px 0">'+esc(m)+'</span>'; }).join('')
       : '<span style="color:var(--teal-deep)">All 34 key citations are live.</span>';
@@ -338,6 +388,25 @@
     if (v === null) return;
     saveOverride(current, 'Google', v.trim(), 'Complete')
       .catch(function(e){ alert(e && e.message ? e.message : 'Save failed.'); });
+  };
+
+  // The sheet is private, so the browser cannot read it directly.
+  // Syncing is done by the nightly GitHub Action; this button just
+  // reloads whatever the Action last wrote, and tells you when that was.
+  document.getElementById('sync-btn').onclick = function(){
+    var b = this; b.disabled = true; b.textContent = 'Syncing…';
+    Promise.all([loadSnapshot(), loadOverrides()])
+      .then(function(){
+        render(current);
+        var si = syncInfo[current];
+        b.textContent = 'Sync from sheet'; b.disabled = false;
+        if (si && si.sync_error) alert('Last sheet sync failed:\n' + si.sync_error);
+        else if (si && si.last_synced) b.title = 'Sheet last read ' + si.last_synced;
+      })
+      .catch(function(e){
+        alert('Could not reach the backend: ' + (e && e.message ? e.message : 'unknown'));
+        b.textContent = 'Sync from sheet'; b.disabled = false;
+      });
   };
 
   document.getElementById('name-edit').onclick = function(){
@@ -378,7 +447,7 @@
     conn.className='conn off'; conn.textContent='read-only · no backend';
     start();
   } else {
-    loadOverrides().then(function(){
+    Promise.all([loadSnapshot(), loadOverrides()]).then(function(){
       online = true; conn.className='conn live'; conn.textContent='live · synced';
       refreshPickerLabels(); subscribe(); start();
     }).catch(function(err){
