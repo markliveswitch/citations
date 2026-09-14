@@ -4,7 +4,7 @@ const CITATIONS_DATA = {
    "name": "Dental Art Clinic",
    "code": "ART",
    "key_count": 24,
-   "other_count": 52,
+   "other_count": 58,
    "key_live": [
     {
      "name": "Apple",
@@ -285,6 +285,12 @@ const CITATIONS_DATA = {
      "status": "Complete"
     },
     {
+     "name": "hotfrog.com.au",
+     "domain": "hotfrog.com.au",
+     "url": "https://www.hotfrog.com.au/company/3a58e5fb2db9ec82a148ccad6d676764/dental-art-clinic/macquarie-fields/dentists",
+     "status": "Complete"
+    },
+    {
      "name": "I Global",
      "domain": "iglobal.co",
      "url": "https://www.iglobal.co/australia/macquarie-fields/dental-art-clinic",
@@ -301,6 +307,12 @@ const CITATIONS_DATA = {
      "domain": "linkcentre.com",
      "url": "https://www.linkcentre.com/profile/dentalartclinicau/",
      "status": "Complete"
+    },
+    {
+     "name": "macquarie-fields-nsw.place-advisor.com",
+     "domain": "macquarie-fields-nsw.place-advisor.com",
+     "url": "https://macquarie-fields-nsw.place-advisor.com/dental-art-clinic-dr-dal-sodhi/",
+     "status": "Existing OK"
     },
     {
      "name": "MapQuest",
@@ -363,6 +375,12 @@ const CITATIONS_DATA = {
      "status": "Complete"
     },
     {
+     "name": "reviews.birdeye.com",
+     "domain": "reviews.birdeye.com",
+     "url": "https://reviews.birdeye.com/dr-daljeet-sodhi-171220688023510?update=1",
+     "status": "Complete"
+    },
+    {
      "name": "Seekfind",
      "domain": "seekfind.com.au",
      "url": "https://www.seekfind.com.au/businesses/medical/dentists/dental-art-clinic",
@@ -396,6 +414,12 @@ const CITATIONS_DATA = {
      "name": "SuperPages",
      "domain": "superpages.com.au",
      "url": "https://www.superpages.com.au/company/1072256773607424  - Duplicate SS: before: https://prnt.sc/7VH0TSBzoPss, after: https://prnt.sc/P67EayrUMrKA\nhttps://www.superpages.com.au/company/1072256773607424/dental-art-clinic/macquarie-fields/dentists - Retain listing.",
+     "status": "Complete"
+    },
+    {
+     "name": "superpages.com.au",
+     "domain": "superpages.com.au",
+     "url": "https://www.superpages.com.au/company/1072256773607424/dental-art-clinic/macquarie-fields/dentists",
      "status": "Complete"
     },
     {
@@ -447,10 +471,22 @@ const CITATIONS_DATA = {
      "status": "Existing OK"
     },
     {
+     "name": "waze.com",
+     "domain": "waze.com",
+     "url": "https://www.waze.com/?from=place.ChIJWbmjHkDrEmsRNMAAY2P4e9Q",
+     "status": "Existing OK"
+    },
+    {
      "name": "Whats Your Hours",
      "domain": "whatsyourhours.com",
      "url": "https://www.whatsyourhours.com/aus/macquarie-fields/dentists-1/dental-art-clinic",
      "status": "Complete"
+    },
+    {
+     "name": "Where To",
+     "domain": "wheretoapp.com",
+     "url": "https://wheretoapp.com/search?poi=15311104463922577460",
+     "status": "Existing OK"
     },
     {
      "name": "Whitecoat",
@@ -479,7 +515,9 @@ const CITATIONS_DATA = {
    ],
    "gbp_status": "ok",
    "gbp_url": "https://maps.google.com/maps?cid=15311104463922577460",
-   "pending": false
+   "pending": false,
+   "sheet_id": "15DopIeZjaa8qCYQNWJNpoE6GfQSgYH_oV6QXjtGzW7A",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/15DopIeZjaa8qCYQNWJNpoE6GfQSgYH_oV6QXjtGzW7A/edit"
   },
   "ADP": {
    "name": "Advanced Dental Practice",
@@ -850,14 +888,41 @@ const CITATIONS_DATA = {
    ],
    "gbp_status": "ok",
    "gbp_url": "https://maps.app.goo.gl/rR3dwXGoGUKfFSuh7",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1wnTSYbVF7cJrIqCsp7sPWrcSG9C5RqV2aN22lwqBhNs",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1wnTSYbVF7cJrIqCsp7sPWrcSG9C5RqV2aN22lwqBhNs/edit"
   },
   "ALB": {
    "name": "Albany Place Dental Practice",
    "code": "ALB",
-   "key_count": 0,
-   "other_count": 0,
-   "key_live": [],
+   "key_count": 4,
+   "other_count": 3,
+   "key_live": [
+    {
+     "name": "Local Search",
+     "domain": "localsearch.com.au",
+     "url": "https://www.localsearch.com.au/profile/albany-place-dental-practice/cmtsndlaj002d02ibawvhfcvo",
+     "status": "Awaiting Verification"
+    },
+    {
+     "name": "Nextdoor",
+     "domain": "nextdoor.com",
+     "url": "https://au.nextdoor.com/page/albany-place-dental-practice-albany-creek-qld",
+     "status": "Complete"
+    },
+    {
+     "name": "Top Rated Online",
+     "domain": "top-rated.online",
+     "url": "https://www.top-rated.online/cities/Albany+Creek/place/p/20059404/Albany+Place+Dental+Practice",
+     "status": "Complete"
+    },
+    {
+     "name": "VY Maps",
+     "domain": "vymaps.com",
+     "url": "https://vymaps.com/AU/albany-place-dental-practice-vn174165/?id_new=ce99993b17c1a631203eb415196b83a4",
+     "status": "Awaiting Verification"
+    }
+   ],
    "key_missing": [
     "American Express",
     "Apple",
@@ -877,16 +942,12 @@ const CITATIONS_DATA = {
     "Infobel",
     "Kompass",
     "LinkedIn",
-    "Local Search",
     "My Community Directory",
     "My Health 1st",
-    "Nextdoor",
     "StartLocal",
     "Three Best Rated",
     "TomTom",
-    "Top Rated Online",
     "True Local",
-    "VY Maps",
     "What Clinic",
     "White Pages",
     "Word of Mouth",
@@ -894,63 +955,167 @@ const CITATIONS_DATA = {
     "Yellow Pages",
     "Yelp"
    ],
-   "other_live": [],
+   "other_live": [
+    {
+     "name": "au.zenbu.org",
+     "domain": "au.zenbu.org",
+     "url": "https://au.zenbu.org/entries/1371027-albany-place-dental-practice",
+     "status": "Complete"
+    },
+    {
+     "name": "blinx.biz",
+     "domain": "blinx.biz",
+     "url": "https://www.blinx.biz/albany-place-dental-practice",
+     "status": "Complete"
+    },
+    {
+     "name": "brownbook.net",
+     "domain": "brownbook.net",
+     "url": "https://www.brownbook.net/business/55485162/albany-place-dental-practice",
+     "status": "Complete"
+    }
+   ],
    "gbp_status": "missing",
    "gbp_url": "",
-   "pending": true
+   "pending": false,
+   "sheet_id": "1cn7VzFMy27Y0GG1xWKw0yypbJJWcQwm65i9-VV6r054",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1cn7VzFMy27Y0GG1xWKw0yypbJJWcQwm65i9-VV6r054/edit"
   },
   "ALT": {
    "name": "Altona Meadows Dental Clinic",
    "code": "ALT",
-   "key_count": 0,
-   "other_count": 0,
-   "key_live": [],
+   "key_count": 11,
+   "other_count": 4,
+   "key_live": [
+    {
+     "name": "Cybo",
+     "domain": "cybo.com",
+     "url": "https://www.cybo.com/AU-biz/altona-meadows-dental-clinic_3S",
+     "status": "Existing Upate"
+    },
+    {
+     "name": "Facebook",
+     "domain": "facebook.com",
+     "url": "https://www.facebook.com/profile.php?id=61589840525734",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Foursquare",
+     "domain": "foursquare.com",
+     "url": "https://business.foursquare.com/places/4ca56678f47ea143ef1d5721",
+     "status": "Complete"
+    },
+    {
+     "name": "Google",
+     "domain": "google.com",
+     "url": "https://sites.google.com/view/altonameadowsdentalclinic/",
+     "status": "Complete"
+    },
+    {
+     "name": "Infobel",
+     "domain": "infobel.com",
+     "url": "https://www.infobel.com/en/australia/altona_meadows_dental_clinic/altona_meadows/AU100983231-0393692382/businessdetails.aspx",
+     "status": "Existing OK"
+    },
+    {
+     "name": "Local Search",
+     "domain": "localsearch.com.au",
+     "url": "https://www.localsearch.com.au/profile/albany-place-dental-practice/cmtsndlaj002d02ibawvhfcvo",
+     "status": "Complete"
+    },
+    {
+     "name": "My Community Directory",
+     "domain": "mycommunitydirectory.com.au",
+     "url": "https://www.mycommunitydirectory.com.au/Victoria/Hobsons_Bay/Health_Services/Dental___Oral_Health/128661/249689/Altona_Meadows_Dental_Clinic",
+     "status": "Complete"
+    },
+    {
+     "name": "Nextdoor",
+     "domain": "nextdoor.com",
+     "url": "https://au.nextdoor.com/page/altona-meadows-dental-clinic-altona-meadows-vic",
+     "status": "Complete"
+    },
+    {
+     "name": "Top Rated Online",
+     "domain": "top-rated.online",
+     "url": "https://www.top-rated.online/cities/Melbourne/place/p/20059410/Altona+Meadows+Dental+Clinic",
+     "status": "Complete"
+    },
+    {
+     "name": "VY Maps",
+     "domain": "vymaps.com",
+     "url": "https://vymaps.com/AU/altona-meadows-dental-clinic-vn174190/?id_new=5c42f2731880308b4a239d7cc5373eb6",
+     "status": "Complete"
+    },
+    {
+     "name": "Word of Mouth",
+     "domain": "wordofmouth.com.au",
+     "url": "https://www.wordofmouth.com.au/reviews/altona-meadows-dental-clinic",
+     "status": "Existing OK"
+    }
+   ],
    "key_missing": [
     "American Express",
     "Apple",
     "Aus Health Pages",
     "Bing",
-    "Cybo",
     "Dentist.com.au",
-    "Facebook",
     "Fixed Dental",
-    "Foursquare",
-    "Google",
     "Health Direct",
     "Health Engine",
     "Health Share",
     "Healthcare Link",
     "Here",
-    "Infobel",
     "Kompass",
     "LinkedIn",
-    "Local Search",
-    "My Community Directory",
     "My Health 1st",
-    "Nextdoor",
     "StartLocal",
     "Three Best Rated",
     "TomTom",
-    "Top Rated Online",
     "True Local",
-    "VY Maps",
     "What Clinic",
     "White Pages",
-    "Word of Mouth",
     "Yahoo",
     "Yellow Pages",
     "Yelp"
    ],
-   "other_live": [],
-   "gbp_status": "missing",
-   "gbp_url": "",
-   "pending": true
+   "other_live": [
+    {
+     "name": "blinx.biz",
+     "domain": "blinx.biz",
+     "url": "https://www.blinx.biz/altona-meadows-dental-clinic",
+     "status": "Complete"
+    },
+    {
+     "name": "brownbook.net",
+     "domain": "brownbook.net",
+     "url": "https://www.brownbook.net/business/55485755/altona-meadows-dental-clinic",
+     "status": "Complete"
+    },
+    {
+     "name": "infoisinfo-au.com",
+     "domain": "infoisinfo-au.com",
+     "url": "https://hobsons-bay.infoisinfo-au.com/card/altona-meadows-dental-clinic/1595736",
+     "status": "Complete"
+    },
+    {
+     "name": "localstar.org",
+     "domain": "localstar.org",
+     "url": "https://www.localstar.org/altona-meadows-dental-clinic",
+     "status": "Complete"
+    }
+   ],
+   "gbp_status": "not_gbp",
+   "gbp_url": "https://sites.google.com/view/altonameadowsdentalclinic/",
+   "pending": false,
+   "sheet_id": "1Y8bDPDMHzM7pOOBOBtawoQUMA5JJHgks0c1RFPRN97I",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1Y8bDPDMHzM7pOOBOBtawoQUMA5JJHgks0c1RFPRN97I/edit"
   },
   "ARC": {
    "name": "Arc Orthodontic Specialists",
    "code": "ARC",
    "key_count": 18,
-   "other_count": 32,
+   "other_count": 37,
    "key_live": [
     {
      "name": "Apple",
@@ -1084,6 +1249,30 @@ const CITATIONS_DATA = {
      "name": "2 Find Local",
      "domain": "2findlocal.com",
      "url": "https://www.2findlocal.com/b/15285732/arc-orthodontics-specialists-burwood-nsw",
+     "status": "Complete"
+    },
+    {
+     "name": "4shared.com",
+     "domain": "4shared.com",
+     "url": "https://www.4shared.com/u/TR3tzmnV/arc.html",
+     "status": "Complete"
+    },
+    {
+     "name": "a-zbusinessfinder.com",
+     "domain": "a-zbusinessfinder.com",
+     "url": "https://www.a-zbusinessfinder.com/business-directory/Arc-Orthodontics-Specialists-Burwood-New-South-Wales-Australia/34386976/",
+     "status": "Complete"
+    },
+    {
+     "name": "anibookmark.com",
+     "domain": "anibookmark.com",
+     "url": "https://www.anibookmark.com/business/arc-orthodontic-specialists-bs459295.html",
+     "status": "Complete"
+    },
+    {
+     "name": "app.simplenote.com",
+     "domain": "app.simplenote.com",
+     "url": "https://app.simplenote.com/p/1lYLCK",
      "status": "Complete"
     },
     {
@@ -1255,6 +1444,12 @@ const CITATIONS_DATA = {
      "status": "Complete"
     },
     {
+     "name": "x.com",
+     "domain": "x.com",
+     "url": "https://x.com/arcorthodontic",
+     "status": "Complete"
+    },
+    {
      "name": "Yandex",
      "domain": "yandex.com",
      "url": "https://yandex.com/maps/org/arc_orthodontic_specialists/43509929604/?ll=150.932800%2C-33.815778&z=10",
@@ -1275,7 +1470,9 @@ const CITATIONS_DATA = {
    ],
    "gbp_status": "missing",
    "gbp_url": "",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1L-2LL2PuBv0t3RJBKxpW-wghi1qlqFWENAD_EXRm3xo",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1L-2LL2PuBv0t3RJBKxpW-wghi1qlqFWENAD_EXRm3xo/edit"
   },
   "BAL": {
    "name": "Balmain Dental",
@@ -1517,7 +1714,9 @@ const CITATIONS_DATA = {
    ],
    "gbp_status": "missing",
    "gbp_url": "",
-   "pending": false
+   "pending": false,
+   "sheet_id": "17J_dG16s9h5od07gt3UN7Mkixg7cAW9_fNi99jYr2kI",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/17J_dG16s9h5od07gt3UN7Mkixg7cAW9_fNi99jYr2kI/edit"
   },
   "BSD": {
    "name": "Balanced Smiles Dental Clinic",
@@ -1778,7 +1977,9 @@ const CITATIONS_DATA = {
    ],
    "gbp_status": "not_gbp",
    "gbp_url": "https://sites.google.com/view/balanced-smiles-dental-clinic/home",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1si5VjDQUyDz8UMEd--UG4MJsBRiaPGkLuLnFIjTjIUE",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1si5VjDQUyDz8UMEd--UG4MJsBRiaPGkLuLnFIjTjIUE/edit"
   },
   "CAL": {
    "name": "Calderwood Family Dental",
@@ -2013,7 +2214,9 @@ const CITATIONS_DATA = {
    ],
    "gbp_status": "missing",
    "gbp_url": "",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1m6x5FvlGKfWGtbpCNMxPhY7aS1xsmoDGb1slPES8LxQ",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1m6x5FvlGKfWGtbpCNMxPhY7aS1xsmoDGb1slPES8LxQ/edit"
   },
   "CHI": {
    "name": "Chic Dental | Dentist Preston",
@@ -2342,7 +2545,9 @@ const CITATIONS_DATA = {
    ],
    "gbp_status": "not_gbp",
    "gbp_url": "https://sites.google.com/view/chic-dental--dentist-preston/home",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1dA-eh_1E2567TYDHh1aOeb66y5Xe6-8X6mdKNl4cp80",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1dA-eh_1E2567TYDHh1aOeb66y5Xe6-8X6mdKNl4cp80/edit"
   },
   "CRO": {
    "name": "Cronulla Beach Dental",
@@ -2599,7 +2804,9 @@ const CITATIONS_DATA = {
    ],
    "gbp_status": "not_gbp",
    "gbp_url": "https://sites.google.com/view/cronullabeachdental/home",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1-lNNQEERWPeOTBy1PYCSQThPhdlCA3X--sB2AhPxzVw",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1-lNNQEERWPeOTBy1PYCSQThPhdlCA3X--sB2AhPxzVw/edit"
   },
   "DSO": {
    "name": "Dental Society",
@@ -2957,7 +3164,9 @@ const CITATIONS_DATA = {
    ],
    "gbp_status": "ok",
    "gbp_url": "https://maps.app.goo.gl/tqGxXzW6A37UdhfG8",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1-pEP6KoU8xQiQWlkBGcC1_J-JhQVrYkj72J5MFfpOGg",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1-pEP6KoU8xQiQWlkBGcC1_J-JhQVrYkj72J5MFfpOGg/edit"
   },
   "ELV": {
    "name": "Elevate Oral Surgery Kogarah",
@@ -3414,7 +3623,9 @@ const CITATIONS_DATA = {
    ],
    "gbp_status": "ok",
    "gbp_url": "https://www.google.com/maps?cid=13526401560788131293",
-   "pending": false
+   "pending": false,
+   "sheet_id": "13p1QOrzeJD-QMWPWd8wSdAdTpZIuvOQIMrkGs4GVEuk",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/13p1QOrzeJD-QMWPWd8wSdAdTpZIuvOQIMrkGs4GVEuk/edit"
   },
   "GOO": {
    "name": "Goodna Family Dentist",
@@ -3537,7 +3748,9 @@ const CITATIONS_DATA = {
    "other_live": [],
    "gbp_status": "not_gbp",
    "gbp_url": "https://sites.google.com/view/goodna-family-dentist/",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1_NUH55piymvuVOl7h03zGe7CeUUPcoHq3i_9bno3otA",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1_NUH55piymvuVOl7h03zGe7CeUUPcoHq3i_9bno3otA/edit"
   },
   "HDS": {
    "name": "Hanly Dental Studio Mackay",
@@ -3660,7 +3873,9 @@ const CITATIONS_DATA = {
    "other_live": [],
    "gbp_status": "not_gbp",
    "gbp_url": "https://sites.google.com/view/hanlydentalstudio",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1QmdUPy0_xTEjmAdhw6Wil60e7yKHpzqMCT-yGy-G_yk",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1QmdUPy0_xTEjmAdhw6Wil60e7yKHpzqMCT-yGy-G_yk/edit"
   },
   "HEN": {
    "name": "Henley Dental",
@@ -3967,7 +4182,9 @@ const CITATIONS_DATA = {
    ],
    "gbp_status": "ok",
    "gbp_url": "https://maps.app.goo.gl/qB3RkSgBJGuaTKUR8",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1CEFowJkZvGDHEhGDL2v0W3n30t3NvB4Pcz-Gqv_ww_Y",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1CEFowJkZvGDHEhGDL2v0W3n30t3NvB4Pcz-Gqv_ww_Y/edit"
   },
   "LFD": {
    "name": "Lily Family Dental Ripley",
@@ -4070,7 +4287,9 @@ const CITATIONS_DATA = {
    "other_live": [],
    "gbp_status": "not_gbp",
    "gbp_url": "https://sites.google.com/view/lily-family-dental/",
-   "pending": false
+   "pending": false,
+   "sheet_id": "17quQXgVNM921VZOXPYaEH1mYFDfFxf52tPKztNGU_6U",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/17quQXgVNM921VZOXPYaEH1mYFDfFxf52tPKztNGU_6U/edit"
   },
   "LUM": {
    "name": "Luma Dental Clinic Edwardstown",
@@ -4183,7 +4402,9 @@ const CITATIONS_DATA = {
    "other_live": [],
    "gbp_status": "not_gbp",
    "gbp_url": "https://sites.google.com/view/luma-dental-clinic-sa",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1Q9iHuLK00Byv3xk40gkEVc77iNq1SH5GvJ1GQ9Wr0tk",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1Q9iHuLK00Byv3xk40gkEVc77iNq1SH5GvJ1GQ9Wr0tk/edit"
   },
   "MAI": {
    "name": "Dr Mai Dental Surgery Parramatta",
@@ -4296,7 +4517,9 @@ const CITATIONS_DATA = {
    "other_live": [],
    "gbp_status": "not_gbp",
    "gbp_url": "https://sites.google.com/view/drmaidentalsurgeryparramatta",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1Go34B6psfEJisdzHWNFTzITmJXa44KudZZ4B7xGni8Q",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1Go34B6psfEJisdzHWNFTzITmJXa44KudZZ4B7xGni8Q/edit"
   },
   "MAR": {
    "name": "Mary St Dental Health",
@@ -4495,13 +4718,15 @@ const CITATIONS_DATA = {
    ],
    "gbp_status": "ok",
    "gbp_url": "https://maps.app.goo.gl/gpzshNfsrHUxraMD8",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1XEHVc4wUlrE8igx_Ycq9AS8Amx3vVBjeLfKXOjqOL80",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1XEHVc4wUlrE8igx_Ycq9AS8Amx3vVBjeLfKXOjqOL80/edit"
   },
   "MQD": {
    "name": "Macquarie Park Dentists",
    "code": "MQD",
    "key_count": 23,
-   "other_count": 55,
+   "other_count": 94,
    "key_live": [
     {
      "name": "Apple",
@@ -4541,9 +4766,9 @@ const CITATIONS_DATA = {
     },
     {
      "name": "Google",
-     "domain": "google.com",
-     "url": "https://maps.google.com/maps?cid=3820880163294844339",
-     "status": "Existing OK"
+     "domain": "sites.google.com",
+     "url": "https://sites.google.com/view/macquariedentists/",
+     "status": "Complete"
     },
     {
      "name": "Health Direct",
@@ -4663,14 +4888,32 @@ const CITATIONS_DATA = {
      "status": "Existing Upate"
     },
     {
+     "name": "4shared.com",
+     "domain": "4shared.com",
+     "url": "https://www.4shared.com/u/_mcXcwuj/mqd.html",
+     "status": "Complete"
+    },
+    {
      "name": "911getit.com",
      "domain": "911getit.com",
      "url": "https://www.911getit.com/australia/macquarie-park/dentistry-cosmetic/macquarie-dentists",
      "status": "Complete"
     },
     {
+     "name": "a-zbusinessfinder.com",
+     "domain": "a-zbusinessfinder.com",
+     "url": "https://www.a-zbusinessfinder.com/business-directory/Macquarie-Dentists-Macquarie-Park-New-South-Wales-Australia/34473980/",
+     "status": "Complete"
+    },
+    {
      "name": "Around Me",
      "domain": "aroundmeapp.com",
+     "url": "http://www.yext.com/partnerpages/aroundme/macquarie-dentists-macquarie-park-nsw-au-fa1643",
+     "status": "Complete"
+    },
+    {
+     "name": "Aroundme",
+     "domain": "yext.com",
      "url": "http://www.yext.com/partnerpages/aroundme/macquarie-dentists-macquarie-park-nsw-au-fa1643",
      "status": "Complete"
     },
@@ -4693,15 +4936,63 @@ const CITATIONS_DATA = {
      "status": "Complete"
     },
     {
+     "name": "behance.net",
+     "domain": "behance.net",
+     "url": "https://www.behance.net/macquariedentists",
+     "status": "Complete"
+    },
+    {
+     "name": "bigbizmaker.com",
+     "domain": "bigbizmaker.com",
+     "url": "https://www.bigbizmaker.com/australia/macquarie-park/healthcare-pharmaceuticals-biotech/macquarie-dentists",
+     "status": "Complete"
+    },
+    {
      "name": "BirdEye",
      "domain": "getbirdeye.com.au",
      "url": "https://reviews.birdeye.com/macquarie-dentists-166502271191861",
      "status": "Complete"
     },
     {
+     "name": "biz411.org",
+     "domain": "biz411.org",
+     "url": "https://www.biz411.org/australia/macquarie-park/healthcare-pharmaceuticals-biotech/macquarie-dentists",
+     "status": "Complete"
+    },
+    {
+     "name": "bizbangboom.com",
+     "domain": "bizbangboom.com",
+     "url": "https://www.bizbangboom.com/australia/macquarie-park/healthcare-pharmaceuticals-biotech/macquarie-dentists",
+     "status": "Complete"
+    },
+    {
+     "name": "bizcommunity.com",
+     "domain": "bizcommunity.com",
+     "url": "https://www.bizcommunity.com/Company/MacquarieDentists",
+     "status": "Awaiting Verification"
+    },
+    {
+     "name": "bizmaker.org",
+     "domain": "bizmaker.org",
+     "url": "https://www.bizmaker.org/australia/macquarie-park/healthcare-pharmaceuticals-biotech/macquarie-dentists",
+     "status": "Complete"
+    },
+    {
+     "name": "biztobiz.org",
+     "domain": "biztobiz.org",
+     "url": "https://www.biztobiz.org/australia/macquarie-park/healthcare-pharmaceuticals-biotech/macquarie-dentists",
+     "status": "Complete"
+    },
+    {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/52210394/macquarie-dentists/",
+     "status": "Complete"
+    },
+    {
+     "name": "businessja.com",
+     "domain": "businessja.com",
+     "url": "https://www.businessja.com/australia/macquarie-park/macquarie-dentists",
      "status": "Complete"
     },
     {
@@ -4717,6 +5008,18 @@ const CITATIONS_DATA = {
      "status": "Awaiting Verification"
     },
     {
+     "name": "cleanbill.com.au",
+     "domain": "cleanbill.com.au",
+     "url": "https://cleanbill.com.au/listings/macquarie-dentists",
+     "status": "Existing OK"
+    },
+    {
+     "name": "cleansway.com",
+     "domain": "cleansway.com",
+     "url": "https://www.cleansway.com/australia/macquarie-park/business/macquarie-dentists",
+     "status": "Complete"
+    },
+    {
      "name": "Cylex",
      "domain": "cylex-australia.com",
      "url": "https://www.cylex-australia.com/company/macquarie-dentists-23715654.html",
@@ -4727,6 +5030,18 @@ const CITATIONS_DATA = {
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/macquarie-dentists",
      "status": "Existing OK"
+    },
+    {
+     "name": "dentistnearme.net.au",
+     "domain": "dentistnearme.net.au",
+     "url": "https://dentistnearme.net.au/nsw/dentist-macquarie-park-2113/macquarie-dentists-dentist",
+     "status": "Complete"
+    },
+    {
+     "name": "dentists.dentinova.co.uk",
+     "domain": "dentists.dentinova.co.uk",
+     "url": "https://dentists.dentinova.co.uk/places/michael-to-dentist-in-newcastle-at-macquarie-dentists/",
+     "status": "Complete"
     },
     {
      "name": "dentistscout.com.au",
@@ -4771,9 +5086,33 @@ const CITATIONS_DATA = {
      "status": "Complete"
     },
     {
+     "name": "findabusinesspro.com",
+     "domain": "findabusinesspro.com",
+     "url": "https://www.findabusinesspro.com/australia/macquarie-park/general-business-1/macquarie-dentists",
+     "status": "Complete"
+    },
+    {
+     "name": "freebusinesslistingsites.com",
+     "domain": "freebusinesslistingsites.com",
+     "url": "https://freebusinesslistingsites.com/listing/macquarie-dentists/",
+     "status": "Complete"
+    },
+    {
+     "name": "freelistingaustralia.com",
+     "domain": "freelistingaustralia.com",
+     "url": "https://www.freelistingaustralia.com/listings/macquarie-dentists",
+     "status": "Complete"
+    },
+    {
      "name": "globeconnected.com",
      "domain": "globeconnected.com",
      "url": "https://globeconnected.com/Macquarie-Dentists",
+     "status": "Complete"
+    },
+    {
+     "name": "gravitysplash.com",
+     "domain": "gravitysplash.com",
+     "url": "https://www.gravitysplash.com/b/macquarie-dentists/",
      "status": "Complete"
     },
     {
@@ -4789,15 +5128,57 @@ const CITATIONS_DATA = {
      "status": "Existing OK"
     },
     {
+     "name": "issuu.com",
+     "domain": "issuu.com",
+     "url": "https://issuu.com/macquariedds",
+     "status": "Complete"
+    },
+    {
      "name": "lazypal.com",
      "domain": "lazypal.com",
      "url": "https://lazypal.com/macquarie-dentists-10270?preview=1",
      "status": "Complete"
     },
     {
+     "name": "linkcentre.com",
+     "domain": "linkcentre.com",
+     "url": "https://www.linkcentre.com/profile/macquariedds/",
+     "status": "Complete"
+    },
+    {
+     "name": "linktr.ee",
+     "domain": "linktr.ee",
+     "url": "https://linktr.ee/macquariedentists",
+     "status": "Complete"
+    },
+    {
      "name": "Local Business Guide",
      "domain": "localbusinessguide.com.au",
      "url": "https://www.localbusinessguide.com.au/business/macquarie-dentists-1macquarie-dentists-2/",
+     "status": "Complete"
+    },
+    {
+     "name": "localbusinessguide.com.au",
+     "domain": "localbusinessguide.com.au",
+     "url": "https://www.localbusinessguide.com.au/business/macquarie-dentists/",
+     "status": "Awaiting Verification"
+    },
+    {
+     "name": "localbusinessguide.com.au",
+     "domain": "localbusinessguide.com.au",
+     "url": "https://www.localbusinessguide.com.au/business/macquarie-dentists-1/",
+     "status": "Awaiting Verification"
+    },
+    {
+     "name": "macquarie-park.cataloxy.net",
+     "domain": "macquarie-park.cataloxy.net",
+     "url": "https://macquarie-park.cataloxy.net/firms/macquariedentists.com.au.htm",
+     "status": "Complete"
+    },
+    {
+     "name": "MapQuest",
+     "domain": "mapquest.com",
+     "url": "https://www.mapquest.com/au/new-south-wales/macquarie-dentists-795374855",
      "status": "Complete"
     },
     {
@@ -4813,6 +5194,12 @@ const CITATIONS_DATA = {
      "status": "Awaiting Verification"
     },
     {
+     "name": "mobiledentalproviders.com.au",
+     "domain": "mobiledentalproviders.com.au",
+     "url": "https://www.mobiledentalproviders.com.au/profile/macquarie-dentists/profile - Profile Only\nhttps://www.mobiledentalproviders.com.au/directoryresluts/macquarie-dentists - Business Page",
+     "status": "Complete"
+    },
+    {
      "name": "NaviMii",
      "domain": "navmii.com",
      "url": "http://www.yext.com/partnerpages/navmii/macquarie-dentists-macquarie-park-nsw-au-fa1643",
@@ -4822,6 +5209,12 @@ const CITATIONS_DATA = {
      "name": "nextbizmaker",
      "domain": "nextbizmaker.com",
      "url": "https://www.nextbizmaker.com/australia/macquarie-park/healthcare-pharmaceuticals-biotech/macquarie-dentists",
+     "status": "Complete"
+    },
+    {
+     "name": "nextbizthing.com",
+     "domain": "nextbizthing.com",
+     "url": "https://www.nextbizthing.com/australia/macquarie-park/health-20-medicine/macquarie-dentists",
      "status": "Complete"
     },
     {
@@ -4843,6 +5236,18 @@ const CITATIONS_DATA = {
      "status": "Complete"
     },
     {
+     "name": "pastelink.net",
+     "domain": "pastelink.net",
+     "url": "https://pastelink.net/httpsmacquariedentistscomau",
+     "status": "Complete"
+    },
+    {
+     "name": "penzu.com",
+     "domain": "penzu.com",
+     "url": "https://penzu.com/public/3bae4cbf875e9c86",
+     "status": "Complete"
+    },
+    {
      "name": "perrysplacepromotions.org",
      "domain": "perrysplacepromotions.org",
      "url": "https://www.perrysplacepromotions.org/macquarie-park-nsw/dentist/macquarie-dentists",
@@ -4852,6 +5257,12 @@ const CITATIONS_DATA = {
      "name": "Pink Pages",
      "domain": "pinkpages.com.au",
      "url": "https://pinkpages.com.au/businesses/macquarie-dentists-11448890",
+     "status": "Complete"
+    },
+    {
+     "name": "pinterest.com",
+     "domain": "pinterest.com",
+     "url": "https://www.pinterest.com/macquariedds/",
      "status": "Complete"
     },
     {
@@ -4873,21 +5284,27 @@ const CITATIONS_DATA = {
      "status": "Complete"
     },
     {
+     "name": "quora.com",
+     "domain": "quora.com",
+     "url": "https://www.quora.com/profile/Macquarie-Dentists",
+     "status": "Existing OK"
+    },
+    {
      "name": "Seekfind",
      "domain": "seekfind.com.au",
      "url": "https://www.seekfind.com.au/businesses/medical/dentists/macquarie-dentists",
      "status": "Complete"
     },
     {
-     "name": "Show Me Local",
-     "domain": "showmelocal.com",
-     "url": "https://au.showmelocal.com/38542790-macquarie-dentists-macquarie-park",
+     "name": "Seekfind",
+     "domain": "seekfind.com.au",
+     "url": "https://www.seekfind.com.au/medical/dentists/macquarie-dentists",
      "status": "Complete"
     },
     {
-     "name": "sites.google.com",
-     "domain": "sites.google.com",
-     "url": "https://sites.google.com/view/macquariedentists/",
+     "name": "Show Me Local",
+     "domain": "showmelocal.com",
+     "url": "https://au.showmelocal.com/38542790-macquarie-dentists-macquarie-park",
      "status": "Complete"
     },
     {
@@ -4900,6 +5317,18 @@ const CITATIONS_DATA = {
      "name": "SuperPages",
      "domain": "superpages.com.au",
      "url": "https://www.superpages.com.au/company/7373822eeace4a1351e04b22af6d6019",
+     "status": "Complete"
+    },
+    {
+     "name": "sydneylocalista.com.au",
+     "domain": "sydneylocalista.com.au",
+     "url": "https://sydneylocalista.com.au/listing/macquarie-dentists?place=macquarie+park%2C+nsw%2C+au&show=preview",
+     "status": "Complete"
+    },
+    {
+     "name": "techdirectory.io",
+     "domain": "techdirectory.io",
+     "url": "https://www.techdirectory.io/australia/macquarie-park/health-beauty/macquarie-dentists",
      "status": "Complete"
     },
     {
@@ -4951,6 +5380,12 @@ const CITATIONS_DATA = {
      "status": "Complete"
     },
     {
+     "name": "wellfound.com",
+     "domain": "wellfound.com",
+     "url": "https://wellfound.com/company/macquarie-dentists",
+     "status": "Complete"
+    },
+    {
      "name": "Whats Your Hours",
      "domain": "whatsyourhours.com",
      "url": "https://www.whatsyourhours.com/australia/macquarie-park/dentists-1/macquarie-dentists",
@@ -4963,15 +5398,33 @@ const CITATIONS_DATA = {
      "status": "Complete"
     },
     {
+     "name": "Where to",
+     "domain": "wheretoapp.com",
+     "url": "https://wheretoapp.com/search?poi=3820880163294844339",
+     "status": "Payment Needed"
+    },
+    {
      "name": "Whitecoat",
      "domain": "whitecoat.com.au",
      "url": "https://www.whitecoat.com.au/directory/practitioner/dentist/nsw/macquarie-park/to/1329272/901",
      "status": "Complete"
     },
     {
+     "name": "x.com",
+     "domain": "x.com",
+     "url": "https://x.com/macquariedds",
+     "status": "Complete"
+    },
+    {
      "name": "Yandex",
      "domain": "yandex.com",
      "url": "https://yandex.com/maps/org/macquarie_dentists/76961042077",
+     "status": "Complete"
+    },
+    {
+     "name": "zeemaps.com",
+     "domain": "zeemaps.com",
+     "url": "https://www.zeemaps.com/map?group=7016016",
      "status": "Complete"
     },
     {
@@ -4985,11 +5438,19 @@ const CITATIONS_DATA = {
      "domain": "zipleaf.com",
      "url": "https://au.zipleaf.com/Companies/Macquarie-Dentists",
      "status": "Existing OK"
+    },
+    {
+     "name": "zumvu.com",
+     "domain": "zumvu.com",
+     "url": "https://zumvu.com/macquariedds/",
+     "status": "Complete"
     }
    ],
-   "gbp_status": "ok",
-   "gbp_url": "https://maps.google.com/maps?cid=3820880163294844339",
-   "pending": false
+   "gbp_status": "not_gbp",
+   "gbp_url": "https://sites.google.com/view/macquariedentists/",
+   "pending": false,
+   "sheet_id": "1dFXRSSkPi-c0B4v_eHSw8SQM64lZo3brpaJx2Zh6DPM",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1dFXRSSkPi-c0B4v_eHSw8SQM64lZo3brpaJx2Zh6DPM/edit"
   },
   "PER": {
    "name": "Perfect Smile Adelaide",
@@ -5463,13 +5924,15 @@ const CITATIONS_DATA = {
    ],
    "gbp_status": "ok",
    "gbp_url": "https://maps.app.goo.gl/L7HLbdzNKZ3QUmr36",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1QcFsQF1MCB-zQZz2hxV_Fv3NiXPJccUYNTGClLZ7ol0",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1QcFsQF1MCB-zQZz2hxV_Fv3NiXPJccUYNTGClLZ7ol0/edit"
   },
   "SWD": {
    "name": "Sherwood Dental Brisbane",
    "code": "SWD",
    "key_count": 22,
-   "other_count": 49,
+   "other_count": 53,
    "key_live": [
     {
      "name": "Aus Health Pages",
@@ -5650,6 +6113,12 @@ const CITATIONS_DATA = {
      "status": "Awaiting Verification"
     },
     {
+     "name": "australianplanet.com",
+     "domain": "australianplanet.com",
+     "url": "https://www.australianplanet.com/sherwood-dental-technician-sherwood-qld-F120FC30E1ED742",
+     "status": "Awaiting Verification"
+    },
+    {
      "name": "BirdEye",
      "domain": "getbirdeye.com.au",
      "url": "https://reviews.birdeye.com/sherwood-dental-166617790992278",
@@ -5761,6 +6230,18 @@ const CITATIONS_DATA = {
      "name": "Local Business Guide",
      "domain": "localbusinessguide.com.au",
      "url": "https://www.localbusinessguide.com.au/listing/sherwood-dental-n3abiq/",
+     "status": "Awaiting Verification"
+    },
+    {
+     "name": "localbusinessguide.com.au",
+     "domain": "localbusinessguide.com.au",
+     "url": "https://www.localbusinessguide.com.au/business/brisbane-implants/",
+     "status": "Awaiting Verification"
+    },
+    {
+     "name": "localbusinessguide.com.au",
+     "domain": "localbusinessguide.com.au",
+     "url": "https://www.localbusinessguide.com.au/business/sherwood-dental/",
      "status": "Awaiting Verification"
     },
     {
@@ -5890,6 +6371,12 @@ const CITATIONS_DATA = {
      "status": "Complete"
     },
     {
+     "name": "whereis.com",
+     "domain": "whereis.com",
+     "url": "https://www.whereis.com/qld/sherwood-4075/yellowId-1000001678793",
+     "status": "Complete"
+    },
+    {
      "name": "Whitecoat",
      "domain": "whitecoat.com.au",
      "url": "https://whitecoat.com.au/directory/practice/dentist/QLD/sherwood/sherwood-dental/897132/901",
@@ -5916,7 +6403,9 @@ const CITATIONS_DATA = {
    ],
    "gbp_status": "missing",
    "gbp_url": "",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1yEGGcPbH96JyGCJqbTex4rB4WPwWCPDjAVseIhOoiVs",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1yEGGcPbH96JyGCJqbTex4rB4WPwWCPDjAVseIhOoiVs/edit"
   },
   "WEL": {
    "name": "Wellness Dental Oakleigh",
@@ -6221,7 +6710,9 @@ const CITATIONS_DATA = {
    ],
    "gbp_status": "ok",
    "gbp_url": "https://g.co/kgs/RbkGE18",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1otgOP4pvkQuXvS5RTlYeUPGdMW1V82n-e_hkEPcXvG8",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1otgOP4pvkQuXvS5RTlYeUPGdMW1V82n-e_hkEPcXvG8/edit"
   },
   "WIN": {
    "name": "Winning Smiles Sutherland",
@@ -6334,7 +6825,9 @@ const CITATIONS_DATA = {
    "other_live": [],
    "gbp_status": "not_gbp",
    "gbp_url": "https://sites.google.com/view/winningdentalsutherland",
-   "pending": false
+   "pending": false,
+   "sheet_id": "1a2uEkM5dWAnvYf8_GIYSYFo5EfihZqaGNnt4u7RS1Xc",
+   "sheet_url": "https://docs.google.com/spreadsheets/d/1a2uEkM5dWAnvYf8_GIYSYFo5EfihZqaGNnt4u7RS1Xc/edit"
   }
  }
 };
