@@ -46,6 +46,7 @@
     <p class="page-lede">Google Search Console, last 28 complete days against the previous 28. Both windows end three days back because Search Console finalises data on a lag; without that offset the current period is always short and every client looks like it is falling.</p>
 
     <p class="win" id="windows"></p>
+    <p class="win" id="freshness" style="margin-top:-8px"></p>
 
     <div id="empty" class="placeholder-note" style="display:none">
       No data yet. Run the <span class="mono">gsc-sync</span> edge function once, then map each property to a client below.
@@ -60,6 +61,7 @@
           <th class="num">Impressions</th>
           <th class="num">CTR</th>
           <th class="num">Avg position</th>
+          <th>Trend</th>
         </tr>
       </thead>
       <tbody id="rows"></tbody>
@@ -116,6 +118,56 @@
     });
   }
 
+  // ── trend scoring ───────────────────────────────────────────
+  // Scored on clicks, impressions and average position only.
+  // CTR is deliberately EXCLUDED: it is clicks divided by impressions,
+  // so including it counts clicks twice and flatters any client whose
+  // impressions have collapsed.
+  //
+  // Clicks carry double weight — impressions and position are leading
+  // indicators, clicks are the outcome.
+  var NOISE = 5;        // percent; below this a move is not a signal
+  var MIN_CLICKS = 20;  // combined clicks below this is too noisy to score
+
+  function scoreOne(cur, prev, lowerIsBetter){
+    if (prev === 0) return 0;              // no baseline, no verdict
+    var d = ((cur - prev) / prev) * 100;
+    if (Math.abs(d) < NOISE) return 0;
+    var better = lowerIsBetter ? d < 0 : d > 0;
+    return better ? 1 : -1;
+  }
+
+  function trend(c, v){
+    if ((c.clicks + v.clicks) < MIN_CLICKS)
+      return { verdict:'low', label:'low volume',
+               why:'Fewer than ' + MIN_CLICKS + ' clicks across both periods — percentage moves here are noise, not signal.' };
+
+    var sClicks = scoreOne(c.clicks, v.clicks, false);
+    var sImpr   = scoreOne(c.impressions, v.impressions, false);
+    var sPos    = scoreOne(c.position, v.position, true);
+    var total   = (sClicks * 2) + sImpr + sPos;
+
+    var parts = [];
+    function word(n){ return n > 0 ? 'up' : (n < 0 ? 'down' : 'flat'); }
+    parts.push('clicks ' + word(sClicks) + ' (double weight)');
+    parts.push('impressions ' + word(sImpr));
+    parts.push('position ' + word(sPos));
+    var why = parts.join(', ') + ' — score ' + (total > 0 ? '+' : '') + total +
+              '. CTR is excluded because it is derived from clicks and impressions.';
+
+    if (total >= 2)  return { verdict:'good',    label:'improving', why:why };
+    if (total <= -2) return { verdict:'bad',     label:'declining', why:why };
+    return             { verdict:'neutral', label:'flat',      why:why };
+  }
+
+  function trendTag(c, v){
+    var t = trend(c, v);
+    var cls = t.verdict === 'good' ? 'live'
+            : t.verdict === 'bad'  ? 'mismatch'
+            : 'pending';
+    return '<span class="tag ' + cls + '" title="' + esc(t.why) + '">' + esc(t.label) + '</span>';
+  }
+
   function pct(cur, prev){
     if (prev === 0) return cur === 0 ? null : null;   // undefined growth from zero
     return ((cur - prev) / prev) * 100;
@@ -161,15 +213,16 @@
         '<td class="num">'+deltaCell(c.clicks, v.clicks)+'</td>'+
         '<td class="num">'+deltaCell(c.impressions, v.impressions)+'</td>'+
         '<td class="num">'+deltaCell(c.ctr, v.ctr, {fmt:function(x){return (x*100).toFixed(2)+'%';}})+'</td>'+
-        '<td class="num">'+deltaCell(c.position, v.position, {lowerIsBetter:true, fmt:function(x){return x.toFixed(1);}})+'</td>';
+        '<td class="num">'+deltaCell(c.position, v.position, {lowerIsBetter:true, fmt:function(x){return x.toFixed(1);}})+'</td>'+
+        '<td>'+trendTag(c, v)+'</td>';
       tb.appendChild(tr);
     });
 
-    if (!withData.length) tb.innerHTML = '<tr><td colspan="5" style="color:var(--ink-soft)">Nothing mapped with data yet.</td></tr>';
+    if (!withData.length) tb.innerHTML = '<tr><td colspan="6" style="color:var(--ink-soft)">Nothing mapped with data yet.</td></tr>';
 
     document.getElementById('foot').innerHTML = withData.length
       ? '<tr><th>Total</th><th class="num">'+deltaCell(tot.c, tot.pc)+'</th>'+
-        '<th class="num">'+deltaCell(tot.i, tot.pi)+'</th><th></th><th></th></tr>'
+        '<th class="num">'+deltaCell(tot.i, tot.pi)+'</th><th></th><th></th><th></th></tr>'
       : '';
 
     // mapping table
@@ -208,15 +261,54 @@
     }).catch(function(e){ alert(e.message); el.disabled=false; });
   }
 
+  // ── auto refresh ────────────────────────────────────────────
+  // The page re-reads Supabase; it does not re-run the sync. Search
+  // Console only publishes once a day and lags 2-3 days, so polling
+  // harder gains nothing — this exists so a browser left open
+  // overnight shows the morning's sync without a manual reload.
+  var POLL_MS = 5 * 60 * 1000;
+  var lastLoad = null, refreshing = false;
+
+  function showFreshness(){
+    var el = document.getElementById('freshness');
+    if (!lastLoad){ el.textContent = ''; return; }
+    var newest = null;
+    Object.keys(syncInfo).forEach(function(k){
+      var t = syncInfo[k] && syncInfo[k].last_synced;
+      if (t && (!newest || t > newest)) newest = t;
+    });
+    var mins = Math.round((Date.now() - lastLoad) / 60000);
+    el.textContent = 'Page refreshed ' + (mins < 1 ? 'just now' : mins + ' min ago') +
+      (newest ? '   ·   Search Console last pulled ' + new Date(newest).toLocaleString('en-AU') : '') +
+      '   ·   auto-refreshes every 5 min';
+  }
+
+  function refresh(quiet){
+    if (refreshing) return Promise.resolve();
+    refreshing = true;
+    if (!quiet){ conn.textContent = 'refreshing…'; }
+    return load().then(function(){
+      lastLoad = Date.now();
+      conn.className = 'conn live'; conn.textContent = 'connected';
+      render(); showFreshness();
+    }).catch(function(e){
+      conn.className = 'conn off'; conn.textContent = 'backend error';
+      conn.title = e.message;
+    }).then(function(){ refreshing = false; });
+  }
+
   var conn = document.getElementById('conn');
   if (!hasBackend){
     conn.className='conn off'; conn.textContent='no backend'; render();
   } else {
-    load().then(function(){
-      conn.className='conn live'; conn.textContent='connected'; render();
-    }).catch(function(e){
-      conn.className='conn off'; conn.textContent='backend error';
-      conn.title = e.message; console.error(e); render();
+    refresh(true).then(function(){
+      setInterval(function(){ refresh(true); }, POLL_MS);
+      setInterval(showFreshness, 60000);
+      // Coming back to the tab is the moment a stale page is most
+      // likely to be read, so refresh then rather than waiting.
+      document.addEventListener('visibilitychange', function(){
+        if (!document.hidden && lastLoad && (Date.now() - lastLoad) > 60000) refresh(true);
+      });
     });
   }
 })();
