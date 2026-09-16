@@ -24,6 +24,22 @@
   dialog { border:1px solid var(--line); border-radius:4px; padding:0; max-width:460px; width:92%; background:var(--paper); }
   dialog::backdrop { background:rgba(20,24,28,0.45); }
   .dlg-body { padding:22px 24px; } .dlg-foot { padding:12px 24px; border-top:1px solid var(--line); display:flex; justify-content:flex-end; gap:8px; }
+  .cit-panel { position:fixed; top:0; right:0; width:min(520px,100%); height:100%;
+    background:var(--paper); border-left:1px solid var(--line); box-shadow:-8px 0 24px rgba(20,24,28,0.12);
+    z-index:50; display:flex; flex-direction:column; transform:translateX(100%); transition:transform .18s ease; }
+  .cit-panel.open { transform:translateX(0); }
+  .cit-head { padding:20px 24px 14px; border-bottom:1px solid var(--line); }
+  .cit-body { padding:18px 24px; overflow-y:auto; flex:1; }
+  .cit-foot { padding:14px 24px; border-top:1px solid var(--line); background:var(--panel); }
+  .cmt { border-left:2px solid var(--line); padding:8px 0 8px 12px; margin-bottom:12px; }
+  .cmt.reply { margin-left:22px; border-left-color:var(--teal); }
+  .cmt-meta { font-family:'IBM Plex Mono',monospace; font-size:0.68rem; color:var(--ink-soft); margin-bottom:3px; }
+  .cmt-body { font-size:0.9rem; white-space:pre-wrap; }
+  .cmt-act { font-size:0.72rem; background:none; border:none; color:var(--teal-deep);
+    cursor:pointer; padding:2px 0; font-family:'IBM Plex Sans',sans-serif; }
+  textarea.cmt-in { width:100%; font-family:'IBM Plex Sans',sans-serif; font-size:0.88rem;
+    padding:8px 9px; border:1px solid var(--line); border-radius:3px; background:#fff; resize:vertical; }
+  .cmt-count { font-family:'IBM Plex Mono',monospace; font-size:0.68rem; color:var(--teal-deep); }
   .lbl { display:block; font-family:'IBM Plex Mono',monospace; font-size:0.66rem; text-transform:uppercase;
     letter-spacing:0.04em; color:var(--ink-soft); margin-bottom:4px; }
 </style>
@@ -89,6 +105,29 @@
       <tbody id="t-other"></tbody></table>
     </div>
   </main>
+</div>
+
+<div class="cit-panel" id="cit-panel" role="dialog" aria-label="Citation detail">
+  <div class="cit-head">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px">
+      <h2 style="margin:0" id="cit-title">Citation</h2>
+      <button class="btn sm" id="cit-close">Close</button>
+    </div>
+    <p class="mono" id="cit-sub" style="margin:6px 0 0;font-size:0.8rem;color:var(--ink-soft)"></p>
+    <p style="margin:8px 0 0"><a class="btn sm" id="cit-perma" href="#" style="text-decoration:none">Copy link</a></p>
+  </div>
+  <div class="cit-body" id="cit-comments"></div>
+  <div class="cit-foot">
+    <div class="fld" style="margin-bottom:8px">
+      <label class="lbl" for="cmt-author">Your name</label>
+      <input type="text" id="cmt-author" placeholder="e.g. Reign">
+    </div>
+    <textarea class="cmt-in" id="cmt-body" rows="3" placeholder="Add a comment…"></textarea>
+    <div style="margin-top:8px;display:flex;gap:8px;align-items:center">
+      <button class="btn primary sm" id="cmt-post">Post comment</button>
+      <span id="cmt-replying" style="font-size:0.78rem;color:var(--ink-soft)"></span>
+    </div>
+  </div>
 </div>
 
 <dialog id="pw-dlg">
@@ -305,7 +344,10 @@
 
   function rowHtml(code, x, idx, tbl){
     var safe = /^https?:\/\//i.test(x.url) ? x.url : '';
-    return '<td>' + esc(x.name) + (x.edited?' <span class="tag" style="font-size:0.6rem">edited</span>':'') + '</td>' +
+    var n = cmtCount(code, x.name);
+    return '<td><a href="#" data-cit="' + esc(x.name) + '">' + esc(x.name) + '</a>' +
+      (x.edited?' <span class="tag" style="font-size:0.6rem">edited</span>':'') +
+      (n ? ' <span class="cmt-count">' + n + '&#128172;</span>' : '') + '</td>' +
       '<td class="mono">' + (safe
         ? '<a href="'+esc(safe)+'" target="_blank" rel="noopener noreferrer">'+esc(shortUrl(safe))+'</a>'
         : (x.url ? esc(shortUrl(x.url)) : '<span style="color:var(--ink-soft)">—</span>')) + '</td>' +
@@ -339,6 +381,8 @@
       var tr = document.createElement('tr');
       tr.innerHTML = rowHtml(code, x, i, tbl);
       tr.querySelector('[data-edit]').onclick = function(){ editRow(tr, code, x); };
+      var link = tr.querySelector('[data-cit]');
+      if (link) link.onclick = function(e){ e.preventDefault(); openCitation(code, x.name); };
       tb.appendChild(tr);
     });
   }
@@ -395,7 +439,7 @@
   // reloads whatever the Action last wrote, and tells you when that was.
   document.getElementById('sync-btn').onclick = function(){
     var b = this; b.disabled = true; b.textContent = 'Syncing…';
-    Promise.all([loadSnapshot(), loadOverrides()])
+    Promise.all([loadSnapshot(), loadOverrides(), loadComments()])
       .then(function(){
         render(current);
         var si = syncInfo[current];
@@ -408,6 +452,146 @@
         b.textContent = 'Sync from sheet'; b.disabled = false;
       });
   };
+
+  // ── per-citation comment threads ────────────────────────────
+  var comments = {};        // "CODE||Site" -> [rows]
+  var openCit = null;       // {code, name}
+  var replyTo = null;
+
+  function loadComments(){
+    if (!hasBackend) return Promise.resolve();
+    return fetch(SUPABASE_URL + '/rest/v1/citation_comments?select=*&order=created_at.asc',
+                 { headers: headers(false) })
+      .then(function(r){ return r.ok ? r.json() : []; })
+      .then(function(rows){
+        comments = {};
+        rows.forEach(function(r){
+          var k = ovKey(r.client_code, r.site_name);
+          (comments[k] || (comments[k] = [])).push(r);
+        });
+      }).catch(function(){});
+  }
+
+  function cmtCount(code, site){
+    var a = comments[ovKey(code, site)];
+    return a ? a.length : 0;
+  }
+
+  function when(ts){
+    try {
+      var d = new Date(ts);
+      return d.toLocaleDateString('en-AU', {day:'numeric', month:'short'}) + ' ' +
+             d.toLocaleTimeString('en-AU', {hour:'2-digit', minute:'2-digit'});
+    } catch(e){ return ts; }
+  }
+
+  function renderComments(){
+    var wrap = document.getElementById('cit-comments');
+    if (!openCit){ wrap.innerHTML = ''; return; }
+    var list = comments[ovKey(openCit.code, openCit.name)] || [];
+    if (!list.length){
+      wrap.innerHTML = '<p style="color:var(--ink-soft);font-size:0.9rem">No comments yet.</p>';
+      return;
+    }
+    var tops = list.filter(function(c){ return !c.parent_id; });
+    var kids = {};
+    list.forEach(function(c){
+      if (c.parent_id) (kids[c.parent_id] || (kids[c.parent_id] = [])).push(c);
+    });
+    function block(c, isReply){
+      return '<div class="cmt' + (isReply ? ' reply' : '') + '">' +
+        '<div class="cmt-meta">' + esc(c.author) + ' · ' + esc(when(c.created_at)) + '</div>' +
+        '<div class="cmt-body">' + esc(c.body) + '</div>' +
+        (isReply ? '' : '<button class="cmt-act" data-reply="' + esc(c.id) + '">Reply</button>') +
+        '</div>';
+    }
+    wrap.innerHTML = tops.map(function(c){
+      return block(c, false) + (kids[c.id] || []).map(function(k){ return block(k, true); }).join('');
+    }).join('');
+    Array.prototype.forEach.call(wrap.querySelectorAll('[data-reply]'), function(b){
+      b.onclick = function(){
+        replyTo = b.getAttribute('data-reply');
+        document.getElementById('cmt-replying').textContent = 'Replying — click Post to send, or Close to cancel.';
+        document.getElementById('cmt-body').focus();
+      };
+    });
+  }
+
+  function openCitation(code, site){
+    openCit = { code: code, name: site };
+    replyTo = null;
+    document.getElementById('cmt-replying').textContent = '';
+    document.getElementById('cit-title').textContent = site;
+    var b = baseFor(code);
+    var rec = b.key_live.concat(b.other_live).filter(function(x){ return x.name === site; })[0];
+    var ov = overrides[ovKey(code, site)];
+    var url = ov && ov.listing_url != null ? ov.listing_url : (rec ? rec.url : '');
+    var st  = ov && ov.status != null ? ov.status : (rec ? rec.status : '');
+    document.getElementById('cit-sub').innerHTML =
+      esc(nameFor(code)) + (st ? ' · ' + esc(st) : '') +
+      (url ? '<br><a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(url) + '</a>' : '');
+    var perma = location.origin + location.pathname + '?c=' + encodeURIComponent(code) +
+                '&site=' + encodeURIComponent(site);
+    var pl = document.getElementById('cit-perma');
+    pl.href = perma;
+    pl.onclick = function(e){
+      e.preventDefault();
+      if (navigator.clipboard) navigator.clipboard.writeText(perma).then(function(){
+        pl.textContent = 'Link copied'; setTimeout(function(){ pl.textContent = 'Copy link'; }, 1600);
+      });
+    };
+    history.replaceState(null, '', '?c=' + encodeURIComponent(code) + '&site=' + encodeURIComponent(site));
+    document.getElementById('cit-panel').classList.add('open');
+    renderComments();
+  }
+
+  function closeCitation(){
+    openCit = null; replyTo = null;
+    document.getElementById('cit-panel').classList.remove('open');
+    if (current) history.replaceState(null, '', '?c=' + encodeURIComponent(current));
+  }
+
+  document.getElementById('cit-close').onclick = closeCitation;
+
+  document.getElementById('cmt-post').onclick = function(){
+    if (!openCit) return;
+    var author = document.getElementById('cmt-author').value.trim();
+    var body   = document.getElementById('cmt-body').value.trim();
+    if (!author){ alert('Add your name so people know who commented.'); return; }
+    if (!body){ return; }
+    var btn = this; btn.disabled = true; btn.textContent = 'Posting…';
+    function send(){
+      return fetch(SUPABASE_URL + '/rest/v1/citation_comments', {
+        method: 'POST',
+        headers: Object.assign(headers(true), {'Prefer':'return=representation'}),
+        body: JSON.stringify([{ client_code: openCit.code, site_name: openCit.name,
+                                author: author, body: body, parent_id: replyTo }])
+      }).then(function(r){
+        if (r.status === 401 || r.status === 403){
+          sessionStorage.removeItem(KEY_PW); throw new Error('Passphrase rejected — not posted.');
+        }
+        if (!r.ok) return r.text().then(function(t){ throw new Error('Post failed: ' + t.slice(0,160)); });
+        return r.json();
+      }).then(function(rows){
+        var k = ovKey(openCit.code, openCit.name);
+        (comments[k] || (comments[k] = [])).push(rows[0]);
+        document.getElementById('cmt-body').value = '';
+        replyTo = null;
+        document.getElementById('cmt-replying').textContent = '';
+        try { localStorage.setItem('bdm_cmt_author', author); } catch(e){}
+        renderComments();
+        render(current);
+      });
+    }
+    var p = sessionStorage.getItem(KEY_PW) ? send() : askPw().then(send);
+    p.catch(function(e){ alert(e && e.message ? e.message : 'Could not post.'); })
+     .then(function(){ btn.disabled = false; btn.textContent = 'Post comment'; });
+  };
+
+  try {
+    var savedAuthor = localStorage.getItem('bdm_cmt_author');
+    if (savedAuthor) document.getElementById('cmt-author').value = savedAuthor;
+  } catch(e){}
 
   document.getElementById('name-edit').onclick = function(){
     var cur = nameFor(current);
@@ -439,15 +623,21 @@
 
   var conn = document.getElementById('conn');
   function start(){
-    var q = new URLSearchParams(location.search).get('c');
-    if (q && BASE[q]){ picker.value=q; render(q); }
+    var qs = new URLSearchParams(location.search);
+    var q = qs.get('c');
+    if (q && BASE[q]){
+      picker.value = q; render(q);
+      // Permalink straight to one citation's thread.
+      var site = qs.get('site');
+      if (site) openCitation(q, site);
+    }
   }
 
   if (!hasBackend){
     conn.className='conn off'; conn.textContent='read-only · no backend';
     start();
   } else {
-    Promise.all([loadSnapshot(), loadOverrides()]).then(function(){
+    Promise.all([loadSnapshot(), loadOverrides(), loadComments()]).then(function(){
       online = true; conn.className='conn live'; conn.textContent='live · synced';
       refreshPickerLabels(); subscribe(); start();
     }).catch(function(err){
