@@ -2,7 +2,9 @@ name: Data sync
 
 on:
   schedule:
-    - cron: "0 7 * * *"      # daily, 07:00 UTC
+    # Twice daily. GSC publishes once a day, so the second run is
+    # not for fresher data — it is a retry window if the first fails.
+    - cron: "0 7,19 * * *"
   workflow_dispatch:
 
 jobs:
