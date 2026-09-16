@@ -98,7 +98,9 @@
       <tbody id="t-key"></tbody></table>
 
       <h2>Key citations — missing</h2>
-      <p id="p-missing" style="margin-bottom:30px"></p>
+      <p id="p-missing-empty" style="margin-bottom:12px"></p>
+      <table id="t-missing-wrap"><thead><tr><th style="width:22%">Site</th><th>Listing URL</th><th style="width:20%">Status</th><th style="width:9%"></th></tr></thead>
+      <tbody id="t-missing"></tbody></table>
 
       <h2>Other citations — live</h2>
       <table><thead><tr><th style="width:22%">Site</th><th>Listing URL</th><th style="width:20%">Status</th><th style="width:9%"></th></tr></thead>
@@ -297,6 +299,27 @@
   // ── merge base sheet data with overrides ────────────────────
   function isMeta(site){ return site === '__client_name__'; }
 
+  // Citations that exist ONLY as an override — someone added a listing
+  // URL to something the sheet never had. Without this they would be
+  // saved to the database and then never rendered.
+  function overrideOnly(code, merged, inKeySet){
+    var have = {};
+    merged.forEach(function(x){ have[x.name] = 1; });
+    var out = [];
+    Object.keys(overrides).forEach(function(k){
+      var parts = k.split('||');
+      if (parts[0] !== code) return;
+      var site = parts[1];
+      if (site === NAME_ROW || have[site]) return;
+      var isKey = KEY_34.indexOf(site) > -1;
+      if (isKey !== inKeySet) return;
+      var o = overrides[k];
+      if (!o.listing_url || !String(o.listing_url).trim()) return;
+      out.push({ name: site, domain: '', url: o.listing_url, status: o.status, edited: true });
+    });
+    return out;
+  }
+
   function merged(code, list){
     return list.map(function(x){
       var o = overrides[ovKey(code, x.name)];
@@ -400,6 +423,8 @@
 
     var b = baseFor(code);
     var kl = merged(code, b.key_live), ol = merged(code, b.other_live);
+    kl = kl.concat(overrideOnly(code, kl, true)).sort(function(a,b2){ return a.name.localeCompare(b2.name); });
+    ol = ol.concat(overrideOnly(code, ol, false)).sort(function(a,b2){ return a.name.localeCompare(b2.name); });
     document.getElementById('d-key').textContent = kl.length + '/34';
     document.getElementById('d-gap').textContent = 34 - kl.length;
     document.getElementById('d-other').textContent = ol.length;
@@ -418,9 +443,16 @@
 
     var have = {}; kl.forEach(function(x){ have[x.name]=1; });
     var miss = KEY_34.filter(function(m){ return !have[m]; });
-    document.getElementById('p-missing').innerHTML = miss.length
-      ? miss.map(function(m){ return '<span class="tag mismatch" style="margin:0 6px 6px 0">'+esc(m)+'</span>'; }).join('')
+    // Missing citations are editable: paste a URL when one goes live,
+    // or open the thread to note who it is sitting with.
+    document.getElementById('p-missing-empty').innerHTML = miss.length
+      ? '<span style="color:var(--ink-soft);font-size:0.9rem">Add a listing URL when one goes live, or click the name to discuss it.</span>'
       : '<span style="color:var(--teal-deep)">All 34 key citations are live.</span>';
+    document.getElementById('t-missing-wrap').style.display = miss.length ? '' : 'none';
+    fill('t-missing', code, miss.map(function(m){
+      var o = overrides[ovKey(code, m)];
+      return { name:m, domain:'', url:'', status:(o && o.status) ? o.status : '' };
+    }), 'm');
 
     document.getElementById('detail').style.display='block';
   }
