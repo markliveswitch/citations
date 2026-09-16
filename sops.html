@@ -61,6 +61,8 @@
     <p class="page-lede">Per-site claim and verification procedures for the 34 key citation sites. Edit here, then export and commit the updated file so the whole team sees your changes.</p>
 
     <div class="placeholder-note">
+      <strong>Check the badge before following an SOP.</strong> <span class="tag live">verified</span> means checked against that directory's own documentation on the date in its notes. <span class="tag pending">confirm on site</span> means a standard, widely-documented process that has not been re-checked — verify before quoting it to a client. <span class="tag mismatch">not researched</span> means nobody has written it yet; do not guess.
+      <br><br>
       Edits live in this browser tab only until you export. Nothing is saved to the repo automatically. Click <strong>Export updated file</strong>, then commit the downloaded <span class="mono">sops-data.js</span> to the repo to publish your changes to the team.
     </div>
 
@@ -95,6 +97,13 @@
         <option>Payment Needed</option>
       </select>
     </div>
+    <div class="fld"><label>Confidence</label>
+      <select id="f-conf">
+        <option value="">Not researched</option>
+        <option value="standard">Confirm on site — standard process, not re-checked</option>
+        <option value="verified">Verified against the directory's own documentation</option>
+      </select>
+    </div>
     <div class="fld"><label>Steps (one per line)</label>
       <textarea id="f-steps" rows="9" placeholder="Go to the directory's claim page&#10;Search for the practice by name and suburb&#10;…"></textarea>
     </div>
@@ -125,6 +134,18 @@
     document.getElementById('dirty').classList.add('show');
   }
 
+  // Make the provenance of each SOP visible. An unchecked entry must
+  // never look the same as one verified against the directory's own docs.
+  function confTag(s){
+    if (s.confidence === 'verified')
+      return ' <span class="tag live" style="margin-left:6px">verified</span>';
+    if (s.confidence === 'standard')
+      return ' <span class="tag pending" style="margin-left:6px">confirm on site</span>';
+    if (!s.steps || !s.steps.length)
+      return ' <span class="tag mismatch" style="margin-left:6px">not researched</span>';
+    return '';
+  }
+
   function render(){
     var q = document.getElementById('search').value.trim().toLowerCase();
     var keys = Object.keys(data.sites).sort();
@@ -146,6 +167,7 @@
       d.innerHTML =
         '<summary><span>' + esc(s.name) +
           (s.verification ? ' <span class="tag" style="margin-left:8px">' + esc(s.verification) + '</span>' : '') +
+          confTag(s) +
         '</span></summary>' +
         '<div class="body">' +
           (s.url ? '<p class="mono" style="margin-top:0">' + esc(s.url) + '</p>' : '') +
@@ -176,13 +198,14 @@
 
   function openDlg(key){
     editingKey = key;
-    var s = key ? data.sites[key] : { name:'', url:'', verification:'', steps:[], notes:'' };
+    var s = key ? data.sites[key] : { name:'', url:'', verification:'', steps:[], notes:'', confidence:'' };
     document.getElementById('dlg-title').textContent = key ? 'Edit SOP' : 'Add a site';
     document.getElementById('f-name').value = s.name || '';
     document.getElementById('f-url').value = s.url || '';
     document.getElementById('f-ver').value = s.verification || '';
     document.getElementById('f-steps').value = (s.steps || []).join('\n');
     document.getElementById('f-notes').value = s.notes || '';
+    document.getElementById('f-conf').value = s.confidence || '';
     dlg.showModal();
   }
 
@@ -195,7 +218,8 @@
       verification: document.getElementById('f-ver').value,
       steps: document.getElementById('f-steps').value.split('\n')
                .map(function(x){ return x.trim(); }).filter(Boolean),
-      notes: document.getElementById('f-notes').value.trim()
+      notes: document.getElementById('f-notes').value.trim(),
+      confidence: document.getElementById('f-conf').value
     };
     if (editingKey && editingKey !== name) delete data.sites[editingKey];
     data.sites[name] = rec;
