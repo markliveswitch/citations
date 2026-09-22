@@ -94,16 +94,16 @@
       </div>
 
       <h2>Key citations — live</h2>
-      <table><thead><tr><th style="width:22%">Site</th><th>Listing URL</th><th style="width:20%">Status</th><th style="width:9%"></th></tr></thead>
+      <table><thead><tr><th style="width:20%">Site</th><th>Listing URL</th><th style="width:16%">Status</th><th style="width:15%">Created</th><th style="width:9%"></th></tr></thead>
       <tbody id="t-key"></tbody></table>
 
       <h2>Key citations — missing</h2>
       <p id="p-missing-empty" style="margin-bottom:12px"></p>
-      <table id="t-missing-wrap"><thead><tr><th style="width:22%">Site</th><th>Listing URL</th><th style="width:20%">Status</th><th style="width:9%"></th></tr></thead>
+      <table id="t-missing-wrap"><thead><tr><th style="width:20%">Site</th><th>Listing URL</th><th style="width:16%">Status</th><th style="width:15%">Created</th><th style="width:9%"></th></tr></thead>
       <tbody id="t-missing"></tbody></table>
 
       <h2>Other citations — live</h2>
-      <table><thead><tr><th style="width:22%">Site</th><th>Listing URL</th><th style="width:20%">Status</th><th style="width:9%"></th></tr></thead>
+      <table><thead><tr><th style="width:20%">Site</th><th>Listing URL</th><th style="width:16%">Status</th><th style="width:15%">Created</th><th style="width:9%"></th></tr></thead>
       <tbody id="t-other"></tbody></table>
     </div>
   </main>
@@ -189,7 +189,8 @@
       snapshot = {}; syncInfo = {};
       res[0].forEach(function(r){
         var s = snapshot[r.client_code] || (snapshot[r.client_code] = {key_live:[], other_live:[]});
-        var rec = { name:r.site_name, domain:r.domain, url:r.listing_url, status:r.status };
+        var rec = { name:r.site_name, domain:r.domain, url:r.listing_url,
+                    status:r.status, created:r.created_on || '' };
         (r.category === 'key' ? s.key_live : s.other_live).push(rec);
       });
       Object.keys(snapshot).forEach(function(k){
@@ -222,19 +223,22 @@
       .then(function(rows){
         overrides = {};
         rows.forEach(function(r){
-          overrides[ovKey(r.client_code, r.site_name)] = { listing_url:r.listing_url, status:r.status };
+          overrides[ovKey(r.client_code, r.site_name)] =
+            { listing_url:r.listing_url, status:r.status, created_on:r.created_on };
         });
         return true;
       });
   }
 
-  function saveOverride(code, site, url, status){
+  function saveOverride(code, site, url, status, created){
     if (!hasBackend){
       alert('No backend configured — edits cannot be saved.\n\nFill in SUPABASE_URL and SUPABASE_ANON_KEY in config.js.');
       return Promise.reject();
     }
-    if (!sessionStorage.getItem(KEY_PW)){ return askPw().then(function(){ return saveOverride(code,site,url,status); }); }
-    var body = [{ client_code:code, site_name:site, listing_url:url, status:status, updated_at:new Date().toISOString() }];
+    if (!sessionStorage.getItem(KEY_PW)){ return askPw().then(function(){ return saveOverride(code,site,url,status,created); }); }
+    var body = [{ client_code:code, site_name:site, listing_url:url, status:status,
+                  created_on:(created != null ? created : null),
+                  updated_at:new Date().toISOString() }];
     return fetch(SUPABASE_URL + '/rest/v1/citation_overrides?on_conflict=client_code,site_name', {
       method:'POST',
       headers: Object.assign(headers(true), { 'Prefer':'resolution=merge-duplicates,return=minimal' }),
@@ -249,7 +253,7 @@
         try { var j = JSON.parse(t); if (j.message) msg = j.message; } catch(e){}
         throw new Error(msg);
       });
-      overrides[ovKey(code,site)] = { listing_url:url, status:status };
+      overrides[ovKey(code,site)] = { listing_url:url, status:status, created_on:created };
       render(current);
     });
   }
@@ -315,7 +319,8 @@
       if (isKey !== inKeySet) return;
       var o = overrides[k];
       if (!o.listing_url || !String(o.listing_url).trim()) return;
-      out.push({ name: site, domain: '', url: o.listing_url, status: o.status, edited: true });
+      out.push({ name: site, domain: '', url: o.listing_url, status: o.status,
+                 created: o.created_on || '', edited: true });
     });
     return out;
   }
@@ -325,7 +330,8 @@
       var o = overrides[ovKey(code, x.name)];
       return o ? { name:x.name, domain:x.domain,
                    url:(o.listing_url != null ? o.listing_url : x.url),
-                   status:(o.status != null ? o.status : x.status), edited:true }
+                   status:(o.status != null ? o.status : x.status),
+                   created:(o.created_on ? o.created_on : x.created), edited:true }
                : x;
     });
   }
@@ -375,6 +381,7 @@
         ? '<a href="'+esc(safe)+'" target="_blank" rel="noopener noreferrer">'+esc(shortUrl(safe))+'</a>'
         : (x.url ? esc(shortUrl(x.url)) : '<span style="color:var(--ink-soft)">—</span>')) + '</td>' +
       '<td>' + esc(x.status || '—') + '</td>' +
+      '<td class="mono" style="font-size:0.8rem">' + (x.created ? esc(x.created) : '<span style="color:var(--ink-soft)">—</span>') + '</td>' +
       '<td><button class="btn sm" data-edit="'+esc(tbl)+':'+idx+'">Edit</button></td>';
   }
 
@@ -385,12 +392,14 @@
       '<td><input type="text" class="e-url" value="'+esc(x.url||'')+'" placeholder="https://…"></td>' +
       '<td><select class="e-st">' + ['']. concat(STATUSES).map(function(s){
           return '<option'+(s===x.status?' selected':'')+'>'+esc(s)+'</option>'; }).join('') + '</select></td>' +
+      '<td><input type="text" class="e-dt" value="'+esc(x.created||'')+'" placeholder="e.g. 15 March 2026" style="font-size:0.8rem"></td>' +
       '<td><button class="btn sm primary e-save">Save</button></td>';
     tr.querySelector('.e-save').onclick = function(){
       var u = tr.querySelector('.e-url').value.trim();
       var s = tr.querySelector('.e-st').value;
+      var dt = tr.querySelector('.e-dt').value.trim();
       this.textContent = '…'; this.disabled = true;
-      saveOverride(code, x.name, u, s).catch(function(e){
+      saveOverride(code, x.name, u, s, dt).catch(function(e){
         alert(e && e.message ? e.message : 'Save failed.'); render(current);
       });
     };
@@ -399,7 +408,7 @@
   function fill(tbodyId, code, list, tbl){
     var tb = document.getElementById(tbodyId);
     tb.innerHTML = '';
-    if (!list.length){ tb.innerHTML = '<tr><td colspan="4" style="color:var(--ink-soft)">None recorded.</td></tr>'; return; }
+    if (!list.length){ tb.innerHTML = '<tr><td colspan="5" style="color:var(--ink-soft)">None recorded.</td></tr>'; return; }
     list.forEach(function(x, i){
       var tr = document.createElement('tr');
       tr.innerHTML = rowHtml(code, x, i, tbl);
@@ -451,7 +460,8 @@
     document.getElementById('t-missing-wrap').style.display = miss.length ? '' : 'none';
     fill('t-missing', code, miss.map(function(m){
       var o = overrides[ovKey(code, m)];
-      return { name:m, domain:'', url:'', status:(o && o.status) ? o.status : '' };
+      return { name:m, domain:'', url:'', status:(o && o.status) ? o.status : '',
+               created:(o && o.created_on) ? o.created_on : '' };
     }), 'm');
 
     document.getElementById('detail').style.display='block';
@@ -559,8 +569,9 @@
     var ov = overrides[ovKey(code, site)];
     var url = ov && ov.listing_url != null ? ov.listing_url : (rec ? rec.url : '');
     var st  = ov && ov.status != null ? ov.status : (rec ? rec.status : '');
+    var cr = ov && ov.created_on ? ov.created_on : (rec ? rec.created : '');
     document.getElementById('cit-sub').innerHTML =
-      esc(nameFor(code)) + (st ? ' · ' + esc(st) : '') +
+      esc(nameFor(code)) + (st ? ' · ' + esc(st) : '') + (cr ? ' · created ' + esc(cr) : '') +
       (url ? '<br><a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(url) + '</a>' : '');
     var perma = location.origin + location.pathname + '?c=' + encodeURIComponent(code) +
                 '&site=' + encodeURIComponent(site);
