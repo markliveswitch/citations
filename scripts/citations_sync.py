@@ -120,6 +120,35 @@ def access_token():
     return r.json()["access_token"]
 
 
+MONTHS = ["January", "February", "March", "April", "May", "June",
+          "July", "August", "September", "October", "November", "December"]
+
+
+def parse_sheet_date(v):
+    """Sheet dates are US M.D.YY strings ('3.15.26' = 15 March 2026).
+
+    Verified across 353 values in the client sheets: 187 have a second
+    component above 12 and none have a first above 12, so month-first
+    is unambiguous. Returns 'DD Month YYYY' or '' — never a guess.
+    """
+    if v is None:
+        return ""
+    s = str(v).strip()
+    if not s or s.lower() in ("nan", "none", "-"):
+        return ""
+    if "/" in s and "." in s.split("/")[0]:
+        s = s.split("/")[0].strip()       # a few cells hold two dates
+    m = re.match(r"^(\d{1,2})[./-](\d{1,2})[./-](\d{2,4})$", s)
+    if not m:
+        return ""
+    mo, day, yr = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    if not (1 <= mo <= 12) or not (1 <= day <= 31):
+        return ""
+    if yr < 100:
+        yr += 2000
+    return f"{day} {MONTHS[mo - 1]} {yr}"
+
+
 def norm_domain(v):
     if not v:
         return ""
@@ -168,6 +197,7 @@ def parse(values):
 
     c_name, c_url = col("Website Name"), col("Website URL")
     c_list, c_stat = col("Listing URL"), col("Status")
+    c_date = col("Date") or col("Date Submitted")
     if c_url is None or c_list is None:
         raise RuntimeError("missing Website URL or Listing URL column")
 
@@ -190,6 +220,7 @@ def parse(values):
             continue
         listing = str(cell(raw, c_list)).strip()
         status = str(cell(raw, c_stat)).strip()
+        created = parse_sheet_date(cell(raw, c_date)) if c_date is not None else ""
         # Match subdomains too: app.foursquare.com is Foursquare, not
         # a separate directory.
         keyname = DOMAIN_TO_KEY.get(dom)
@@ -203,14 +234,16 @@ def parse(values):
                 continue
             seen_key.add(keyname)
             rows.append({"site_name": keyname, "category": "key", "domain": dom,
-                         "listing_url": listing, "status": status})
+                         "listing_url": listing, "status": status,
+                         "created_on": created})
         else:
             if dom in seen_other:
                 continue
             seen_other.add(dom)
             nm = str(cell(raw, c_name)).strip() or dom
             rows.append({"site_name": nm, "category": "other", "domain": dom,
-                         "listing_url": listing, "status": status})
+                         "listing_url": listing, "status": status,
+                         "created_on": created})
     return rows, len(seen_key), len(seen_other)
 
 
