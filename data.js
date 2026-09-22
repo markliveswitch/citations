@@ -4,151 +4,175 @@ const CITATIONS_DATA = {
    "name": "Dental Art Clinic",
    "code": "ART",
    "key_count": 24,
-   "other_count": 58,
+   "other_count": 54,
    "key_live": [
     {
      "name": "Apple",
      "domain": "businessconnect.apple.com",
      "url": "https://maps.apple.com/place?auid=6490167748949831158",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Bing",
      "domain": "bingplaces.com",
      "url": "https://www.bing.com/local/details.aspx?lid=YN44D6CA5F71C573A0",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/dental-art-clinic_50",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/nsw/macquarie-fields/dental-art-clinic/A15012944",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/dentalart.clinic.nsw",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://business.foursquare.com/places/75eafe22cba44b0f4948b518",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://maps.google.com/maps?cid=15311104463922577460",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Health Direct",
      "domain": "healthdirect.gov.au",
      "url": "https://www.healthdirect.gov.au/australian-health-services/healthcare-service/macquarie-fields-2564-nsw/dental-art-clinic/dentists/0f1db13b-1f6f-4a56-b0a8-6a7bf6f430a2?search_method=Details+-+search+results+list",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Health Engine",
      "domain": "healthengine.com.au",
      "url": "https://healthengine.com.au/dentist/nsw/macquarie-fields/dr-daljeet-sodhi/p66409",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Health Share",
      "domain": "healthshare.com.au",
      "url": "https://www.healthshare.com.au/practices/dental-art-clinic/28373-macquarie-fields-2564/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Healthcare Link",
      "domain": "healthcarelink.com.au",
      "url": "https://www.healthcarelink.com.au/employer-profile/30935/dental-art-clinic/?show_emp_pro=28090",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Here",
      "domain": "here.com",
      "url": "https://share.here.com/p/s-Yz1EZW50aXN0JTJGRGVudGFsJTIwT2ZmaWNlO2lkPTAzNnIzZ3E5LWJlOTM5MGY4MWI0ZDRjZWM5N2FiMTUwN2Y5ZjE5YzMyO2xhdD0tMzMuOTg5Mjc7bG9uPTE1MC44ODMwNjtuPURlbnRhbCtBcnQrQ2xpbmljO3BoPSs2MTI5NjA1NTA0Mg==?z=16&t=normal",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/dental_art_clinic/macquarie_fields/AU107742577-0296055042/businessdetails.aspx",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/dental-art-clinic-macquarie-fields/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/dental-art-clinic/cmdq3kdfe000108jn3bve1l54",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "My Community Directory",
      "domain": "mycommunitydirectory.com.au",
      "url": "https://www.mycommunitydirectory.com.au/Organisation/203346/Dental_Art_Clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Nextdoor",
      "domain": "nextdoor.com",
      "url": "https://au.nextdoor.com/pages/dental-art-clinic-dr-daljeet-sodhi",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "TomTom",
      "domain": "tomtom.com",
      "url": "https://plan.tomtom.com/en/location/id/__H11UMTZ5XMBVmJTiYLjg?p=-33.9893,150.88213,16z&q=Dental%20Art%20Clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Sydney/place/p/15056941/Dental+Art+Clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "True Local",
      "domain": "truelocal.com.au",
      "url": "https://www.truelocal.com.au/nsw/macquarie-fields/dental-art-clinic-1000003001383",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/Dental-Art-Clinic-VN105937/?id_new=7ebd071f90ef716f5f4f141adc2e02e6",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/dental-art-clinic-macquarie-fields-nsw",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Yellow Pages",
      "domain": "yellowpages.com.au",
      "url": "https://www.yellowpages.com.au/nsw/macquarie-fields/dental-art-clinic-1000003001383-listing.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Yelp",
      "domain": "biz.yelp.com",
      "url": "https://www.yelp.com.au/biz/dental-art-clinic-chatswood",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     }
    ],
    "key_missing": [
@@ -168,349 +192,379 @@ const CITATIONS_DATA = {
      "name": "2 Find Local",
      "domain": "2findlocal.com",
      "url": "https://www.2findlocal.com/b/15285710/dental-art-clinic-macquarie-fields-nsw",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "a-zbusinessfinder",
      "domain": "a-zbusinessfinder.com",
      "url": "https://www.a-zbusinessfinder.com/business-directory/Dental-Art-Clinic-Macquarie-Fields-New-South-Wales-Australia/34471122/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "adlandpro",
      "domain": "adlandpro.com",
      "url": "https://australia.adlandpro.com/listing/comprehensive-dental-care-at-dental-art-clinic-in-macquarie-fields/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Around Me",
      "domain": "aroundmeapp.com",
      "url": "http://www.yext.com/partnerpages/aroundme/dental-art-clinic-macquarie-fields-nsw-au-0bfc8a",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "AussieWeb",
      "domain": "aussieweb.com.au",
      "url": "https://www.aussieweb.com.au/business/3275729",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Australian Planet",
      "domain": "australianplanet.com",
      "url": "https://www.australianplanet.com/dental-art-clinic-F110CC80713D047",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "az-australia",
      "domain": "az-australia.com",
      "url": "https://www.az-australia.com/company/dental_art_clinic_macquarie_fields_nsw_10_parliament_road",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "BirdEye",
      "domain": "getbirdeye.com.au",
      "url": "https://reviews.birdeye.com/dental-art-clinic-177735131236568",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/51205953/dental-art-clinic/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Call Up Contact",
      "domain": "callupcontact.com",
      "url": "https://www.callupcontact.com/b/businessprofile/Dental_Art_Clinic/9699689",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Cataloxy",
      "domain": "cataloxy.net",
      "url": "https://nsw-state.cataloxy.net/firms/macquarie-fields/dentalartclinic.com.au.htm",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Central Index",
      "domain": "centralindex.com",
      "url": "https://au.centralindex.com/company/ddae6950da57486ab87f33588883bae2",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Cylex",
      "domain": "cylex-australia.com",
      "url": "https://www.cylex-australia.com/company/dental-art-clinic-24709581.html",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Dentagama",
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/dental-art-clinic1",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Enroll Business",
      "domain": "enrollbusiness.com",
      "url": "https://au.enrollbusiness.com/BusinessProfile/7438438/Dental-Art-Clinic-Macquarie-Fields-NSW-2564/Home",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Find Open",
      "domain": "find-open.com",
      "url": "https://find-open.biz/macquarie-fields/dental-art-clinic-1027860",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Find Postcode",
      "domain": "findpostcode.com.au",
      "url": "https://findpostcode.com.au/local-listings/nsw/macquarie-fields/dental-art-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Find Us Here",
      "domain": "find-us-here.com",
      "url": "https://www.find-us-here.com/businesses/Dental-Art-Clinic-Macquarie-Fields-New-South-Wales-Australia/34305166/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "freelistingaustralia",
      "domain": "freelistingaustralia.com",
      "url": "https://www.freelistingaustralia.com/listings/dental-art-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "HotFrog",
      "domain": "hotfrog.com.au",
      "url": "https://www.hotfrog.com.au/company/1072256773607424",
-     "status": "Complete"
-    },
-    {
-     "name": "hotfrog.com.au",
-     "domain": "hotfrog.com.au",
-     "url": "https://www.hotfrog.com.au/company/3a58e5fb2db9ec82a148ccad6d676764/dental-art-clinic/macquarie-fields/dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "I Global",
      "domain": "iglobal.co",
      "url": "https://www.iglobal.co/australia/macquarie-fields/dental-art-clinic",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Infols Info",
      "domain": "liverpool.infoisinfo-au.com",
      "url": "https://liverpool.infoisinfo-au.com/card/dental-art-clinic/1525753",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "linkcentre",
      "domain": "linkcentre.com",
      "url": "https://www.linkcentre.com/profile/dentalartclinicau/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "macquarie-fields-nsw.place-advisor.com",
      "domain": "macquarie-fields-nsw.place-advisor.com",
      "url": "https://macquarie-fields-nsw.place-advisor.com/dental-art-clinic-dr-dal-sodhi/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "MapQuest",
      "domain": "mapquest.com",
      "url": "https://www.mapquest.com/au/new-south-wales/dental-art-clinic-795240705",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Mister What",
      "domain": "misterwhat-au.com",
      "url": "https://www.misterwhat-au.com/preview/hUD6819Yj2A",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "NaviMii",
      "domain": "navmii.com",
      "url": "http://www.yext.com/partnerpages/navmii/dental-art-clinic-macquarie-fields-nsw-au-0bfc8a",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "nearfinderau",
      "domain": "nearfinderau.com",
      "url": "https://nearfinderau.com/en/business/nsw/macquarie-fields/category_dentist/dental-art-clinic_2571691+2.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "NextBizMaker",
      "domain": "nextbizmaker.com",
      "url": "https://www.nextbizmaker.com/australia/macquarie-fields/healthcare-pharmaceuticals-biotech/dental-art-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "nextbizthing",
      "domain": "nextbizthing.com",
      "url": "https://www.nextbizthing.com/australia/macquarie-fields/health-20-medicine/dental-art-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Open Di",
      "domain": "opendi.com.au",
      "url": "https://www.opendi.com.au/macquarie-fields/789756.html",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Pink Pages",
      "domain": "pinkpages.com.au",
      "url": "https://pinkpages.com.au/businesses/dental-art-clinic-7423114",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Place123",
      "domain": "place123.net",
      "url": "http://www.place123.net/place/dental-art-clinic-macquarie-fields-nsw-australia",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Poter",
      "domain": "poter.com.au",
      "url": "https://www.poter.com.au/store/preview/1029151",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "reviews.birdeye.com",
      "domain": "reviews.birdeye.com",
      "url": "https://reviews.birdeye.com/dr-daljeet-sodhi-171220688023510?update=1",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Seekfind",
      "domain": "seekfind.com.au",
      "url": "https://www.seekfind.com.au/businesses/medical/dentists/dental-art-clinic",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Show Me Local",
      "domain": "showmelocal.com",
      "url": "https://au.showmelocal.com/35544681-dental-art-clinic-macquarie-fields",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Snapchat",
      "domain": "snapchat.com",
      "url": "https://www.snapchat.com/place/dental-art-clinic/d64e2884-6bec-11ed-9805-1b4574c631a5",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "StoreBoard",
      "domain": "storeboard.com",
      "url": "https://www.storeboard.com/dentalartclinic1",
-     "status": "Complete"
-    },
-    {
-     "name": "storeboard",
-     "domain": "storeboard.com",
-     "url": "https://www.storeboard.com/dentalartclinic1",
-     "status": "Complete"
-    },
-    {
-     "name": "SuperPages",
-     "domain": "superpages.com.au",
-     "url": "https://www.superpages.com.au/company/1072256773607424  - Duplicate SS: before: https://prnt.sc/7VH0TSBzoPss, after: https://prnt.sc/P67EayrUMrKA\nhttps://www.superpages.com.au/company/1072256773607424/dental-art-clinic/macquarie-fields/dentists - Retain listing.",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "superpages.com.au",
      "domain": "superpages.com.au",
      "url": "https://www.superpages.com.au/company/1072256773607424/dental-art-clinic/macquarie-fields/dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "supplyautonomy",
      "domain": "supplyautonomy.com",
      "url": "https://supplyautonomy.com/dentalartclinic.au",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Tellows",
      "domain": "tellows.com",
      "url": "https://www.tellows-au.com/num/0296055042/c/7103878",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Top4",
      "domain": "top4.com.au",
      "url": "https://www.top4.com.au/business/dental-art-clinic-622577",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "TripAdvisor",
      "domain": "tripadvisor.com",
      "url": "https://www.tripadvisor.com/Profile/dentalartclinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "True Finders",
      "domain": "truefinders.com.au",
      "url": "https://truefinders.com.au/business/dentalartclinic.com.au",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "trueen",
      "domain": "trueen.com",
      "url": "https://trueen.com/business/listing/dental-art-clinic/717852",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Tupalo",
      "domain": "tupalo.com",
      "url": "https://www.tupalo.net/en/macquarie-fields-new-south-wales/dental-art-clinic",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Waze",
      "domain": "waze.com",
      "url": "https://www.waze.com/?from=place.ChIJWbmjHkDrEmsRNMAAY2P4e9Q",
-     "status": "Existing OK"
-    },
-    {
-     "name": "waze.com",
-     "domain": "waze.com",
-     "url": "https://www.waze.com/?from=place.ChIJWbmjHkDrEmsRNMAAY2P4e9Q",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Whats Your Hours",
      "domain": "whatsyourhours.com",
      "url": "https://www.whatsyourhours.com/aus/macquarie-fields/dentists-1/dental-art-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Where To",
      "domain": "wheretoapp.com",
      "url": "https://wheretoapp.com/search?poi=15311104463922577460",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Whitecoat",
      "domain": "whitecoat.com.au",
      "url": "https://www.whitecoat.com.au/directory/practitioner/dentist/nsw/macquarie-fields/sodhi/574302/901",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "zeemaps",
      "domain": "zeemaps.com",
      "url": "https://www.zeemaps.com/map?group=7008950",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Zenbu",
      "domain": "zenbu.org",
      "url": "https://au.zenbu.org/entry/1360757-dental-art-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Zip Leaf",
      "domain": "zipleaf.com",
      "url": "https://au.zipleaf.com/Companies/Dental-Art-Clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     }
    ],
    "gbp_status": "ok",
@@ -529,121 +583,141 @@ const CITATIONS_DATA = {
      "name": "Apple",
      "domain": "apple.com",
      "url": "https://maps.apple.com/place?auid=2975726677299771999",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Bing",
      "domain": "bingplaces.com",
      "url": "https://www.bing.com/maps?ss=ypid.YN3724x5305156170734456806&amp%3Bamp%3Bmkt=en-AU&cp=-33.941829%7E151.101644&lvl=16.0",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/advanced-dental-practice",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/nsw/kingsgrove/advanced-dental-practice/A23018924",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/advdental.kingsgrove",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://foursquare.com/v/advanced-dental-practice/66798b681f9f0d009357fd27",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://maps.app.goo.gl/rR3dwXGoGUKfFSuh7",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Health Engine",
      "domain": "healthengine.com.au",
      "url": "https://listyourpractice.healthengine.com.au/list-your-practice-confirmation-dental/",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "Health Share",
      "domain": "healthshare.com.au",
      "url": "https://www.healthshare.com.au/practices/advanced-dental-practice/38099-kingsgrove-2208/#overview",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Healthcare Link",
      "domain": "healthcarelink.com.au",
      "url": "https://www.healthcarelink.com.au/professionals-profile/mohamad/104244",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Here",
      "domain": "here.com",
      "url": "https://mapcreator.here.com/dashboard/?l=-33.9418,151.1016,18,normal",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/advdental/about/",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/advanced-dental-practice-pty-ltd/clbvonzrg000g08mga9rddllr",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "My Community Directory",
      "domain": "mycommunitydirectory.com.au",
      "url": "https://www.mycommunitydirectory.com.au/New_South_Wales/Rockdale/Health_Services/Dental___Oral_Health/103196/229783/Advanced_Dental_Practice",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Sydney/place/p/12782195/Advanced+Dental+Practice",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "True Local",
      "domain": "truelocal.com.au",
      "url": "https://www.truelocal.com.au/business/advanced-dental-practice/kingsgrove",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/Advanced-Dental-Practice-281981/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/advanced-dental-practice",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Yellow Pages",
      "domain": "yellowpages.com.au",
      "url": "https://www.yellowpages.com.au/nsw/kingsgrove/advanced-dental-practice-1000002823431-listing.html",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Yelp",
      "domain": "biz.yelp.com",
      "url": "https://www.yelp.com/biz/advanced-dental-practice-kingsgrove",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     }
    ],
    "key_missing": [
@@ -667,223 +741,260 @@ const CITATIONS_DATA = {
      "name": "2 Find Local",
      "domain": "2findlocal.com",
      "url": "https://www.2findlocal.com/b/14864303/advanced-dental-practice-kingsgrove-nsw",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Around Me",
      "domain": "aroundmeapp.com",
      "url": "https://www.yext.com/partnerpages/aroundme/advanced-dental-practice-kingsgrove-kingsgrove-nsw-au-7f77f6",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "AussieWeb",
      "domain": "aussieweb.com.au",
      "url": "https://www.aussieweb.com.au/business/advanced+dental+practice/3280640",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Australian Planet",
      "domain": "australianplanet.com",
      "url": "https://www.australianplanet.com/advanced-dental-practice-F110CC50718D44D",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/51501976/advanced-dental-practice/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Business Wiki",
      "domain": "businesswiki.com.au",
      "url": "https://www.businesswiki.com.au/listing/advance-dental-practice/kingsgrove-nsw",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Call Up Contact",
      "domain": "callupcontact.com",
      "url": "https://www.callupcontact.com/b/businessprofile/Advanced_Dental_Practice/9158580",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Central Index",
      "domain": "centralindex.com",
      "url": "https://au.centralindex.com/company/aa2c58c1cba64d2fa50a8d650a4613a2/advanced-dental-practice-kingsgrove/kingsgrove",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Cylex",
      "domain": "cylex-australia.com",
      "url": "https://www.cylex-australia.com/company/advanced-dental-practice-24818602.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Dentagama",
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/advanced-dental-practice1",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "dLook",
      "domain": "dlook.com.au",
      "url": "https://www.dlook.com.au/business/dental-clinic-in-kingsgrove-nsw-2208/advanced-dental-practice",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Enroll Business",
      "domain": "enrollbusiness.com",
      "url": "https://au.enrollbusiness.com/BusinessProfile/6172293/Advanced-Dental-Practice-Kingsgrove-NSW-2208/Home",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Find Us Here",
      "domain": "find-us-here.com",
      "url": "https://www.find-us-here.com/businesses/Advanced-Dental-Practice-Kingsgrove-New-South-Wales-Australia/34101661/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Fyple",
      "domain": "fyple.biz",
      "url": "https://www.fyple.biz/company/advanced-dental-practice-9nzr1eu/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "HotFrog",
      "domain": "hotfrog.com.au",
      "url": "https://www.hotfrog.com.au/company/07bc421839377cc45035389fd67e0798/advanced-dental-practice/kingsgrove/dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "I Global",
      "domain": "iglobal.co",
      "url": "https://www.iglobal.co/australia/kingsgrove/advanced-dental-practice",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Infols Info",
      "domain": "cannot find",
      "url": "https://hurstville.infoisinfo-au.com/card/advanced-dental-practice/1540969",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Instagram",
      "domain": "instagram.com",
      "url": "https://www.instagram.com/explore/locations/106127452298832/",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Local Business Guide",
      "domain": "localbusinessguide.com.au",
      "url": "https://www.localbusinessguide.com.au/business/advanced-dental-practice-1advanced-dental-practice-2/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "MapQuest",
      "domain": "mapquest.com",
      "url": "https://www.mapquest.com/au/new-south-wales/advanced-dental-practice-kingsgrove-708092045",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Mister What",
      "domain": "misterwhat-au.com",
      "url": "https://www.misterwhat-au.com/preview/PsA64y8sPXA",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "NaviMii",
      "domain": "navmii.com",
      "url": "https://www.yext.com/partnerpages/navmii/advanced-dental-practice-kingsgrove-kingsgrove-nsw-au-7f77f6",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Open Di",
      "domain": "opendi.com.au",
      "url": "https://www.opendi.com.au/kingsgrove/807605.html",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Pink Pages",
      "domain": "pinkpages.com.au",
      "url": "https://pinkpages.com.au/businesses/advanced-dental-practice-kingsgrove-2-11434288",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Show Me Local",
      "domain": "showmelocal.com",
      "url": "https://au.showmelocal.com/35888067-advanced-dental-practice-kingsgrove",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "StoreBoard",
      "domain": "storeboard.com",
      "url": "https://www.storeboard.com/advanceddentalpractice",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "SuperPages",
      "domain": "superpages.com.au",
      "url": "https://www.superpages.com.au/company/07bc421839377cc45035389fd67e0798/advanced-dental-practice/kingsgrove/dentists",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "SVC Lookup",
      "domain": "svclookup.com.au",
      "url": "https://svclookup.com.au/business/Advanced-Dental-Practice-in-Kingsgrove-NSW",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Tellows",
      "domain": "tellows.com",
      "url": "https://www.tellows-au.com/num/0291509029",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Top4",
      "domain": "top4.com.au",
      "url": "https://www.top4.com.au/business/advanced-dental-practice-232759",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Whats Your Hours",
      "domain": "whatsyourhours.com",
      "url": "https://www.brownbook.net/business/51501976/advanced-dental-practice/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Where To",
      "domain": "whereto.com",
      "url": "https://wheretoapp.com/search?poi=17273227027197760526",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Whereis",
      "domain": "whereis.com",
      "url": "https://www.whereis.com/nsw/kingsgrove-2208/yellowId-1000002823431",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Who Do You",
      "domain": "whodoyou.com",
      "url": "https://www.whodoyou.com/biz/2200058/advanced-dental-practice-new-south-wales-au",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Yalwa",
      "domain": "yalwa.com.au",
      "url": "https://nsw.yalwa.com.au/ID_140834043/Advanced-Dental-Practice.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Zenbu",
      "domain": "zenbu.org",
      "url": "https://au.zenbu.org/entry/1325843-advanced-dental-practice",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Zip Leaf",
      "domain": "zipleaf.com",
      "url": "https://au.zipleaf.com/Companies/Advanced-Dental-Practice",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     }
    ],
    "gbp_status": "ok",
@@ -902,25 +1013,29 @@ const CITATIONS_DATA = {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/albany-place-dental-practice/cmtsndlaj002d02ibawvhfcvo",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "Nextdoor",
      "domain": "nextdoor.com",
      "url": "https://au.nextdoor.com/page/albany-place-dental-practice-albany-creek-qld",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Albany+Creek/place/p/20059404/Albany+Place+Dental+Practice",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/albany-place-dental-practice-vn174165/?id_new=ce99993b17c1a631203eb415196b83a4",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     }
    ],
    "key_missing": [
@@ -960,19 +1075,22 @@ const CITATIONS_DATA = {
      "name": "au.zenbu.org",
      "domain": "au.zenbu.org",
      "url": "https://au.zenbu.org/entries/1371027-albany-place-dental-practice",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "blinx.biz",
      "domain": "blinx.biz",
      "url": "https://www.blinx.biz/albany-place-dental-practice",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "brownbook.net",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/55485162/albany-place-dental-practice",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     }
    ],
    "gbp_status": "missing",
@@ -991,67 +1109,78 @@ const CITATIONS_DATA = {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/altona-meadows-dental-clinic_3S",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/profile.php?id=61589840525734",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://business.foursquare.com/places/4ca56678f47ea143ef1d5721",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://sites.google.com/view/altonameadowsdentalclinic/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/altona_meadows_dental_clinic/altona_meadows/AU100983231-0393692382/businessdetails.aspx",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/albany-place-dental-practice/cmtsndlaj002d02ibawvhfcvo",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "My Community Directory",
      "domain": "mycommunitydirectory.com.au",
      "url": "https://www.mycommunitydirectory.com.au/Victoria/Hobsons_Bay/Health_Services/Dental___Oral_Health/128661/249689/Altona_Meadows_Dental_Clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Nextdoor",
      "domain": "nextdoor.com",
      "url": "https://au.nextdoor.com/page/altona-meadows-dental-clinic-altona-meadows-vic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Melbourne/place/p/20059410/Altona+Meadows+Dental+Clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/altona-meadows-dental-clinic-vn174190/?id_new=5c42f2731880308b4a239d7cc5373eb6",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/altona-meadows-dental-clinic",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     }
    ],
    "key_missing": [
@@ -1084,25 +1213,29 @@ const CITATIONS_DATA = {
      "name": "blinx.biz",
      "domain": "blinx.biz",
      "url": "https://www.blinx.biz/altona-meadows-dental-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "brownbook.net",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/55485755/altona-meadows-dental-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "infoisinfo-au.com",
      "domain": "infoisinfo-au.com",
      "url": "https://hobsons-bay.infoisinfo-au.com/card/altona-meadows-dental-clinic/1595736",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "localstar.org",
      "domain": "localstar.org",
      "url": "https://www.localstar.org/altona-meadows-dental-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     }
    ],
    "gbp_status": "not_gbp",
@@ -1121,109 +1254,127 @@ const CITATIONS_DATA = {
      "name": "Apple",
      "domain": "businessconnect.apple.com",
      "url": "https://maps.apple.com/place?place-id=I68B4EAA4F0816B2F",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Bing",
      "domain": "bingplaces.com",
      "url": "https://www.bing.com/local/details.aspx?lid=YN219A1C2B42202FF2",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/arc-orthodontics-specialists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/nsw/burwood/arc-orthodontic-specialists/A26020268",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "13 March 2026"
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/people/Arc-Orthodontic-Specialists/61558499139541/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://business.foursquare.com/places/674ff1bbcc7698710d65cf13",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "13 March 2026"
     },
     {
      "name": "Health Share",
      "domain": "healthshare.com.au",
      "url": "https://www.healthshare.com.au/practices/arc-orthodontic-specialists/51185-burwood-2134/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "13 March 2026"
     },
     {
      "name": "Healthcare Link",
      "domain": "healthcarelink.com.au",
      "url": "https://www.healthcarelink.com.au/cpd/provider-profile/2829/arc-orthodontic-specialists/?show_emp_pro=2643",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "Here",
      "domain": "here.com",
      "url": "https://share.here.com/p/s-Yz1EZW50aXN0JTJGRGVudGFsJTIwT2ZmaWNlO2lkPTAzNnIzZ3JxLTI0MzVmNzI3OTJjZjI0Yzk2YmRhMzUzZmRlYWUwYzQ1O2xhdD0tMzMuODc4MTg7bG9uPTE1MS4xMDQxMjtuPUFyYytPcnRob2RvbnRpYytTcGVjaWFsaXN0cztwaD0rNjEyODA3Mjc5ODE=?z=16&t=normal",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "13 March 2026"
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/arc_orthodontic_specialists/burwood/AU106960212-0280727981/businessdetails.aspx",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/arc-orthodontic-specialists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "13 March 2026"
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/arc-orthodontic-specialists/cmmrr9rhu000202l56mvk53zm",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "29 April 2026"
     },
     {
      "name": "TomTom",
      "domain": "tomtom.com",
      "url": "https://plan.tomtom.com/en/location/id/r_IYwp2vnhtiR_5S7aDE8g?p=-33.87818,151.10315,16z&q=Arc%20Orthodontic%20Specialists",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Sydney/place/p/17252981/Arc+Orthodontic+Specialists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "True Local",
      "domain": "truelocal.com.au",
      "url": "https://www.truelocal.com.au/burwood-nsw/tlp/arc-orthodontic-specialists-581735329",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/Arc-Orthodontic-Specialists-VN137084/?id_new=0b88a2213c55ca1db1b9c8d2e962c218",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/arc-orthodontic-specialists",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "Yellow Pages",
      "domain": "yellowpages.com.au",
      "url": "https://www.yellowpages.com.au/burwood-nsw/bpp/arc-orthodontic-specialists-581735329",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     }
    ],
    "key_missing": [
@@ -1249,223 +1400,260 @@ const CITATIONS_DATA = {
      "name": "2 Find Local",
      "domain": "2findlocal.com",
      "url": "https://www.2findlocal.com/b/15285732/arc-orthodontics-specialists-burwood-nsw",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "4shared.com",
      "domain": "4shared.com",
      "url": "https://www.4shared.com/u/TR3tzmnV/arc.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "a-zbusinessfinder.com",
      "domain": "a-zbusinessfinder.com",
      "url": "https://www.a-zbusinessfinder.com/business-directory/Arc-Orthodontics-Specialists-Burwood-New-South-Wales-Australia/34386976/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "anibookmark.com",
      "domain": "anibookmark.com",
      "url": "https://www.anibookmark.com/business/arc-orthodontic-specialists-bs459295.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "app.simplenote.com",
      "domain": "app.simplenote.com",
      "url": "https://app.simplenote.com/p/1lYLCK",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "Australian Planet",
      "domain": "australianplanet.com",
      "url": "https://www.australianplanet.com/arc-orthodontic-specialists-F110CC80F1CD841",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "13 March 2026"
     },
     {
      "name": "BirdEye",
      "domain": "getbirdeye.com.au",
      "url": "https://reviews.birdeye.com/arc-orthodontic-specialists-171592988562826",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "13 March 2026"
     },
     {
      "name": "Brave",
      "domain": "brave.com",
      "url": "https://search.brave.com/search?q=Arc+Orthodontic+Specialists&summary=1&conversation=08d7c40343addd3e2a6b8e09769cba808760&view=full&map_src=i&loc_id=loc44OARFMDH6BAMAX2PQWEVBY3CICEW3FVMAAAAAAA%3D&bbox=150.466%2C-34.139%2C151.741%2C-33.617",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/54908762/arc-orthodontic-specialists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "13 March 2026"
     },
     {
      "name": "Call Up Contact",
      "domain": "callupcontact.com",
      "url": "https://www.callupcontact.com/b/businessprofile/Arc_Orthodontic_Specialists/9852765",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Central Index",
      "domain": "centralindex.com",
      "url": "https://au.centralindex.com/company/521fa83e5a44a15c5b2ebb06c1ecf5ed/arc-orthodontic-specialists/burwood",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Cylex",
      "domain": "cylex-australia.com",
      "url": "https://www.cylex-australia.com/company/arc-orthodontic-specialists-25178928.html",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Dentagama",
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/arc-orthodontic-specialists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "Enroll Business",
      "domain": "enrollbusiness.com",
      "url": "https://au.enrollbusiness.com/BusinessProfile/7742635/Arc-Orthodontic-Specialists-Burwood-NSW-2134",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "Find Open",
      "domain": "find-open.com",
      "url": "https://find-open.biz/burwood-new-south-wales/arc-orthodontic-specialists-1386562",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Find Us Here",
      "domain": "find-us-here.com",
      "url": "https://www.find-us-here.com/businesses/Arc-Orthodontics-Specialists-Burwood-New-South-Wales-Australia/34386976/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "HotFrog",
      "domain": "hotfrog.com.au",
      "url": "https://www.hotfrog.com.au/company/66fd76aba195865948b99d421b311f5f/arc-orthodontic-specialists/burwood/dental-care",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Infols Info",
      "domain": "cannot find",
      "url": "https://burwood.infoisinfo-au.com/card/arc-orthodontic-specialists/1583986",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "13 March 2026"
     },
     {
      "name": "Local Business Guide",
      "domain": "localbusinessguide.com.au",
      "url": "https://www.localbusinessguide.com.au/business/arc-orthodontic-specialists/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "Mister What",
      "domain": "misterwhat-au.com",
      "url": "https://www.misterwhat-au.com/preview/100616",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "Open Di",
      "domain": "opendi.com.au",
      "url": "https://www.opendi.com.au/burwood/850124.html",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Pink Pages",
      "domain": "pinkpages.com.au",
      "url": "https://pinkpages.com.au/businesses/arc-orthodontic-specialists-11457487",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "Poter",
      "domain": "poter.com.au",
      "url": "https://www.poter.com.au/store/preview/1029170",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "Show Me Local",
      "domain": "showmelocal.com",
      "url": "https://au.showmelocal.com/39219154-arc-orthodontic-specialists-burwood",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "Snapchat",
      "domain": "snapchat.com",
      "url": "https://www.snapchat.com/place/arc-orthodontic-specialists/c1c97a70-aa83-11f0-86fa-ebbcec869aa7",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "StoreBoard",
      "domain": "storeboard.com",
      "url": "https://www.storeboard.com/arcorthodontic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "SuperPages",
      "domain": "superpages.com.au",
      "url": "https://www.superpages.com.au/company/66fd76aba195865948b99d421b311f5f/arc-orthodontic-specialists/burwood/dental-care",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Tellows",
      "domain": "tellows.com",
      "url": "https://www.tellows-au.com/num/0280727981",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Top4",
      "domain": "top4.com.au",
      "url": "https://www.top4.com.au/business/arc-orthodontic-specialists-625313",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "True Finders",
      "domain": "truefinders.com.au",
      "url": "https://truefinders.com.au/business/arcorthodonticspecialists.com.au",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "Tupalo",
      "domain": "tupalo.com",
      "url": "https://www.tupalo.net/en/burwood-new-south-wales/arc-orthodontic-specialists?pk_vid=761ad1e79b560beb177358399387756d",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Waze",
      "domain": "waze.com",
      "url": "https://ul.waze.com/ul?place=ChIJrzoOvfG7EmsR__xOCJVSW2s&ll=-33.87816430%2C151.10358120&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Whitecoat",
      "domain": "whitecoat.com.au",
      "url": "https://www.whitecoat.com.au/directory/practitioner/orthodontist/nsw/burwood/lam/1337936/963",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "x.com",
      "domain": "x.com",
      "url": "https://x.com/arcorthodontic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     },
     {
      "name": "Yandex",
      "domain": "yandex.com",
      "url": "https://yandex.com/maps/org/arc_orthodontic_specialists/43509929604/?ll=150.932800%2C-33.815778&z=10",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Zenbu",
      "domain": "zenbu.org",
      "url": "https://au.zenbu.org/entry/1360798-arc-orthodontic-specialists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Zip Leaf",
      "domain": "zipleaf.com",
      "url": "https://au.zipleaf.com/Companies/Arc-Orthodontic-Specialists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "15 March 2026"
     }
    ],
    "gbp_status": "missing",
@@ -1484,103 +1672,120 @@ const CITATIONS_DATA = {
      "name": "Apple",
      "domain": "businessconnect.apple.com",
      "url": "https://maps.apple.com/place?auid=12008641325702360293",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Bing",
      "domain": "bingplaces.com",
      "url": "https://www.bing.com/search?mkt=en-US&pq=Balmain+Dentist+16a+Beattie+Street&q=Balmain+Dentist+16a+Beattie+Street",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/nsw/balmain/balmain-dentist/A11004242",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/p/Balmain-Dentist-61565398162232/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://foursquare.com/v/59e4762f1213841382c8488d",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Health Direct",
      "domain": "healthdirect.gov.au",
      "url": "https://www.healthdirect.gov.au/australian-health-services/healthcare-service/balmain-2041-nsw/balmain-dentist/dental-hygiene-service/fd8d7267-64f1-48f4-bbc8-8fe3eafd8b82",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Health Engine",
      "domain": "healthengine.com.au",
      "url": "https://healthengine.com.au/dentist/nsw/balmain/balmain-dentist/s36624\n\nhttps://healthengine.com.au/dentist/nsw/balmain/dr-huy-nguyen/p123224",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Health Share",
      "domain": "healthshare.com.au",
      "url": "https://www.healthshare.com.au/profile/professional/477314-dr-mark-teoh/",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/balmain_dentist/balmain/AU107669549-0295557959/businessdetails.aspx",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://au.linkedin.com/in/balmain-dentist",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/balmain-dentist/clgqg7bo7000808l70yan2nac",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "My Community Directory",
      "domain": "mycommunitydirectory.com.au",
      "url": "https://www.mycommunitydirectory.com.au/Outlet/230549/Balmain_Dentist_\n\nhttps://www.mycommunitydirectory.com.au/New_South_Wales/Inner_West/Health_Services/Dental___Oral_Health/106239/230549/Balmain_Dentist_",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Sydney/place/p/17334839/Balmain+Dentist",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "True Local",
      "domain": "truelocal.com.au",
      "url": "https://www.truelocal.com.au/business/balmain-dentist-best-dentist-near-me/balmain",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/balmain-dentist-dr-flora-galoustian",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Yellow Pages",
      "domain": "yellowpages.com.au",
      "url": "https://www.yellowpages.com.au/nsw/balmain/dr-flora-galoustian-14699807-listing.html/?referredBy=www.whereis.com",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Yelp",
      "domain": "biz.yelp.com",
      "url": "https://www.yelp.com/biz/balmain-dentist-dr-flora-galoustian-balmain\n\nhttps://www.yelp.com/biz/balmain-dentists-balmain",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     }
    ],
    "key_missing": [
@@ -1607,109 +1812,127 @@ const CITATIONS_DATA = {
      "name": "2 Find Local",
      "domain": "2findlocal.com",
      "url": "https://www.2findlocal.com/b/15285817/balmain-dentist-balmain-nsw",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "AussieWeb",
      "domain": "aussieweb.com.au",
      "url": "https://www.aussieweb.com.au/business/1125412",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Australian Planet",
      "domain": "australianplanet.com",
      "url": "https://www.australianplanet.com/balmain-dentist-F1209C40512D74D",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "BirdEye",
      "domain": "getbirdeye.com.au",
      "url": "https://getbirdeye.com.au/balmain-dentist-172365200990353",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/51643557/",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Dentagama",
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/balmain-dentist",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Enroll Business",
      "domain": "enrollbusiness.com",
      "url": "https://au.enrollbusiness.com/BusinessProfile/3320848/Balmain-Dentist-Dr-Flora-Galoustian-Balmain-NSW-2041",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Fyple",
      "domain": "fyple.biz",
      "url": "https://www.fyple.biz/company/balmain-dentist-dr-flora-galoustian-9sjjxu3/",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "HotFrog",
      "domain": "hotfrog.com.au",
      "url": "https://www.hotfrog.com.au/company/1072178011983872/balmain-dentist/balmain/dental-care",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Local Business Guide",
      "domain": "localbusinessguide.com.au",
      "url": "https://www.localbusinessguide.com.au/business/balmain-dentist-dr-flora-galoustian/",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Local Store",
      "domain": "localstore.com.au",
      "url": "https://www.storeboard.com/balmaindentist3",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Poter",
      "domain": "poter.com.au",
      "url": "https://www.poter.com.au/store/preview/1029216",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Show Me Local",
      "domain": "showmelocal.com",
      "url": "https://au.showmelocal.com/profile.aspx?bid=17393234",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "StoreBoard",
      "domain": "storeboard.com",
      "url": "https://www.storeboard.com/balmaindentist3",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "SuperPages",
      "domain": "superpages.com.au",
      "url": "https://www.superpages.com.au/company/adf776a40402e659821822de0f1e5033",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Tupalo",
      "domain": "tupalo.com",
      "url": "https://www.tupalo.net/en/balmain-new-south-wales/balmain-dentist",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Whitecoat",
      "domain": "whitecoat.com.au",
      "url": "https://www.whitecoat.com.au/directory/practitioner/dentist/nsw/balmain/nguyen/1270892/901",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Zenbu",
      "domain": "zenbu.org",
      "url": "https://au.zenbu.org/entry/1360805-balmain-dentist",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     }
    ],
    "gbp_status": "missing",
@@ -1728,61 +1951,71 @@ const CITATIONS_DATA = {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/balanced-smiles-dental-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/people/Balanced-Smiles/61568357406952/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://app.foursquare.com/v/balanced-smiles-dental-clinic/6a2c009afbd73b122ce85bb3",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://sites.google.com/view/balanced-smiles-dental-clinic/home",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 June 2026"
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "infobel.com/en/australia/balanced_smiles_dental_clinic/rowville/AU108782694-0370745186/businessdetails.aspx",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/balanced-smiles-dental-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/balanced-smiles-dental-clinic/cmqb14lkn000702kzds039hvs",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "My Community Directory",
      "domain": "mycommunitydirectory.com.au",
      "url": "https://www.mycommunitydirectory.com.au/Victoria/Knox/Health_Services/Dental___Oral_Health/127157/248545/Balanced_Smiles_Dental_Clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "18 June 2026"
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Melbourne/place/p/14725599/Balanced+Smiles+Dental+Clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/balanced-smiles-dental-clinic-vn158750/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     }
    ],
    "key_missing": [
@@ -1816,163 +2049,190 @@ const CITATIONS_DATA = {
      "name": "2 Find Local",
      "domain": "2findlocal.com",
      "url": "https://www.2findlocal.com/b/15314341/balanced-smiles-dental-clinic-rowville-vic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "Acompio Australia",
      "domain": "australia.acompio.com",
      "url": "https://australia.acompio.com/Balanced-Smiles-Dental-Clinic-47727750.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "Australian Planet",
      "domain": "australianplanet.com",
      "url": "https://www.australianplanet.com/balanced-smiles-dental-clinic-F110BC10218D946",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "18 June 2026"
     },
     {
      "name": "BirdEye",
      "domain": "getbirdeye.com.au",
      "url": "https://reviews.birdeye.com/balanced-smiles-dental-clinic-178126033569537",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/55200004/balanced-smiles-dental-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "Call Up Contact",
      "domain": "callupcontact.com",
      "url": "https://www.callupcontact.com/b/businessprofile/Balanced_Smiles_Dental_Clinic/10124526",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Dentagama",
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/balanced-smiles-dental-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "18 June 2026"
     },
     {
      "name": "Enroll Business",
      "domain": "enrollbusiness.com",
      "url": "https://au.enrollbusiness.com/BusinessProfile/7840501/Balanced-Smiles-Dental-Clinic-Rowville-VIC-3178",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "Find Postcode",
      "domain": "findpostcode.com.au",
      "url": "https://findpostcode.com.au/local-listings/vic/rowville/balanced-smiles-dental-clinic",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": "12 June 2026"
     },
     {
      "name": "Find Us Here",
      "domain": "find-us-here.com",
      "url": "https://www.find-us-here.com/businesses/Balanced-Smiles-Dental-Clinic-Rowville-Victoria-Australia/34534744/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "HotFrog",
      "domain": "hotfrog.com.au",
      "url": "https://www.hotfrog.com.au/company/d67acb2b83139a8c2cc5b11f5586755a/balanced-smiles-dental-clinic/rowville/dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "18 June 2026"
     },
     {
      "name": "Infols Info",
      "domain": "cannot find",
      "url": "https://knox.infoisinfo-au.com/card/balanced-smiles-dental-clinic/1589046",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "Local Business Guide",
      "domain": "localbusinessguide.com.au",
      "url": "https://www.localbusinessguide.com.au/business/balanced-smiles-dental-clinic/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "Pink Pages",
      "domain": "pinkpages.com.au",
      "url": "https://pinkpages.com.au/businesses/balanced-smiles-dental-clinic-rowville-11494236",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "Poter",
      "domain": "poter.com.au",
      "url": "https://www.poter.com.au/store/preview/1029203",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "18 June 2026"
     },
     {
      "name": "Seekfind",
      "domain": "seekfind.com.au",
      "url": "https://www.seekfind.com.au/business/medical-dentists-balanced-smiles-dental-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "Show Me Local",
      "domain": "showmelocal.com",
      "url": "https://au.showmelocal.com/40025348-balanced-smiles-dental-clinic-rowville",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "StoreBoard",
      "domain": "storeboard.com",
      "url": "https://www.storeboard.com/balancedsmilesdentalclinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "SuperPages",
      "domain": "superpages.com.au",
      "url": "https://www.superpages.com.au/company/d67acb2b83139a8c2cc5b11f5586755a/balanced-smiles-dental-clinic/rowville/dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "18 June 2026"
     },
     {
      "name": "Tellows",
      "domain": "tellows.com",
      "url": "https://www.tellows-au.com/num/0370745186",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "18 June 2026"
     },
     {
      "name": "Top4",
      "domain": "top4.com.au",
      "url": "https://www.top4.com.au/business/balanced-smiles-dental-clinic-627585",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "TripAdvisor",
      "domain": "tripadvisor.com",
      "url": "https://www.tripadvisor.com/Profile/balancedsmiles",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "18 June 2026"
     },
     {
      "name": "True Finders",
      "domain": "truefinders.com.au",
      "url": "https://truefinders.com.au/business/balancedsmiles.co/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "Tupalo",
      "domain": "tupalo.com",
      "url": "https://www.tupalo.net/en/mulgrave-victoria/balanced-smiles-dental-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "18 June 2026"
     },
     {
      "name": "Whats Your Hours",
      "domain": "whatsyourhours.com",
      "url": "https://www.whatsyourhours.com/aus/rowville/dentists-1/balanced-smiles-dental-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "Zenbu",
      "domain": "zenbu.org",
      "url": "https://au.zenbu.org/entries/1368009-balanced-smiles-dental-clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     },
     {
      "name": "Zip Leaf",
      "domain": "zipleaf.com",
      "url": "https://au.zipleaf.com/Companies/Balanced-Smiles-Dental-Clinic",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "12 June 2026"
     }
    ],
    "gbp_status": "not_gbp",
@@ -1991,73 +2251,85 @@ const CITATIONS_DATA = {
      "name": "Apple",
      "domain": "businessconnect.apple.com",
      "url": "https://maps.apple.com/place?place-id=I405675B38EE406AF",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Bing",
      "domain": "bingplaces.com",
      "url": "https://www.bing.com/local/details.aspx?lid=YNAECC77910FBAB777",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/calderwood-family-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/nsw/calderwood/calderwood-family-dental/A26020281",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/Calderwoodfamilydental/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://business.foursquare.com/places/69ce7662b6d7f5648c12d4af - Live Page\nhttps://app.foursquare.com/v/calderwood-family-dental/69ce7662b6d7f5648c12d4af - App",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "Health Direct",
      "domain": "healthdirect.gov.au",
      "url": "https://www.healthdirect.gov.au/australian-health-services/healthcare-service/calderwood-2527-nsw/calderwood-family-dental/dentists/f7e22269-8e24-4464-9dfd-b59507b1eeef?search_method=Details+-+search+results+list",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "Health Share",
      "domain": "healthshare.com.au",
      "url": "https://www.healthshare.com.au/profile/professional/453492-dr-erwin-adinata-halim/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "Healthcare Link",
      "domain": "healthcarelink.com.au",
      "url": "https://www.healthcarelink.com.au/cpd/provider-profile/2858/calderwood-family-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/calderwood-family-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/calderwood-family-dental/cmnpxjit2000102l5f5121vca",
-     "status": ""
+     "status": "",
+     "created": "8 April 2026"
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Calderwood/place/p/18979055/Calderwood+Family+Dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     }
    ],
    "key_missing": [
@@ -2089,127 +2361,148 @@ const CITATIONS_DATA = {
      "name": "Australian Planet",
      "domain": "australianplanet.com",
      "url": "https://www.australianplanet.com/calderwood-family-dental-F110BC1061CD244",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "BirdEye",
      "domain": "getbirdeye.com.au",
      "url": "https://reviews.birdeye.com/calderwood-family-dental-177513430983394",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/54971870/calderwood-family-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "Call Up Contact",
      "domain": "callupcontact.com",
      "url": "https://www.callupcontact.com/b/businessprofile/Calderwood_Family_Dental/10033176",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "Dentagama",
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/calderwood-family-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "Enroll Business",
      "domain": "enrollbusiness.com",
      "url": "https://au.enrollbusiness.com/BusinessProfile/7760917/Calderwood-Family-Dental-Calderwood-NSW-2527",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "Find Postcode",
      "domain": "findpostcode.com.au",
      "url": "https://findpostcode.com.au/local-listings/nsw/calderwood/calderwood-family-dental",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": "2 April 2026"
     },
     {
      "name": "Find Us Here",
      "domain": "find-us-here.com",
      "url": "https://www.find-us-here.com/businesses/Calderwood-Family-Dental-Sydney-NSW-New-South-Wales-Australia/34486594/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "HotFrog",
      "domain": "hotfrog.com.au",
      "url": "https://www.hotfrog.com.au/company/adc4b5d34108f4654ed6f86c042671ce/calderwood-family-dental/calderwood/dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "Infols Info",
      "domain": "cannot find",
      "url": "https://shellharbour.infoisinfo-au.com/card/calderwood-family-dental/1584368",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "6 April 2026"
     },
     {
      "name": "Local Business Guide",
      "domain": "localbusinessguide.com.au",
      "url": "https://www.localbusinessguide.com.au/business/calderwood-family-dental/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "8 April 2026"
     },
     {
      "name": "Pink Pages",
      "domain": "pinkpages.com.au",
      "url": "https://pinkpages.com.au/businesses/calderwood-family-dental-calderwood-11492298",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "8 April 2026"
     },
     {
      "name": "Poter",
      "domain": "poter.com.au",
      "url": "https://www.poter.com.au/store/preview/1029175",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "8 April 2026"
     },
     {
      "name": "Show Me Local",
      "domain": "showmelocal.com",
      "url": "https://au.showmelocal.com/39772415-calderwood-family-dental-calderwood",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "StoreBoard",
      "domain": "storeboard.com",
      "url": "https://www.storeboard.com/calderwoodfamilydental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "8 April 2026"
     },
     {
      "name": "SuperPages",
      "domain": "superpages.com.au",
      "url": "https://www.superpages.com.au/company/adc4b5d34108f4654ed6f86c042671ce/calderwood-family-dental/calderwood/dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "Top4",
      "domain": "top4.com.au",
      "url": "https://www.top4.com.au/business/calderwood-family-dental-625740",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "True Finders",
      "domain": "truefinders.com.au",
      "url": "https://truefinders.com.au/business/calderwoodfamilydental.com.au/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "Whats Your Hours",
      "domain": "whatsyourhours.com",
      "url": "https://www.whatsyourhours.com/australia/dentists-1/calderwood-family-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "Whitecoat",
      "domain": "whitecoat.com.au",
      "url": "https://www.whitecoat.com.au/directory/practitioner/dentist/nsw/shellharbour-city-centre/halim/1088289/901",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     },
     {
      "name": "Zenbu",
      "domain": "zenbu.org",
      "url": "https://au.zenbu.org/entry/1365680-calderwood-family-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 April 2026"
     }
    ],
    "gbp_status": "missing",
@@ -2228,121 +2521,141 @@ const CITATIONS_DATA = {
      "name": "Bing",
      "domain": "bingplaces.com",
      "url": "https://www.bing.com/maps?ypid=YNC57CF5A6F03A61F3",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/chic-dental-%7C-dentist-preston",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/vic/preston/chic-dental/A25020183",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": "20 May 2026"
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/chicdentalau/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://app.foursquare.com/v/chic-dental--dentist-preston/6a0d877ee75e473d8087e7eb",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://sites.google.com/view/chic-dental--dentist-preston/home",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 June 2026"
     },
     {
      "name": "Health Direct",
      "domain": "healthdirect.gov.au",
      "url": "https://www.healthdirect.gov.au/australian-health-services/healthcare-service/preston-3072-vic/chic-dental-dentist-preston/dentists/b8f621cd-baf5-4dbd-b01d-c783e60dae96",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Health Engine",
      "domain": "healthengine.com.au",
      "url": "https://healthengine.com.au/dentist/vic/preston/chic-dental/s87491",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Health Share",
      "domain": "healthshare.com.au",
      "url": "https://www.healthshare.com.au/practices/chic-dental/53357-preston-3072/",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": "30 June 2026"
     },
     {
      "name": "Healthcare Link",
      "domain": "healthcarelink.com.au",
      "url": "https://www.healthcarelink.com.au/employer-profile/14017/chic-dental/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Here",
      "domain": "here.com",
      "url": "https://share.here.com/p/s-Yz1EZW50aXN0JTJGRGVudGFsJTIwT2ZmaWNlO2lkPTAzNnIxcjE3LTk0ZTg3ZGYzMmNkZWM5YTRmNGQ3ZTgyODRlNjk2OTE1O2xhdD0tMzcuNzQ4MDY7bG9uPTE0NS4wMDQ3ODtuPUNoaWMrRGVudGFsK0RlbnRpc3QrUHJlc3RvbjtwaD0rNjEzOTExNjU1ODQ=?z=16&t=normal",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/chic_dental_dentist_preston/preston/AU107086604-0391165584/businessdetails.aspx",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/chic-dental-dentist-preston/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/chic-dental-or-dentist-preston/cmpe0puj6000102lbaecz43wj",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "My Community Directory",
      "domain": "mycommunitydirectory.com.au",
      "url": "https://www.mycommunitydirectory.com.au/Organisation/206974/Chic_Dental___Dentist_Preston",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": "20 May 2026"
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Melbourne/place/p/14177537/Chic+Dental+%7C+Dentist+Preston",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "True Local",
      "domain": "truelocal.com.au",
      "url": "https://www.truelocal.com.au/preston-vic/tlp/chic-dental-dentist-preston-582375675",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/chic-dental-dentist-preston-vn46021/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Yellow Pages",
      "domain": "yellowpages.com.au",
      "url": "https://www.yellowpages.com.au/preston-vic/bpp/chic-dental-dentist-preston-582375675",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Yelp",
      "domain": "biz.yelp.com",
      "url": "https://www.yelp.com.au/biz/chic-dental-dentist-preston-preston",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     }
    ],
    "key_missing": [
@@ -2366,181 +2679,211 @@ const CITATIONS_DATA = {
      "name": "Australian Planet",
      "domain": "australianplanet.com",
      "url": "https://www.australianplanet.com/chic-dental-dentist-preston-F110BC10412D741",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "BirdEye",
      "domain": "getbirdeye.com.au",
      "url": "https://reviews.birdeye.com/chic-dental-dentist-preston-166781162502896",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/55122136/chic-dental-dentist-preston",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Call Up Contact",
      "domain": "callupcontact.com",
      "url": "https://www.callupcontact.com/b/businessprofile/Chic_Dental_%7C_Dentist_Preston/10097238",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Dentagama",
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/preston-dentist-chic-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Enroll Business",
      "domain": "enrollbusiness.com",
      "url": "https://au.enrollbusiness.com/BusinessProfile/6381394/Chic-Dental-Dentist-Preston-Preston-VIC-3072",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Find Open",
      "domain": "find-open.com",
      "url": "https://find-open.biz/preston-victoria/chic-dental-dentist-preston-931611",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Find Postcode",
      "domain": "findpostcode.com.au",
      "url": "https://findpostcode.com.au/local-listings/vic/preston/chic-dental-dentist-preston",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": "20 May 2026"
     },
     {
      "name": "Find Us Here",
      "domain": "find-us-here.com",
      "url": "https://www.find-us-here.com/businesses/Chic-Dental-Dentist-Preston-Preston-Victoria-Australia/33899836/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "HotFrog",
      "domain": "hotfrog.com.au",
      "url": "https://www.hotfrog.com.au/company/587403a3e0ddb65cfdbeaf06ddfc19f3/chic-dental-dentist-preston/preston/dentists",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Infols Info",
      "domain": "cannot find",
      "url": "https://darebin.infoisinfo-au.com/card/chic-dental-dentist-preston/1587209",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Local Business Guide",
      "domain": "localbusinessguide.com.au",
      "url": "https://www.localbusinessguide.com.au/business/preston-dentist-chic-dental/",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": "20 May 2026"
     },
     {
      "name": "MapQuest",
      "domain": "mapquest.com",
      "url": "https://www.mapquest.com/au/victoria/chic-dental-dentist-preston-795011020",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Mister What",
      "domain": "misterwhat-au.com",
      "url": "https://www.misterwhat-au.com/preview/102133",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": "20 May 2026"
     },
     {
      "name": "Open Di",
      "domain": "opendi.com.au",
      "url": "https://www.opendi.com.au/east-preston/795806.html",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Pink Pages",
      "domain": "pinkpages.com.au",
      "url": "https://pinkpages.com.au/businesses/chic-dental-dentist-preston-11464045",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Poter",
      "domain": "poter.com.au",
      "url": "https://www.poter.com.au/store/preview/1029205",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 June 2026"
     },
     {
      "name": "Seekfind",
      "domain": "seekfind.com.au",
      "url": "https://www.seekfind.com.au/business/medical-dentists-chic-dental-dentist-preston",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Show Me Local",
      "domain": "showmelocal.com",
      "url": "https://au.showmelocal.com/39414619-chic-dental-dentist-preston-preston",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "StoreBoard",
      "domain": "storeboard.com",
      "url": "https://www.storeboard.com/chicdentaldentistpreston",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "SuperPages",
      "domain": "superpages.com.au",
      "url": "superpages.com.au/company/587403a3e0ddb65cfdbeaf06ddfc19f3/chic-dental-dentist-preston/preston/dentists",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Tellows",
      "domain": "tellows.com",
      "url": "https://www.tellows-au.com/num/0391165584",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Top4",
      "domain": "top4.com.au",
      "url": "https://www.top4.com.au/business/chic-dental-dentist-preston-627143",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "TripAdvisor",
      "domain": "tripadvisor.com",
      "url": "https://www.tripadvisor.com/Profile/chicdental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 June 2026"
     },
     {
      "name": "True Finders",
      "domain": "truefinders.com.au",
      "url": "https://truefinders.com.au/business/chicdental.com.au/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Tupalo",
      "domain": "tupalo.com",
      "url": "https://www.tupalo.net/en/preston-victoria/chic-dental-dentist-preston?pk_vid=761ad1e79b560beb1779285926b6ec17",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Whats Your Hours",
      "domain": "whatsyourhours.com",
      "url": "https://www.whatsyourhours.com/australia/preston/dentists-1/chic-dental-dentist-preston",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 June 2026"
     },
     {
      "name": "Yandex",
      "domain": "yandex.com",
      "url": "https://yandex.com/profile/148025398442",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Zenbu",
      "domain": "zenbu.org",
      "url": "https://au.zenbu.org/entries/1326287-chic-dental-dentist-preston",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     },
     {
      "name": "Zip Leaf",
      "domain": "zipleaf.com",
      "url": "https://au.zipleaf.com/Companies/Chic-Dental-Dentist-Preston",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "20 May 2026"
     }
    ],
    "gbp_status": "not_gbp",
@@ -2559,85 +2902,99 @@ const CITATIONS_DATA = {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/cronulla-beach-dental_20",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/nsw/cronulla/cronulla-beach-dental/A11004979",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": "21 May 2026"
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/cronullabeachdental",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://app.foursquare.com/v/cronulla-beach-dental/2316f5dd23d34c724bda87d2",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://sites.google.com/view/cronullabeachdental/home",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 July 2026"
     },
     {
      "name": "Health Direct",
      "domain": "healthdirect.gov.au",
      "url": "https://www.healthdirect.gov.au/australian-health-services/healthcare-service/cronulla-2230-nsw/cronulla-beach-dental/dentists/a5d65144-af0d-e399-9bac-a44b0b10b18b",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Healthcare Link",
      "domain": "healthcarelink.com.au",
      "url": "https://www.healthcarelink.com.au/cpd/provider-profile/2873/cronulla-beach-dental/?show_emp_pro=2677",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/cronulla_beach_dental/cronulla/AU107250465-0295235625/businessdetails.aspx",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "29 May 2026"
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/dr-james-daley-cronulla-beach-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "TomTom",
      "domain": "tomtom.com",
      "url": "https://plan.tomtom.com/en/location/id/dLS1sPaLyrgSnvc8rqpbuA?p=-34.05702,151.15123,16z&q=Cronulla%20Beach%20Dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 June 2026"
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Sydney/place/p/6806764/Cronulla+Beach+Dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "True Local",
      "domain": "truelocal.com.au",
      "url": "https://www.truelocal.com.au/cronulla-nsw/tlp/cronulla-beach-dental-580917003",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/cronulla-beach-dental-vn155254/?id_new=af588c36ed6fcfadb07eb15229ebc121",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "Yellow Pages",
      "domain": "yellowpages.com.au",
      "url": "https://www.yellowpages.com.au/cronulla-nsw/bpp/cronulla-beach-dental-580917003",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     }
    ],
    "key_missing": [
@@ -2667,139 +3024,162 @@ const CITATIONS_DATA = {
      "name": "2 Find Local",
      "domain": "2findlocal.com",
      "url": "https://www.2findlocal.com/b/15068226/cronulla-beach-dental-cronulla-new-south-wales",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Acompio Australia",
      "domain": "australia.acompio.com",
      "url": "https://australia.acompio.com/Cronulla-Beach-Dental-47718958.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "31 May 2026"
     },
     {
      "name": "Australian Planet",
      "domain": "australianplanet.com",
      "url": "https://www.australianplanet.com/cronulla-beach-dental-F110FC1071DD143",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": "21 May 2026"
     },
     {
      "name": "BirdEye",
      "domain": "getbirdeye.com.au",
      "url": "https://reviews.birdeye.com/cronulla-beach-dental-166540888354413",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/55126983/cronulla-beach-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "Call Up Contact",
      "domain": "callupcontact.com",
      "url": "https://www.callupcontact.com/b/businessprofile/Cronulla_Beach_Dental/10098522",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "Central Index",
      "domain": "centralindex.com",
      "url": "https://au.centralindex.com/company/4b3fc31cc29b056543a4755fbee01a6a/cronulla-beach-dental/cronulla",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Cylex",
      "domain": "cylex-australia.com",
      "url": "https://www.cylex-australia.com/company/cronulla-beach-dental-24003867.html",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Dentagama",
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/cronulla-beach-dental",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Enroll Business",
      "domain": "enrollbusiness.com",
      "url": "https://au.enrollbusiness.com/BusinessProfile/6366972/Cronulla-Beach-Dental-Cronulla-NSW-2230",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Find Us Here",
      "domain": "find-us-here.com",
      "url": "https://www.find-us-here.com/businesses/Cronulla-Beach-Dental-Cronulla-New-South-Wales-Australia/34521046/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "HotFrog",
      "domain": "hotfrog.com.au",
      "url": "https://www.hotfrog.com.au/company/1072182557474816/cronulla-beach-dental/cronulla/dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "Infols Info",
      "domain": "cannot find",
      "url": "https://sutherland-shire.infoisinfo-au.com/card/cronulla-beach-dental/1587253",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "Pink Pages",
      "domain": "pinkpages.com.au",
      "url": "https://pinkpages.com.au/businesses/cronulla-beach-dental-11383850",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "Poter",
      "domain": "poter.com.au",
      "url": "https://www.poter.com.au/store/preview/1029204",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 June 2026"
     },
     {
      "name": "Seekfind",
      "domain": "seekfind.com.au",
      "url": "https://www.seekfind.com.au/business/medical-dentists-cronulla-beach-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "SuperPages",
      "domain": "superpages.com.au",
      "url": "https://www.superpages.com.au/company/1072182557474816/cronulla-beach-dental/cronulla/dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "Tellows",
      "domain": "tellows.com",
      "url": "https://www.tellows-au.com/num/0295235625",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 June 2026"
     },
     {
      "name": "Top4",
      "domain": "top4.com.au",
      "url": "https://www.top4.com.au/business/cronulla-beach-dental-627163",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "TripAdvisor",
      "domain": "tripadvisor.com",
      "url": "https://www.tripadvisor.com/Profile/cronulladental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 June 2026"
     },
     {
      "name": "True Finders",
      "domain": "truefinders.com.au",
      "url": "https://truefinders.com.au/business/cronullabeachdental.com.au/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "Whats Your Hours",
      "domain": "whatsyourhours.com",
      "url": "https://www.whatsyourhours.com/australia/cronulla/dentists-1/cronulla-beach-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "21 May 2026"
     },
     {
      "name": "Zenbu",
      "domain": "zenbu.org",
      "url": "https://au.zenbu.org/entries/1292398-cronulla-beach-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 June 2026"
     }
    ],
    "gbp_status": "not_gbp",
@@ -2812,133 +3192,154 @@ const CITATIONS_DATA = {
    "name": "Dental Society",
    "code": "DSO",
    "key_count": 21,
-   "other_count": 34,
+   "other_count": 33,
    "key_live": [
     {
      "name": "Bing",
      "domain": "bingplaces.com",
      "url": "https://www.bing.com/maps?osid=ffe90d41-c745-4384-8dd0-935eae96abd5&cp=-34.869798~138.527201&lvl=17&pi=0&imgid=9504baf7-d0e9-4133-a6d2-ab538c837357&v=2&sV=2&form=S00027",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/st-clair-medical-dental-centre",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/sa/st-clair/dental-society/A19015869",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/dentalsocietyau",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://foursquare.com/v/dental-society/6459baef21f7023017479efc",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://maps.app.goo.gl/tqGxXzW6A37UdhfG8",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Health Direct",
      "domain": "healthdirect.gov.au",
      "url": "https://www.healthdirect.gov.au/australian-health-services/healthcare-service/st-clair-5011-sa/dental-society/dentists/e17d221e-35d2-4a19-84ca-3f323602086a",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Health Engine",
      "domain": "healthengine.com.au",
      "url": "https://healthengine.com.au/dentist/sa/st-clair/dental-society/s84271",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Healthcare Link",
      "domain": "healthcarelink.com.au",
      "url": "https://www.healthcarelink.com.au/employer-profile/23617/dental-society/?show_emp_pro=22304",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Here",
      "domain": "here.com",
      "url": "https://mapcreator.here.com/place:kF5tC7ycKWeU1PgB/?l=-34.8700,138.5328,18,normal",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/dental_society/st_clair/AU107086577-0884630814/businessdetails.aspx",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/st-clair-medical-and-dental-centre/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/dental-society/clgbl8cwx003f08mefz447uj9",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "My Community Directory",
      "domain": "mycommunitydirectory.com.au",
      "url": "https://www.mycommunitydirectory.com.au/South_Australia/Charles_Sturt/Health_Services/Dental___Oral_Health/112627/235808/Dental_Society",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "TomTom",
      "domain": "tomtom.com",
      "url": "https://plan.tomtom.com/en/location/id/Qv5I1XSTgcBkjKrj3Ku5jw",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Adelaide/place/p/12438381/Dental+Society+%28formerly+part+of+St+Clair+Medical+and+Dental+Centre%29",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "True Local",
      "domain": "truelocal.com.au",
      "url": "https://www.truelocal.com.au/business/dental-society-1/st-clair",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/Dental-Society-VN26380/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "What Clinic",
      "domain": "whatclinic.com",
      "url": "https://www.whatclinic.com/dentists/australia/south-australia/adelaide/port-adelaide-enfield/dental-society",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/dental-society",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Yellow Pages",
      "domain": "yellowpages.com.au",
      "url": "https://www.yellowpages.com.au/sa/st-clair/dental-society-15742565-listing.html",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     }
    ],
    "key_missing": [
@@ -2961,205 +3362,232 @@ const CITATIONS_DATA = {
      "name": "2 Find Local",
      "domain": "2findlocal.com",
      "url": "https://www.2findlocal.com/b/14765755/dental-society-st-clair-sa",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "AussieWeb",
      "domain": "aussieweb.com.au",
      "url": "https://www.aussieweb.com.au/business/dental+society/3281779",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Australian Planet",
      "domain": "australianplanet.com",
      "url": "https://www.australianplanet.com/dental-society-dental-clinic-F110CC20018D040",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "BirdEye",
      "domain": "getbirdeye.com.au",
      "url": "https://reviews.birdeye.com/dental-society-formerly-st-clair-medical-and-dental-centre-dr-sadia-bubnic-166675596087495",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://brownbook.net/business/51611953/dental-society",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Business Wiki",
      "domain": "businesswiki.com.au",
      "url": "https://www.businesswiki.com.au/listing/dental-society/st-clair-sa",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Call Up Contact",
      "domain": "callupcontact.com",
      "url": "https://www.callupcontact.com/b/businessprofile/Dental_Society/9171332",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Cylex",
      "domain": "cylex-australia.com",
      "url": "https://www.cylex-australia.com/company/dental-society-24813775.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Dentagama",
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/dental-society",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Enroll Business",
      "domain": "enrollbusiness.com",
      "url": "https://au.enrollbusiness.com/BusinessProfile/6212044/Dental%20Society",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Find Emergency Dentist",
      "domain": "findemergencydentist.com.au",
      "url": "https://www.findemergencydentist.com.au/?post_type=listing&p=6729#",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Find Postcode",
      "domain": "findpostcode.com.au",
      "url": "https://findpostcode.com.au/console/listings/saint-clair/dental-society",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Find Us Here",
      "domain": "find-us-here.com",
      "url": "https://www.find-us-here.com/businesses/Dental-Society-St-Clair-South-Australia-Australia/33825545/",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Fyple",
      "domain": "fyple.biz",
      "url": "https://www.fyple.biz/company/dental-society-9n8r069/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "HotFrog",
      "domain": "hotfrog.com.au",
      "url": "https://www.hotfrog.com.au/company/4edef051b09b8858a8711d43c75f90fb/dental-society/st-clair/dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Local Business Guide",
      "domain": "localbusinessguide.com.au",
      "url": "https://www.localbusinessguide.com.au/business/dental-society/",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Mister What",
      "domain": "misterwhat-au.com",
      "url": "https://www.misterwhat-au.com/dental-society-vXSdEteLcPo",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Nice Local",
      "domain": "nicelocal.com.au",
      "url": "https://nicelocal.com.au/adelaide/medical/dental_society_formerly_part_of_st_clair_medical_and_dental_centre/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Seekfind",
      "domain": "seekfind.com.au",
      "url": "https://www.seekfind.com.au/businesses/medical/dentists/dental-society",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Show Me Local",
      "domain": "showmelocal.com",
      "url": "https://au.showmelocal.com/36024357-dental-society-saint-clair",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "StoreBoard",
      "domain": "storeboard.com",
      "url": "https://sydney.storeboard.com/classifieds/services/dentists/dental-society/285133",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "SuperPages",
      "domain": "superpages.com.au",
      "url": "https://www.superpages.com.au/company/4edef051b09b8858a8711d43c75f90fb/dental-society/st-clair/dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Top4",
      "domain": "top4.com.au",
      "url": "https://www.top4.com.au/business/dental-society-230748",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "True Finders",
      "domain": "truefinders.com.au",
      "url": "https://truefinders.com.au/business/dentalsociety.com.au",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Tupalo",
      "domain": "tupalo.com",
      "url": "https://www.tupalo.net/en/adelaide-south-australia/dental-society",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Tuugo",
      "domain": "tuugo.biz",
      "url": "https://www.tuugo.biz/Companies/dental-society/0050004140",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Whats Your Hours",
      "domain": "whatsyourhours.com",
      "url": "https://www.whatsyourhours.com/south-australia/saint-clair/health-beauty/dental-society",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Whereis",
      "domain": "whereis.com",
      "url": "https://www.whereis.com/sa/st-clair-5011/yellowId-15742565",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Whitecoat",
      "domain": "whitecoat.com.au",
      "url": "https://www.whitecoat.com.au/directory/practitioner/dentist/sa/st-clair/bubnic/598769/901",
-     "status": "Complete"
-    },
-    {
-     "name": "whitecoat.com.au",
-     "domain": "whitecoat.com.au",
-     "url": "https://www.whitecoat.com.au/directory/practitioner/dentist/sa/st-clair/bubnic/599316/901",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Who Do You",
      "domain": "whodoyou.com",
      "url": "https://www.whodoyou.com/biz/2169958/dental-society-sa-au",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Yalwa",
      "domain": "yalwa.com.au",
      "url": "https://adelaide.yalwa.com.au/ID_140948911/Dental-Society.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Zenbu",
      "domain": "zenbu.org",
      "url": "https://au.zenbu.org/entry/1325892-dental-society",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Zip Leaf",
      "domain": "zipleaf.com",
      "url": "https://au.zipleaf.com/Companies/Dental-Society",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     }
    ],
    "gbp_status": "ok",
@@ -3178,145 +3606,169 @@ const CITATIONS_DATA = {
      "name": "Apple",
      "domain": "businessconnect.apple.com",
      "url": "https://maps.apple.com/place?auid=8350378508560361636",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Aus Health Pages",
      "domain": "aushealthpages.com.au",
      "url": "https://aushealthpages.com.au/directory/listing/oral-maxillofacial-surgery-krishnan-parthasarathi",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "27 January 2026"
     },
     {
      "name": "Bing",
      "domain": "bingplaces.com",
      "url": "https://www.bing.com/local/details.aspx?lid=YNA1E469327F5DF378",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/elevate-oral-jaw-surgery",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "27 January 2026"
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/nsw/kogarah/elevate-oral-%26-jaw-surgery/A26020265",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "27 January 2026"
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/profile.php?id=61573103576652",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://business.foursquare.com/places/69241e5271ff777390fd48b5",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 March 2026"
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://www.google.com/maps?cid=13526401560788131293",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Health Direct",
      "domain": "healthdirect.gov.au",
      "url": "https://www.healthdirect.gov.au/australian-health-services/healthcare-service/kogarah-2217-nsw/elevate-oral-jaw-surgery/oral-and-maxillofacial-surgery-service/3f49e4cf-c4b8-48ab-9148-a4c1ec7a3a31?search_method=Details+-+search+results+list",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "27 January 2026"
     },
     {
      "name": "Health Engine",
      "domain": "healthengine.com.au",
      "url": "https://healthengine.com.au/oral-and-maxillofacial-surgeon/nsw/kogarah/elevate-oral-and-jaw-surgery/s101813",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "27 January 2026"
     },
     {
      "name": "Health Share",
      "domain": "healthshare.com.au",
      "url": "https://www.healthshare.com.au/practices/elevate-oral-jaw-surgery/47287-kogarah-2217/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "27 January 2026"
     },
     {
      "name": "Healthcare Link",
      "domain": "healthcarelink.com.au",
      "url": "https://www.healthcarelink.com.au/cpd/provider-profile/2818/elevate-oral-&-jaw-surgery/?show_emp_pro=2628",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "27 January 2026"
     },
     {
      "name": "Here",
      "domain": "here.com",
      "url": "https://share.here.com/p/s-Yz1EZW50aXN0JTJGRGVudGFsJTIwT2ZmaWNlO2lkPTAzNnIzZ3F6LTVkZDg4ZWY4ZjI5YmNmNzZjNDQzMjE5ODUzMGQ1NWRkO2xhdD0tMzMuOTY2OTY7bG9uPTE1MS4xMzYwNztuPUVsZXZhdGUrT3JhbCsmK0phdytTdXJnZXJ5O3BoPSs2MTI0MjA4NTUyMA==?z=16&t=normal",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "27 January 2026"
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/elevate_oral_jaw_surgery/kogarah/AU107965996-0242085520/businessdetails.aspx",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/elevate-oral-jaw-surgery/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 March 2026"
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/elevate-oral-and-jaw-surgery/cmkyxtbdj001402lh37ic632k",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "27 January 2026"
     },
     {
      "name": "My Community Directory",
      "domain": "mycommunitydirectory.com.au",
      "url": "https://www.mycommunitydirectory.com.au/New_South_Wales/Georges_River/Health_Services/Dental___Oral_Health/122027/243961/Elevate_Oral___Jaw_Surgery",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 January 2026"
     },
     {
      "name": "Nextdoor",
      "domain": "nextdoor.com",
      "url": "https://prnt.sc/fVDoOdqtA4jI",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "TomTom",
      "domain": "tomtom.com",
      "url": "https://plan.tomtom.com/en/location/id/4U_EupHyvreGQn9RxJQe1g?%20Jaw%20Surgery&%20Jaw%20Surgery&%20Jaw%20Surgery&%20Jaw%20Surgery&p=-33.9669,151.13534,16z&q=Elevate%20Oral%20&%20Jaw%20Surgery",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 January 2026"
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Sydney/place/p/15061615/Elevate+Oral+%26+Jaw+Surgery",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 January 2026"
     },
     {
      "name": "True Local",
      "domain": "truelocal.com.au",
      "url": "https://www.truelocal.com.au/kogarah-nsw/tlp/elevate-oral-jaw-surgery-581682412",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "27 January 2026"
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/Elevate-Oral-Jaw-Surgery-VN134862/?id_new=033c7c08bdf0564140f89552adcdec29",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 January 2026"
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/elevate-oral-and-jaw-surgery-kogarah",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Yellow Pages",
      "domain": "yellowpages.com.au",
      "url": "https://www.yellowpages.com.au/kogarah-nsw/bpp/elevate-oral-jaw-surgery-581682412",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "27 January 2026"
     }
    ],
    "key_missing": [
@@ -3336,289 +3788,337 @@ const CITATIONS_DATA = {
      "name": "2 Find Local",
      "domain": "2findlocal.com",
      "url": "https://www.2findlocal.com/b/15288722/elevate-oral-jaw-surgery-kogarah-nsw",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 January 2026"
     },
     {
      "name": "Around Me",
      "domain": "aroundmeapp.com",
      "url": "http://www.yext.com/partnerpages/aroundme/elevate-oral-jaw-surgery-kogarah-nsw-au-d4cd83",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "AussieWeb",
      "domain": "aussieweb.com.au",
      "url": "https://www.aussieweb.com.au/business/3310647",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Australian Planet",
      "domain": "australianplanet.com",
      "url": "https://www.australianplanet.com/elevate-oral-jaw-surgery-F110CC80712D443",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 January 2026"
     },
     {
      "name": "az-australia",
      "domain": "az-australia.com",
      "url": "https://www.az-australia.com/company/elevate_oral__jaw_surgery_kogarah_nsw_1_south_st",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "11 March 2026"
     },
     {
      "name": "BirdEye",
      "domain": "getbirdeye.com.au",
      "url": "https://reviews.birdeye.com/elevate-oral-jaw-surgery-176965113041616",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "27 January 2026"
     },
     {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/54524019/elevate-oral-jaw-surgery",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 January 2026"
     },
     {
      "name": "Call Up Contact",
      "domain": "callupcontact.com",
      "url": "https://www.callupcontact.com/b/businessprofile/Elevate_Oral_amp_Jaw_Surgery/9750797",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Cataloxy",
      "domain": "cataloxy.net",
      "url": "https://nsw-state.cataloxy.net/firms/kogarah/eojs.com.au.htm",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "11 March 2026"
     },
     {
      "name": "Central Index",
      "domain": "centralindex.com",
      "url": "https://au.centralindex.com/company/021e8a931e9a0f92eb0fbe3e669e6d51",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Cylex",
      "domain": "cylex-australia.com",
      "url": "https://www.cylex-australia.com/company/elevate-oral---jaw-surgery-25141107.html",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Dentagama",
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/elevate-oral-and-jaw-surgery",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "27 January 2026"
     },
     {
      "name": "Enroll Business",
      "domain": "enrollbusiness.com",
      "url": "https://au.enrollbusiness.com/BusinessProfile/7608199/Elevate-Oral-Jaw-Surgery-Kogarah-NSW-2217",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 January 2026"
     },
     {
      "name": "Find Open",
      "domain": "find-open.com",
      "url": "https://find-open.biz/kogarah/elevate-oral-jaw-surgery-1355352",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Find Postcode",
      "domain": "findpostcode.com.au",
      "url": "https://findpostcode.com.au/local-listings/nsw/kogarah/elevate-oral-and-jaw-surgery",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "Find Us Here",
      "domain": "find-us-here.com",
      "url": "https://www.find-us-here.com/businesses/Elevate-Oral-Jaw-Surgery-Kogarah-New-South-Wales-Australia/34380669/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 January 2026"
     },
     {
      "name": "HotFrog",
      "domain": "hotfrog.com.au",
      "url": "https://www.hotfrog.com.au/company/bc1a84bf989161ad11bc5b11e41abadc",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Infols Info",
      "domain": "cannot find",
      "url": "https://kogarah.infoisinfo-au.com/card/elevate-oral-and-jaw-surgery/1569536",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "linkcentre",
      "domain": "linkcentre.com",
      "url": "https://www.linkcentre.com/profile/oraljawsurgery/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "11 March 2026"
     },
     {
      "name": "Local",
      "domain": "local.com.au",
      "url": "https://www.oneflare.com.au/b/elevate-oral-jaw-surgery",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 January 2026"
     },
     {
      "name": "Local Business Guide",
      "domain": "localbusinessguide.com.au",
      "url": "https://www.localbusinessguide.com.au/business/elevate-oral-and-jaw-surgery/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 January 2026"
     },
     {
      "name": "MapQuest",
      "domain": "mapquest.com",
      "url": "https://www.mapquest.com/au/new-south-wales/elevate-oral-jaw-surgery-792243048",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Mister What",
      "domain": "misterwhat-au.com",
      "url": "https://www.misterwhat-au.com/preview/XYmNaD5_asI",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "NaviMii",
      "domain": "navmii.com",
      "url": "https://livepoi.navmii.com/p/view/5806d1b8-4ad7-4cb8-adb9-823f81999bbd",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "NearFinderau",
      "domain": "nearfinderau.com",
      "url": "https://nearfinderau.com/en/business/nsw/kogarah/elevate-oral-jaw-surgery_2571677+0.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "11 March 2026"
     },
     {
      "name": "Open Di",
      "domain": "opendi.com.au",
      "url": "https://www.opendi.com.au/kogarah/839174.html",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Pink Pages",
      "domain": "pinkpages.com.au",
      "url": "https://pinkpages.com.au/businesses/elevate-oral-jaw-surgery-11450863",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Place123",
      "domain": "place123.net",
      "url": "http://www.place123.net/place/elevate-oral-jaw-surgery-kogarah-nsw-australia",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "11 March 2026"
     },
     {
      "name": "Poter",
      "domain": "poter.com.au",
      "url": "https://www.poter.com.au/store/preview/1029152",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 January 2026"
     },
     {
      "name": "Seekfind",
      "domain": "seekfind.com.au",
      "url": "https://www.seekfind.com.au/businesses/medical/oral-surgeons/elevate-oral-and-jaw-surgery",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 January 2026"
     },
     {
      "name": "Show Me Local",
      "domain": "showmelocal.com",
      "url": "https://au.showmelocal.com/profile.aspx?bid=38711773",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "StoreBoard",
      "domain": "storeboard.com",
      "url": "https://www.storeboard.com/elevateoralandjawsurgery",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 January 2026"
     },
     {
      "name": "SuperPages",
      "domain": "superpages.com.au",
      "url": "https://www.superpages.com.au/company/bc1a84bf989161ad11bc5b11e41abadc",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Supplyautonomy",
      "domain": "supplyautonomy.com",
      "url": "https://supplyautonomy.com/elevateoraljawsurgery.au",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "11 March 2026"
     },
     {
      "name": "techdirectory",
      "domain": "techdirectory.io",
      "url": "https://www.techdirectory.io/australia/kogarah/health-beauty/elevate-oral-jaw-surgery",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "11 March 2026"
     },
     {
      "name": "Tellows",
      "domain": "tellows.com",
      "url": "https://www.tellows-au.com/num/0242085520",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Top4",
      "domain": "top4.com.au",
      "url": "https://www.top4.com.au/business/elevate-oral-jaw-surgery-622575 - Business Page\nhttps://mobile.top4.com.au/business/elevate-oral-jaw-surgery-622575 - Mobile",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 March 2026"
     },
     {
      "name": "TripAdvisor",
      "domain": "tripadvisor.com",
      "url": "https://www.tripadvisor.com/Profile/oraljawsurgery",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "27 January 2026"
     },
     {
      "name": "True Finders",
      "domain": "truefinders.com.au",
      "url": "https://truefinders.com.au/business/eojs.com.au",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 March 2026"
     },
     {
      "name": "Trueen",
      "domain": "trueen.com",
      "url": "https://trueen.com/business/listing/elevate-oral-jaw-surgery/717700",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "11 March 2026"
     },
     {
      "name": "Tupalo",
      "domain": "tupalo.com",
      "url": "https://www.tupalo.net/en/kogarah-new-south-wales/elevate-oral-and-jaw-surgery",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Waze",
      "domain": "waze.com",
      "url": "https://ul.waze.com/ul?place=ChIJMaWIaIC5EmsR3d0QuI1ut7s&ll=-33.96691530%2C151.13607440&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Whats Your Hours",
      "domain": "whatsyourhours.com",
      "url": "https://www.whatsyourhours.com/aus/kogarah/dentists-1/elevate-oral-jaw-surgery",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 March 2026"
     },
     {
      "name": "Where To",
      "domain": "whereto.com",
      "url": "https://wheretoapp.com/search?poi=13526401560788131293",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Whitecoat",
      "domain": "whitecoat.com.au",
      "url": "https://www.whitecoat.com.au/directory/practitioner/oral-surgeon/nsw/kogarah/parthasarathi/1337549/1017",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "2 February 2026"
     },
     {
      "name": "Zeemaps",
      "domain": "zeemaps.com",
      "url": "https://www.zeemaps.com/map?group=7008773",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "11 March 2026"
     },
     {
      "name": "Zenbu",
      "domain": "zenbu.org",
      "url": "https://au.zenbu.org/entry/1360411-elevate-oral-jaw-surgery",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 March 2026"
     },
     {
      "name": "Zip Leaf",
      "domain": "zipleaf.com",
      "url": "https://au.zipleaf.com/Companies/Elevate-Oral-Jaw-Surgery",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "30 March 2026"
     }
    ],
    "gbp_status": "ok",
@@ -3637,91 +4137,106 @@ const CITATIONS_DATA = {
      "name": "Bing",
      "domain": "bing.com",
      "url": "http://bing.com/maps?ypid=YN1E069193124BADE1",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": "9 August 2026"
     },
     {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/goodna-family-dentist",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/goodna-family-dental/A15013547",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/Goodnafamilydentist/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://business.foursquare.com/places/6a778abd566bcc7df4333da6",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://sites.google.com/view/goodna-family-dentist/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "Health Engine",
      "domain": "healthengine.com.au",
      "url": "https://healthengine.com.au/dentist/qld/goodna/goodna-family-dentist/s47928",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "Here",
      "domain": "here.com",
      "url": "https://wego.here.com/p/here%3Apds%3Aplace%3A03623cd4-1815889662a36baf665819080024a5b1",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/goodna_family_dentist/goodna/AU106365464-0733818585/businessdetails.aspx",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/goodna-family-dentist-goodna/about/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "My Community Directory",
      "domain": "mycommunitydirectory.com.au",
      "url": "https://www.mycommunitydirectory.com.au/Queensland/Ipswich/Health_Services/Dental___Oral_Health/128133/249268/Goodna_Family_Dentist",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "Nextdoor",
      "domain": "nextdoor.com",
      "url": "https://au.nextdoor.com/page/goodna-family-dentist-goodna-qld",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Ipswich+City/place/p/12976945/Goodna+Family+Dentist",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/goodna-family-dentist-vn168824/?id_new=f6fb6c8e5bf0092fe74703b5153db9ee",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/goodna-family-dentist",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     }
    ],
    "key_missing": [
@@ -3762,91 +4277,106 @@ const CITATIONS_DATA = {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/hanly-dental-studio",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/hanly-dental-studio/A26020398",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/profile.php?id=61561476968662",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "http://business.foursquare.com/places/6a6d852e0c6e055cd87a545c",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://sites.google.com/view/hanlydentalstudio",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "Health Engine",
      "domain": "healthengine.com.au",
      "url": "https://healthengine.com.au/dentist/qld/mackay/hanly-dental-studio/s103044",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "Here",
      "domain": "here.com",
      "url": "https://share.here.com/p/s-Yz1EZW50aXN0JTJGRGVudGFsJTIwT2ZmaWNlO2lkPTAzNnJrNHBkLWIxNzYzODgxY2E4MDVlODliYWRlMjU1MmM5ZTQwYzdhO2xhdD0tMjEuMTQ0NTk7bG9uPTE0OS4xODgzMjtuPUhhbmx5K0RlbnRhbCtTdHVkaW87cGg9KzYxNzQ5NDI5NzMz?z=15&t=normal",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/hanly_dental_studio/mackay/AU108481151-0749429733/businessdetails.aspx",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/hanly-dental-studio/about/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "My Community Directory",
      "domain": "mycommunitydirectory.com.au",
      "url": "https://www.mycommunitydirectory.com.au/Queensland/Mackay/Health_Services/Dental___Oral_Health/128016/249192/Hanly_Dental_Studio",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "Nextdoor",
      "domain": "nextdoor.com",
      "url": "https://au.nextdoor.com/page/hanly-dental-studio-mackay-qld/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "TomTom",
      "domain": "tomtom.com",
      "url": "https://share.here.com/p/s-Yz1EZW50aXN0JTJGRGVudGFsJTIwT2ZmaWNlO2lkPTAzNnJrNHBkLWIxNzYzODgxY2E4MDVlODliYWRlMjU1MmM5ZTQwYzdhO2xhdD0tMjEuMTQ0NTk7bG9uPTE0OS4xODgzMjtuPUhhbmx5K0RlbnRhbCtTdHVkaW87cGg9KzYxNzQ5NDI5NzMz?z=15&t=normal",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Mackay/place/p/20057044/Hanly+Dental+Studio",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/hanly-dental-studio-vn167527/?id_new=47c50bdef57de2579c46405a5307b8ab",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/hanly-dental-studio",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     }
    ],
    "key_missing": [
@@ -3887,109 +4417,127 @@ const CITATIONS_DATA = {
      "name": "Bing",
      "domain": "bingplaces.com",
      "url": "https://www.bing.com/maps?osid=cc95ddd8-10fe-4837-95a6-8cf6186c8d1d&cp=-33.865792~151.067666&lvl=17&pi=0&imgid=802c6612-0c37-49c6-9298-c94dabb5ada1&v=2&sV=2&form=S00027",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/henley-dental",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/HenleyDentalAU",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://foursquare.com/v/henley-dental/6371bde5102c27395046b0f2",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://maps.app.goo.gl/qB3RkSgBJGuaTKUR8",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Health Direct",
      "domain": "healthdirect.gov.au",
      "url": "https://www.healthdirect.gov.au/australian-health-services/healthcare-service/homebush-west-2140-nsw/henley-dental/dentists/736509f9-18db-4ece-88fe-c2fd44f0c493",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Healthcare Link",
      "domain": "healthcarelink.com.au",
      "url": "https://www.healthcarelink.com.au/cpd/providers/profile.php?pid=2345",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/henley_dental/homebush_west/AU107086630-0257011312/businessdetails.aspx",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Kompass",
      "domain": "kompass.com",
      "url": "https://au.kompass.com/c/henley-dental/aunkc080920232/",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/in/henley-dental-104a13276?originalSubdomain=auu",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/henley-dental/clgeq5k2q001208mlh5bb6e3l",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "My Community Directory",
      "domain": "mycommunitydirectory.com.au",
      "url": "https://www.mycommunitydirectory.com.au/New_South_Wales/Strathfield/Health_Services/Dental___Oral_Health/112780/235943/Henley_Dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "TomTom",
      "domain": "tomtom.com",
      "url": "https://www.tomtom.com/mapshare/tools/new/mapshare/#loc=-33.86572,151.07028,19.5",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Sydney/place/p/12852799/Henley+Dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "True Local",
      "domain": "truelocal.com.au",
      "url": "https://www.truelocal.com.au/business/henley-dental-1/homebush-west",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/Henley-Dental-283520/",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/henley-dental",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Yelp",
      "domain": "biz.yelp.com",
      "url": "https://www.yelp.com/biz/henley-dental-homebush-west-2",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     }
    ],
    "key_missing": [
@@ -4015,169 +4563,197 @@ const CITATIONS_DATA = {
      "name": "2 Find Local",
      "domain": "2findlocal.com",
      "url": "https://www.2findlocal.com/b/14769154/henley-dental-homebush-west-nsw",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Australian Planet",
      "domain": "australianplanet.com",
      "url": "https://www.australianplanet.com/henley-dental-dental-services-F110CC2001FD442",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "BirdEye",
      "domain": "getbirdeye.com.au",
      "url": "https://reviews.birdeye.com/henley-dental-166503048075430",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/51621125/henley-dental/",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Business Wiki",
      "domain": "businesswiki.com.au",
      "url": "https://businesswiki.com.au/profile/nsw/homebush-west/henley-dental/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Call Up Contact",
      "domain": "callupcontact.com",
      "url": "https://www.callupcontact.com/b/businessprofile/Henley_Dental/9187450",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Cylex",
      "domain": "cylex-australia.com",
      "url": "https://www.cylex-australia.com/company/henley-dental-24817552.html",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Dentagama",
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/henley-dental",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Doctors.com.au",
      "domain": "doctors.com.au",
      "url": "https://doctors.com.au/profile/dentist/nsw/homebush-west-2140/henley-dental/",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Enroll Business",
      "domain": "enrollbusiness.com",
      "url": "https://au.enrollbusiness.com/BusinessProfile/6216012/Henley%20Dental",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Find Postcode",
      "domain": "findpostcode.com.au",
      "url": "https://findpostcode.com.au/local-listings/nsw/homebush-west/henley-dental",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Find Us Here",
      "domain": "find-us-here.com",
      "url": "https://www.find-us-here.com/businesses/Henley-Dental-Homebush-New-South-Wales-Australia/33829084/",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Fyple",
      "domain": "fyple.biz",
      "url": "https://www.fyple.biz/company/henley-dental-9n8n862/",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "HotFrog",
      "domain": "hotfrog.com.au",
      "url": "https://www.hotfrog.com.au/company/e9a4a90bac365c7f4b266eb814c23dc7/henley-dental/homebush-west/dentists",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Local Business Guide",
      "domain": "localbusinessguide.com.au",
      "url": "https://www.localbusinessguide.com.au/business/henley-dental-1/",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Mister What",
      "domain": "misterwhat-au.com",
      "url": "https://www.misterwhat-au.com/preview/84868",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "Nice Local",
      "domain": "nicelocal.com.au",
      "url": "https://nicelocal.com.au/sydney/medical/henley_dental/",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Pink Pages",
      "domain": "pinkpages.com.au",
      "url": "https://pinkpages.com.au/home/search?what=henley+dental&where=HOMEBUSH+-+NSW&find=Find",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Seekfind",
      "domain": "seekfind.com.au",
      "url": "https://www.seekfind.com.au/businesses/medical/dentists/henley-dental",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Show Me Local",
      "domain": "showmelocal.com",
      "url": "https://au.showmelocal.com/36032087-henley-dental-homebush-west",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "StoreBoard",
      "domain": "storeboard.com",
      "url": "https://www.storeboard.com/henleydental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "SuperPages",
      "domain": "superpages.com.au",
      "url": "https://www.superpages.com.au/company/e9a4a90bac365c7f4b266eb814c23dc7/henley-dental/homebush-west/dentists",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Top4",
      "domain": "top4.com.au",
      "url": "https://www.top4.com.au/business/henley-dental-230795",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Tuugo",
      "domain": "tuugo.biz",
      "url": "https://www.tuugo.biz/Companies/henley-dental/0050004140328",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Whats Your Hours",
      "domain": "whatsyourhours.com",
      "url": "https://www.whatsyourhours.com/search_results?q=henley+dental",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Who Do You",
      "domain": "whodoyou.com",
      "url": "https://www.whodoyou.com/biz/2170962/henley-dental-nsw-au",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Yalwa",
      "domain": "yalwa.com.au",
      "url": "https://sydney.yalwa.com.au/ID_140955873/Henley-Dental.html",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Zenbu",
      "domain": "zenbu.org",
      "url": "https://au.zenbu.org/entry/1326055-henley-dental",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     }
    ],
    "gbp_status": "ok",
@@ -4196,67 +4772,78 @@ const CITATIONS_DATA = {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/lily-family-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/qld/south-ripley/lily-family-dental/A26020400",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/lilyfamilydental",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://business.foursquare.com/places/6a734ec3eb6fd2175a62eba7",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://sites.google.com/view/lily-family-dental/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "Health Engine",
      "domain": "healthengine.com.au",
      "url": "https://healthengine.com.au/dentist/qld/south-ripley/lily-family-dental/s103117",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "7 August 2026"
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/lily_family_dental/south_ripley/AU108861394-0735222826/businessdetails.aspx",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/lily-family-dental/about/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "Nextdoor",
      "domain": "nextdoor.com",
      "url": "https://au.nextdoor.com/page/lily-family-dental-south-ripley-qld",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/lily-family-dental-vn168260/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/lily-family-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     }
    ],
    "key_missing": [
@@ -4301,79 +4888,92 @@ const CITATIONS_DATA = {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/luma-dental-clinic-sa",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/luma-dental-clinic/A26020399",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/lumadentalclinic",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://business.foursquare.com/places/6a71b854ed512f50e1ae3ffd",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "4 August 2026"
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://sites.google.com/view/luma-dental-clinic-sa",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "4 August 2026"
     },
     {
      "name": "Health Engine",
      "domain": "healthengine.com.au",
      "url": "https://healthengine.com.au/dentist/sa/edwardstown/luma-dental-clinic/s103064",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/luma_dental_clinic_sa/edwardstown/AU108861290-0434897759/businessdetails.aspx",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/luma-dental-clinic-sa/about/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "4 August 2026"
     },
     {
      "name": "My Community Directory",
      "domain": "mycommunitydirectory.com.au",
      "url": "https://www.mycommunitydirectory.com.au/South_Australia/Marion/Health_Services/Dental___Oral_Health/128101/249240/LUMA_Dental_Clinic_SA",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "Nextdoor",
      "domain": "nextdoor.com",
      "url": "https://au.nextdoor.com/page/luma-dental-clinic-sa-edwardstown-sa",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Adelaide/place/p/20057405/LUMA+Dental+Clinic+SA",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/luma-dental-clinic-vn168244/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/luma-dental-clinic-sa",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     }
    ],
    "key_missing": [
@@ -4416,79 +5016,92 @@ const CITATIONS_DATA = {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/dr-mai-dental-surgery-parramatta",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/drmaidental",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://business.foursquare.com/places/6a77bfe2377b362edf793a8f",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://sites.google.com/view/drmaidentalsurgeryparramatta",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "Here",
      "domain": "here.com",
      "url": "https://share.here.com/p/s-Yz1EZW50aXN0JTJGRGVudGFsJTIwT2ZmaWNlO2lkPTAzNnIzZ3JzLTg0ZDFjMzZlNjJlNDNmMmQ1NGZmNzFmYmNkYzI5MTZkO2xhdD0tMzMuODE4MjI7bG9uPTE1MS4wMDQxNDtuPURyK01haStEZW50YWwrU3VyZ2VyeStQYXJyYW1hdHRhO3BoPSs2MTI5NjM2MjkzNA==?z=15&t=normal",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/dr_mai_dental_surgery_parramatta/parramatta/AU108861395-0296362934/businessdetails.aspx",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/dr-mai-dental-surgery-parramatta/about",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/dr-mai-dental-surgery-parramatta/cmpuhgosn00cm02jx5ic88m5t",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Nextdoor",
      "domain": "nextdoor.com",
      "url": "https://au.nextdoor.com/page/dr-mai-dental-surgery-parramatta-parramatta-nsw",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Sydney/place/p/20057637/Dr+Mai+Dental+Surgery+Parramatta",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "True Local",
      "domain": "truelocal.com.au",
      "url": "https://www.truelocal.com.au/queensland-qld/tlp/dr-mai-dental-surgery-parramatta-582646255",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/dr-mai-dental-surgery-parramatta-vn168829/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     },
     {
      "name": "Yellow Pages",
      "domain": "yellowpages.com.au",
      "url": "https://www.yellowpages.com.au/queensland-qld/bpp/dr-mai-dental-surgery-parramatta-582646255",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "9 August 2026"
     }
    ],
    "key_missing": [
@@ -4531,73 +5144,85 @@ const CITATIONS_DATA = {
      "name": "Apple",
      "domain": "businessconnect.apple.com",
      "url": "https://maps.apple.com/place?auid=13654194336171818117",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Bing",
      "domain": "bingplaces.com",
      "url": "bing.com/maps/search?amp%3Bamp%3Bmkt=en-AU&ss=id.ypid%3AYN3724x4720099190053198492&cp=14.594600~123.483391&lvl=7&style=r",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/mary-st-dental-health",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/mary-st-dental-health/A13011816",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://maps.app.goo.gl/gpzshNfsrHUxraMD8",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Health Direct",
      "domain": "healthdirect.gov.au",
      "url": "https://www.healthdirect.gov.au/australian-health-services/healthcare-service/lidcombe-2141-nsw/mary-st-dental-health/dentists/ee33e121-6bd7-4999-946b-5b5adde2972f",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Health Engine",
      "domain": "healthengine.com.au",
      "url": "https://healthengine.com.au/dentist/nsw/lidcombe/mary-st-dental-health/s88897",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Health Share",
      "domain": "healthshare.com.au",
      "url": "https://www.healthshare.com.au/profile/professional/391404-dr-huy-nguyen/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Healthcare Link",
      "domain": "healthcarelink.com.au",
      "url": "https://www.healthcarelink.com.au/cpd/provider-profile/2830/mary-st-dental-health/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/mary-st-dental-health/clsyc0u1u00rc08leewcuff9t",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Sydney/place/p/17330785/Mary+St+Dental+Health",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/mary-st-dental-health-lidcombe-nsw",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     }
    ],
    "key_missing": [
@@ -4629,91 +5254,106 @@ const CITATIONS_DATA = {
      "name": "2 Find Local",
      "domain": "2findlocal.com",
      "url": "https://www.2findlocal.com/b/15285813/mary-st-dental-health-lidcombe-nsw",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Australian Planet",
      "domain": "australianplanet.com",
      "url": "https://www.australianplanet.com/mary-st-dental-health-F110CC8041ED840",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/54307284/mary-st-dental-health",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Call Up Contact",
      "domain": "callupcontact.com",
      "url": "https://www.callupcontact.com/b/businessprofile/Mary_St_Dental_Health/9853977",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Dentagama",
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/mary-street-dental-health",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "dLook",
      "domain": "dlook.com.au",
      "url": "https://www.dlook.com.au/business/dental-clinic-in-lidcombe-nsw-2141/mary-st-dental-health",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Enroll Business",
      "domain": "enrollbusiness.com",
      "url": "https://au.enrollbusiness.com/BusinessProfile/7620995/Mary-St-Dental-Health-Lidcombe-NSW-2141",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Find Us Here",
      "domain": "find-us-here.com",
      "url": "https://www.find-us-here.com/businesses/Mary-St-Dental-Health-Lidcombe-New-South-Wales-Australia/34387704/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "HotFrog",
      "domain": "hotfrog.com.au",
      "url": "https://www.hotfrog.com.au/company/e9a675afc94d6952531e8ab742391f26/mary-st-dental-health/lidcombe/dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "I Global",
      "domain": "iglobal.co",
      "url": "https://www.iglobal.co/australia/lidcombe/mary-st-dental-health",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Local Business Guide",
      "domain": "localbusinessguide.com.au",
      "url": "https://www.localbusinessguide.com.au/business/mary-st-dental-health/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Show Me Local",
      "domain": "showmelocal.com",
      "url": "https://au.showmelocal.com/39115525-mary-st-dental-health-lidcombe",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Tupalo",
      "domain": "tupalo.com",
      "url": "https://www.tupalo.net/en/lidcombe-new-south-wales/mary-st-dental-health",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Whats Your Hours",
      "domain": "whatsyourhours.com",
      "url": "https://www.whatsyourhours.com/australia/lidcombe/dentists-1/mary-st-dental-health",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Zenbu",
      "domain": "zenbu.org",
      "url": "https://au.zenbu.org/entry/1360820-mary-st-dental-health",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     }
    ],
    "gbp_status": "ok",
@@ -4726,145 +5366,168 @@ const CITATIONS_DATA = {
    "name": "Macquarie Park Dentists",
    "code": "MQD",
    "key_count": 23,
-   "other_count": 94,
+   "other_count": 90,
    "key_live": [
     {
      "name": "Apple",
      "domain": "businessconnect.apple.com",
      "url": "https://maps.apple.com/place?auid=14143670047310372861",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Bing",
      "domain": "bingplaces.com",
      "url": "https://www.bing.com/maps?ypid=YNAB6413C3C536A8F9",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/macquarie-dentists_40",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/nsw/macquarie-park/macquarie-dentists/A11000179",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/MacquarieDentists",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://business.foursquare.com/places/69b7c23f7b82a275fd72b60b - Business Page\n\nhttps://app.foursquare.com/v/macquarie-dentists/69b7c23f7b82a275fd72b60b - Mobile Page",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Google",
      "domain": "sites.google.com",
      "url": "https://sites.google.com/view/macquariedentists/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Health Direct",
      "domain": "healthdirect.gov.au",
      "url": "https://www.healthdirect.gov.au/australian-health-services/healthcare-service/MACQUARIE%20PARK-2113-nsw/macquarie-dentists/dentists/8a350d13-f8a9-338f-447d-66399848ff16",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Health Engine",
      "domain": "healthengine.com.au",
      "url": "https://healthengine.com.au/dentist/nsw/macquarie-park/macquarie-dentists/s55896",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Health Share",
      "domain": "healthshare.com.au",
      "url": "https://www.healthshare.com.au/practices/macquarie-dentists/26722-macquarie-park-2113/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Healthcare Link",
      "domain": "healthcarelink.com.au",
      "url": "https://www.healthcarelink.com.au/employer-profile/20888/macquarie-dentists/?show_emp_pro=19988&signup_ref=LIFE01&sourceref=LIFE-JOB&showcontentonly=yes&partner_id=27&preview=1",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Here",
      "domain": "here.com",
      "url": "https://share.here.com/p/s-Yz1EZW50aXN0JTJGRGVudGFsJTIwT2ZmaWNlO2lkPTAzNnIzZ3J5LTZhYTcxNTk4YTM3NDRkZGM4ODRjNTMyMTI2MjY3OTZkO2xhdD0tMzMuNzgwNjQ7bG9uPTE1MS4xMjEzMztuPU1hY3F1YXJpZStEZW50aXN0cztwaD0rNjEyOTg4NzIxMjI=?z=16&t=normal",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/macquarie_dentists/macquarie_park/AU104918301-0298872122/businessdetails.aspx",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/macquariedentists/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/macquarie-dentists/clwfwb8rv001708kwh1er23ls",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "My Community Directory",
      "domain": "mycommunitydirectory.com.au",
      "url": "https://www.mycommunitydirectory.com.au/New_South_Wales/Ryde/Health_Services/Dental___Oral_Health/120650/242739/Macquarie_Dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Nextdoor",
      "domain": "nextdoor.com",
      "url": "https://prnt.sc/EUKh1patWUY1",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "TomTom",
      "domain": "tomtom.com",
      "url": "https://plan.tomtom.com/en/location/id/K-0nIyjB1ojWXqMWwvrU-Q?p=-33.78069,151.12042,16z&q=Macquarie%20Dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Sydney/place/p/14165158/Macquarie+Dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "True Local",
      "domain": "truelocal.com.au",
      "url": "https://www.truelocal.com.au/macquarie-park-nsw/tlp/macquarie-dentists-581887106",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/macquarie-dentists-vn114696/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Yellow Pages",
      "domain": "yellowpages.com.au",
      "url": "https://www.yellowpages.com.au/macquarie-park-nsw/bpp/macquarie-dentists-581887106",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Yelp",
      "domain": "biz.yelp.com",
      "url": "https://www.yelp.com.au/biz/macquarie-dentists-macquarie-park",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     }
    ],
    "key_missing": [
@@ -4885,565 +5548,631 @@ const CITATIONS_DATA = {
      "name": "2 Find Local",
      "domain": "2findlocal.com",
      "url": "https://www.2findlocal.com/b/14997886/macquarie-dentists-macquarie-park-nsw",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "4shared.com",
      "domain": "4shared.com",
      "url": "https://www.4shared.com/u/_mcXcwuj/mqd.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "911getit.com",
      "domain": "911getit.com",
      "url": "https://www.911getit.com/australia/macquarie-park/dentistry-cosmetic/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "a-zbusinessfinder.com",
      "domain": "a-zbusinessfinder.com",
      "url": "https://www.a-zbusinessfinder.com/business-directory/Macquarie-Dentists-Macquarie-Park-New-South-Wales-Australia/34473980/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Around Me",
      "domain": "aroundmeapp.com",
      "url": "http://www.yext.com/partnerpages/aroundme/macquarie-dentists-macquarie-park-nsw-au-fa1643",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Aroundme",
      "domain": "yext.com",
      "url": "http://www.yext.com/partnerpages/aroundme/macquarie-dentists-macquarie-park-nsw-au-fa1643",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Ask Map",
      "domain": "askmap.net",
      "url": "http://www.askmap.net/location/7571760/australia/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "AussieWeb",
      "domain": "aussieweb.com.au",
      "url": "https://www.aussieweb.com.au/business/3308779",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Australian Planet",
      "domain": "australianplanet.com",
      "url": "https://www.australianplanet.com/macquarie-dentists-F110CC8071CD847",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "behance.net",
      "domain": "behance.net",
      "url": "https://www.behance.net/macquariedentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "bigbizmaker.com",
      "domain": "bigbizmaker.com",
      "url": "https://www.bigbizmaker.com/australia/macquarie-park/healthcare-pharmaceuticals-biotech/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "BirdEye",
      "domain": "getbirdeye.com.au",
      "url": "https://reviews.birdeye.com/macquarie-dentists-166502271191861",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "biz411.org",
      "domain": "biz411.org",
      "url": "https://www.biz411.org/australia/macquarie-park/healthcare-pharmaceuticals-biotech/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "bizbangboom.com",
      "domain": "bizbangboom.com",
      "url": "https://www.bizbangboom.com/australia/macquarie-park/healthcare-pharmaceuticals-biotech/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "bizcommunity.com",
      "domain": "bizcommunity.com",
      "url": "https://www.bizcommunity.com/Company/MacquarieDentists",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "bizmaker.org",
      "domain": "bizmaker.org",
      "url": "https://www.bizmaker.org/australia/macquarie-park/healthcare-pharmaceuticals-biotech/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "biztobiz.org",
      "domain": "biztobiz.org",
      "url": "https://www.biztobiz.org/australia/macquarie-park/healthcare-pharmaceuticals-biotech/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/52210394/macquarie-dentists/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "businessja.com",
      "domain": "businessja.com",
      "url": "https://www.businessja.com/australia/macquarie-park/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Call Up Contact",
      "domain": "callupcontact.com",
      "url": "https://www.callupcontact.com/b/businessprofile/Macquarie_Dentists/9740965",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Central Index",
      "domain": "centralindex.com",
      "url": "https://au.centralindex.com/company/75e07aa00d53343e67cb1b29661f66ad",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "cleanbill.com.au",
      "domain": "cleanbill.com.au",
      "url": "https://cleanbill.com.au/listings/macquarie-dentists",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "cleansway.com",
      "domain": "cleansway.com",
      "url": "https://www.cleansway.com/australia/macquarie-park/business/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Cylex",
      "domain": "cylex-australia.com",
      "url": "https://www.cylex-australia.com/company/macquarie-dentists-23715654.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Dentagama",
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/macquarie-dentists",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "dentistnearme.net.au",
      "domain": "dentistnearme.net.au",
      "url": "https://dentistnearme.net.au/nsw/dentist-macquarie-park-2113/macquarie-dentists-dentist",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "dentists.dentinova.co.uk",
      "domain": "dentists.dentinova.co.uk",
      "url": "https://dentists.dentinova.co.uk/places/michael-to-dentist-in-newcastle-at-macquarie-dentists/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "dentistscout.com.au",
      "domain": "dentistscout.com.au",
      "url": "https://dentistscout.com.au/dentist/macquarie-dentists-macquarie-park-nsw/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "dLook",
      "domain": "dlook.com.au",
      "url": "https://www.dlook.com.au/business/dental-clinic-in-macquarie-park-nsw-2113/macquarie-dentists",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Enroll Business",
      "domain": "enrollbusiness.com",
      "url": "https://au.enrollbusiness.com/BusinessProfile/6452643/Macquarie-Dentists-Macquarie-Park-NSW-2113",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "expressbusinessdirectory.com",
      "domain": "expressbusinessdirectory.com",
      "url": "https://www.expressbusinessdirectory.com/directory/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Find Open",
      "domain": "find-open.com",
      "url": "https://find-open.biz/macquarie-park/macquarie-dentists-107118",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Find Postcode",
      "domain": "findpostcode.com.au",
      "url": "https://findpostcode.com.au/local-listings/nsw/macquarie-park/macquarie-dentists-dental-clinic",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "Find Us Here",
      "domain": "find-us-here.com",
      "url": "https://www.find-us-here.com/businesses/Macquarie-Dentists-Macquarie-Park-New-South-Wales-Australia/34473980/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "findabusinesspro.com",
      "domain": "findabusinesspro.com",
      "url": "https://www.findabusinesspro.com/australia/macquarie-park/general-business-1/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "freebusinesslistingsites.com",
      "domain": "freebusinesslistingsites.com",
      "url": "https://freebusinesslistingsites.com/listing/macquarie-dentists/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "freelistingaustralia.com",
      "domain": "freelistingaustralia.com",
      "url": "https://www.freelistingaustralia.com/listings/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "globeconnected.com",
      "domain": "globeconnected.com",
      "url": "https://globeconnected.com/Macquarie-Dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "gravitysplash.com",
      "domain": "gravitysplash.com",
      "url": "https://www.gravitysplash.com/b/macquarie-dentists/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "HotFrog",
      "domain": "hotfrog.com.au",
      "url": "https://www.hotfrog.com.au/company/7373822eeace4a1351e04b22af6d6019",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Infols Info",
      "domain": "cannot find",
      "url": "https://ryde.infoisinfo-au.com/card/macquarie-dentists/1566588",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "issuu.com",
      "domain": "issuu.com",
      "url": "https://issuu.com/macquariedds",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "lazypal.com",
      "domain": "lazypal.com",
      "url": "https://lazypal.com/macquarie-dentists-10270?preview=1",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "linkcentre.com",
      "domain": "linkcentre.com",
      "url": "https://www.linkcentre.com/profile/macquariedds/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "linktr.ee",
      "domain": "linktr.ee",
      "url": "https://linktr.ee/macquariedentists",
-     "status": "Complete"
-    },
-    {
-     "name": "Local Business Guide",
-     "domain": "localbusinessguide.com.au",
-     "url": "https://www.localbusinessguide.com.au/business/macquarie-dentists-1macquarie-dentists-2/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "localbusinessguide.com.au",
      "domain": "localbusinessguide.com.au",
      "url": "https://www.localbusinessguide.com.au/business/macquarie-dentists/",
-     "status": "Awaiting Verification"
-    },
-    {
-     "name": "localbusinessguide.com.au",
-     "domain": "localbusinessguide.com.au",
-     "url": "https://www.localbusinessguide.com.au/business/macquarie-dentists-1/",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "macquarie-park.cataloxy.net",
      "domain": "macquarie-park.cataloxy.net",
      "url": "https://macquarie-park.cataloxy.net/firms/macquariedentists.com.au.htm",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "MapQuest",
      "domain": "mapquest.com",
      "url": "https://www.mapquest.com/au/new-south-wales/macquarie-dentists-795374855",
-     "status": "Complete"
-    },
-    {
-     "name": "MapQuest",
-     "domain": "mapquest.com",
-     "url": "https://www.mapquest.com/au/new-south-wales/macquarie-dentists-795374855",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Mister What",
      "domain": "misterwhat-au.com",
      "url": "https://www.misterwhat-au.com/preview/gsrzfXzKWZE",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "mobiledentalproviders.com.au",
      "domain": "mobiledentalproviders.com.au",
      "url": "https://www.mobiledentalproviders.com.au/profile/macquarie-dentists/profile - Profile Only\nhttps://www.mobiledentalproviders.com.au/directoryresluts/macquarie-dentists - Business Page",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "NaviMii",
      "domain": "navmii.com",
      "url": "http://www.yext.com/partnerpages/navmii/macquarie-dentists-macquarie-park-nsw-au-fa1643",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "nextbizmaker",
      "domain": "nextbizmaker.com",
      "url": "https://www.nextbizmaker.com/australia/macquarie-park/healthcare-pharmaceuticals-biotech/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "nextbizthing.com",
      "domain": "nextbizthing.com",
      "url": "https://www.nextbizthing.com/australia/macquarie-park/health-20-medicine/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "nyvo.com.au",
      "domain": "nyvo.com.au",
      "url": "https://app.nyvo.com.au/en-AU/businesses/cmralpqs100kuib04pjbmg874",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Open Di",
      "domain": "opendi.com.au",
      "url": "https://www.opendi.com.au/north-ryde/836346.html",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "pagebook.ws",
      "domain": "pagebook.ws",
      "url": "http://www.pagebook.ws/macquarie-park-nsw/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "pastelink.net",
      "domain": "pastelink.net",
      "url": "https://pastelink.net/httpsmacquariedentistscomau",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "penzu.com",
      "domain": "penzu.com",
      "url": "https://penzu.com/public/3bae4cbf875e9c86",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "perrysplacepromotions.org",
      "domain": "perrysplacepromotions.org",
      "url": "https://www.perrysplacepromotions.org/macquarie-park-nsw/dentist/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Pink Pages",
      "domain": "pinkpages.com.au",
      "url": "https://pinkpages.com.au/businesses/macquarie-dentists-11448890",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "pinterest.com",
      "domain": "pinterest.com",
      "url": "https://www.pinterest.com/macquariedds/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "place123",
      "domain": "place123.com",
      "url": "http://www.place123.net/place/macquarie-dentists-macquarie-park-nsw-australia",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Poter",
      "domain": "poter.com.au",
      "url": "https://www.poter.com.au/store/preview/1029172",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "preferredprofessionals.com",
      "domain": "preferredprofessionals.com",
      "url": "https://www.preferredprofessionals.com/macquarie-park-nsw/dentists/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "quora.com",
      "domain": "quora.com",
      "url": "https://www.quora.com/profile/Macquarie-Dentists",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Seekfind",
      "domain": "seekfind.com.au",
      "url": "https://www.seekfind.com.au/businesses/medical/dentists/macquarie-dentists",
-     "status": "Complete"
-    },
-    {
-     "name": "Seekfind",
-     "domain": "seekfind.com.au",
-     "url": "https://www.seekfind.com.au/medical/dentists/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Show Me Local",
      "domain": "showmelocal.com",
      "url": "https://au.showmelocal.com/38542790-macquarie-dentists-macquarie-park",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "StoreBoard",
      "domain": "storeboard.com",
      "url": "https://www.storeboard.com/macquariedentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "SuperPages",
      "domain": "superpages.com.au",
      "url": "https://www.superpages.com.au/company/7373822eeace4a1351e04b22af6d6019",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "sydneylocalista.com.au",
      "domain": "sydneylocalista.com.au",
      "url": "https://sydneylocalista.com.au/listing/macquarie-dentists?place=macquarie+park%2C+nsw%2C+au&show=preview",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "techdirectory.io",
      "domain": "techdirectory.io",
      "url": "https://www.techdirectory.io/australia/macquarie-park/health-beauty/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Tellows",
      "domain": "tellows.com",
      "url": "https://www.tellows-au.com/num/0298872122",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "thelocal.directory",
      "domain": "thelocal.directory",
      "url": "https://thelocal.directory/business-directory/macquarie-dentists/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Top4",
      "domain": "top4.com.au",
      "url": "https://www.top4.com.au/business/macquarie-dentists-625342",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "TripAdvisor",
      "domain": "tripadvisor.com",
      "url": "https://www.tripadvisor.com/Profile/macquaried",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "True Finders",
      "domain": "truefinders.com.au",
      "url": "https://truefinders.com.au/business/macquariedentists.com.au",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "trueen",
      "domain": "trueen.com",
      "url": "https://trueen.com/business/listing/macquarie-dentists/721635",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Tupalo",
      "domain": "tupalo.com",
      "url": "https://www.tupalo.net/en/macquarie-park-new-south-wales/macquarie-dentists",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "weence.com",
      "domain": "weence.com",
      "url": "https://weence.com/medical/doctors/macquarie-park/macquarie-dentists/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "wellfound.com",
      "domain": "wellfound.com",
      "url": "https://wellfound.com/company/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Whats Your Hours",
      "domain": "whatsyourhours.com",
      "url": "https://www.whatsyourhours.com/australia/macquarie-park/dentists-1/macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Where To",
      "domain": "whereto.com",
      "url": "https://wheretoapp.com/search?poi=3820880163294844339",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Where to",
      "domain": "wheretoapp.com",
      "url": "https://wheretoapp.com/search?poi=3820880163294844339",
-     "status": "Payment Needed"
+     "status": "Payment Needed",
+     "created": ""
     },
     {
      "name": "Whitecoat",
      "domain": "whitecoat.com.au",
      "url": "https://www.whitecoat.com.au/directory/practitioner/dentist/nsw/macquarie-park/to/1329272/901",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "x.com",
      "domain": "x.com",
      "url": "https://x.com/macquariedds",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Yandex",
      "domain": "yandex.com",
      "url": "https://yandex.com/maps/org/macquarie_dentists/76961042077",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "zeemaps.com",
      "domain": "zeemaps.com",
      "url": "https://www.zeemaps.com/map?group=7016016",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Zenbu",
      "domain": "zenbu.org",
      "url": "https://au.zenbu.org/entry/1337489-macquarie-dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Zip Leaf",
      "domain": "zipleaf.com",
      "url": "https://au.zipleaf.com/Companies/Macquarie-Dentists",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "zumvu.com",
      "domain": "zumvu.com",
      "url": "https://zumvu.com/macquariedds/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     }
    ],
    "gbp_status": "not_gbp",
@@ -5462,151 +6191,176 @@ const CITATIONS_DATA = {
      "name": "Bing",
      "domain": "bingplaces.com",
      "url": "https://www.bing.com/maps?osid=aa338f36-0048-4863-945f-948854df782c&cp=-34.926739~138.612227&lvl=16&pi=0&imgid=720195db-0af3-4aa3-a14c-54d91acbbe72&v=2&sV=2&form=S00027",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/perfect-smile_9b",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/sa/adelaide/perfect-smile/A11000163",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/perfectsmileadelaide",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://foursquare.com/v/perfect-smile/5021cd0fe4b0fb901c775f26",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://maps.app.goo.gl/L7HLbdzNKZ3QUmr36",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Health Direct",
      "domain": "healthdirect.gov.au",
      "url": "https://www.healthdirect.gov.au/australian-health-services/healthcare-service/adelaide-5000-sa/perfect-smile/dentists/cfeb365a-adf3-0a0b-c70f-3bcf4043e250",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Health Engine",
      "domain": "healthengine.com.au",
      "url": "https://healthengine.com.au/dentist/sa/adelaide/perfect-smile/s43357",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Healthcare Link",
      "domain": "healthcarelink.com.au",
      "url": "https://www.healthcarelink.com.au/employer-profile/4608/perfect-smile/?show_emp_pro=3440",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Here",
      "domain": "here.com",
      "url": "https://mapcreator.here.com/place:O6ldZFMStpwEhrcP/?l=-34.9271,138.6122,19,normal",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/perfect_smile/adelaide/AU107086603-0882109414",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Kompass",
      "domain": "kompass.com",
      "url": "https://au.kompass.com/c/perfect-smile/aunkc2704202310/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/perfect-smile/about/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/perfect-smile/cldb5ncnz00n409mpezpp2a9y",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "My Health 1st",
      "domain": "myhealth1st.com.au",
      "url": "https://www.myhealth1st.com.au/find/dentists/sa/adelaide-central-and-hills/adelaide/perfect-smile",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Nextdoor",
      "domain": "nextdoor.com",
      "url": "nextdoor.com",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "StartLocal",
      "domain": "startlocal.com.au",
      "url": "https://startlocal.com.au/health/dentists/sa_adelaide/Perfect_Smile_3491142.html",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "TomTom",
      "domain": "tomtom.com",
      "url": "https://www.tomtom.com/mapshare/tools/new/mapshare/#loc=-34.92703,138.61226,19.5",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Adelaide/place/p/13248178/Perfect+Smile",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "True Local",
      "domain": "truelocal.com.au",
      "url": "https://www.truelocal.com.au/business/perfect-smile/adelaide",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/Perfect-Smile-283655/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "White Pages",
      "domain": "whitepages.com.au",
      "url": "https://www.whitepages.com.au/perfect-smile-10240925/adelaide-sa-10240923B",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/perfect-smile-adelaide",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Yellow Pages",
      "domain": "yellowpages.com.au",
      "url": "https://www.yellowpages.com.au/sa/adelaide/perfect-smile-11850074-listing.html",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Yelp",
      "domain": "biz.yelp.com",
      "url": "https://www.yelp.com/biz/perfect-smile-adelaide-2?osq=perfect+smiles",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     }
    ],
    "key_missing": [
@@ -5625,301 +6379,351 @@ const CITATIONS_DATA = {
      "name": "2 Find Local",
      "domain": "2findlocal.com",
      "url": "https://www.2findlocal.com/b/11567621/perfect-smile-adelaide-sa",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Acompio",
      "domain": "acompio.com",
      "url": "https://australia.acompio.com/Perfect-Smile-16032950.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "AussieWeb",
      "domain": "aussieweb.com.au",
      "url": "https://www.aussieweb.com.au/business/perfect+smile/1782338",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Australian Planet",
      "domain": "australianplanet.com",
      "url": "https://www.australianplanet.com/perfect-smile-dental-clinic-F110CC20018D64C",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "BirdEye",
      "domain": "getbirdeye.com.au",
      "url": "https://reviews.birdeye.com/perfect-smile-176103468682902",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Biz Pages",
      "domain": "bizpages.org",
      "url": "https://bizpages.org/business--Australia--Adelaide--59252",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/51615042/perfect-smile/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Business Listings Now",
      "domain": "businesslistingnow.com",
      "url": "https://www.businesslistingnow.com/site_detail.php?listing=102006",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Business Wiki",
      "domain": "businesswiki.com.au",
      "url": "https://businesswiki.com.au/profile/sa/adelaide/perfect-smile/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Call Up Contact",
      "domain": "callupcontact.com",
      "url": "https://www.callupcontact.com/b/businessprofile/Perfect_Smile/9203450",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Chamber of Commerce",
      "domain": "chamberofcommerce.com",
      "url": "https://australia.chamberofcommerce.com/business-directory/south-australia/adelaide/dentist/3334899-perfect-smile",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Cylex",
      "domain": "cylex-australia.com",
      "url": "https://www.cylex-australia.com/company/perfect-smile-23725496.html",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Denta Care",
      "domain": "dentacare.com.au",
      "url": "https://snipboard.io/fWUDS0.jpg",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Dentagama",
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/perfect-smile1",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Dentist Co",
      "domain": "dentist.co.nz",
      "url": "https://www.dentist.co.nz/dentist-detail/adelaide/perfect-smile/A11000163",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "dLook",
      "domain": "dlook.com.au",
      "url": "https://www.dlook.com.au/business/dental-clinic-in-adelaide-sa-5000/perfect-smile",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Doctify",
      "domain": "doctify.com",
      "url": "https://www.doctify.com/au/practice/perfect-smile",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Enroll Business",
      "domain": "enrollbusiness.com",
      "url": "https://au.enrollbusiness.com/BusinessProfile/6214805/Perfect%20Smile",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Find Us Here",
      "domain": "find-us-here.com",
      "url": "https://www.find-us-here.com/businesses/Perfect-Smile-Adelaide-South-Australia-Australia/33827732/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Finddentistnearme",
      "domain": "finddentistnearme.com.au",
      "url": "https://www.finddentistnearme.com.au/dentist/adelaide-sa/perfect-smile/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Fyple",
      "domain": "fyple.biz",
      "url": "https://www.fyple.biz/company/perfect-smile-8ke8quu/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "HotFrog",
      "domain": "hotfrog.com.au",
      "url": "https://www.hotfrog.com.au/company/1072175239905280/perfect-smile/adelaide/dentists",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Lacartes",
      "domain": "lacartes.com",
      "url": "https://www.lacartes.com/business/Perfect-Smile/523969",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Linktree",
      "domain": "linktr.ee",
      "url": "https://linktr.ee/PerfectSmileau",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Local Business Guide",
      "domain": "localbusinessguide.com.au",
      "url": "https://www.localbusinessguide.com.au/business/perfect-smile/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Medicine.com.au",
      "domain": "medicine.com.au",
      "url": "https://www.medicine.com.au/dentists-adelaide/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Mister What",
      "domain": "misterwhat-au.com",
      "url": "https://www.misterwhat-au.com/perfect-smile-6vH-slGEPpY",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Nice Local",
      "domain": "nicelocal.com.au",
      "url": "https://nicelocal.com.au/adelaide/medical/perfect_smile/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Pink Pages",
      "domain": "pinkpages.com.au",
      "url": "https://pinkpages.com.au/businesses/perfect-smile-10306275",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Place-advisor",
      "domain": "place-advisor.com",
      "url": "https://adelaide-sa.place-advisor.com/perfect-smile-henbest-laurence-j/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Seekfind",
      "domain": "seekfind.com.au",
      "url": "https://www.seekfind.com.au/businesses/medical/cosmetic-surgeons/perfect-smile",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Shoutnaustralia",
      "domain": "shoutnaustralia.com",
      "url": "https://www.shoutnaustralia.com/best-dentists-adelaide/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Show Me Local",
      "domain": "showmelocal.com",
      "url": "https://au.showmelocal.com/36028324-perfect-smile-adelaide",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Smilesearch",
      "domain": "smilesearch.com.au",
      "url": "https://smilesearch.com.au/clinics/perfect-smile",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "StoreBoard",
      "domain": "storeboard.com",
      "url": "https://adelaide.storeboard.com/classifieds/services/dentists/perfect-smile/285261",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Street Directory",
      "domain": "street-directory.com.au",
      "url": "https://www.street-directory.com.au/adelaide-sa/cosmetic-surgery/perfect-smile.2893749",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "SuperPages",
      "domain": "superpages.com.au",
      "url": "https://www.superpages.com.au/company/1072175239905280/perfect-smile/adelaide/dentists",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "SVC Lookup",
      "domain": "svclookup.com.au",
      "url": "https://svclookup.com.au/business/Perfect-Smile-in-Adelaide-SA",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Top4",
      "domain": "top4.com.au",
      "url": "https://www.top4.com.au/business/perfect-smile-69852",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "True Finders",
      "domain": "truefinders.com.au",
      "url": "https://truefinders.com.au/business/perfectsmile.com.au",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Tupalo",
      "domain": "tupalo.com",
      "url": "https://www.tupalo.net/en/adelaide-south-australia/perfect-smile?pk_vid=761ad1e79b560beb177364065687756d",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Tupalo",
      "domain": "tupalo.net",
      "url": "https://www.tupalo.net/en/adelaide-south-australia/perfect-smile",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Whats Your Hours",
      "domain": "whatsyourhours.com",
      "url": "https://www.whatsyourhours.com/south-australia/adelaide/health-beauty/perfect-smile",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Whereis",
      "domain": "whereis.com",
      "url": "https://www.whereis.com/sa/adelaide-5000/yellowId-11850074",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Whitecoat",
      "domain": "whitecoat.com.au",
      "url": "https://www.whitecoat.com.au/dentist/sa/adelaide/shaw/1308614/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Who Do You",
      "domain": "whodoyou.com",
      "url": "https://www.whodoyou.com/biz/2170589/perfect-smile-australia-sa-au",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Yalwa",
      "domain": "yalwa.com.au",
      "url": "https://adelaide.yalwa.com.au/ID_140952612/Perfect-Smile.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Zable",
      "domain": "zable.com.au",
      "url": "https://zable.com.au/clinic/perfect-smile",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Zenbu",
      "domain": "zenbu.org",
      "url": "https://au.zenbu.org/entry/1326238-perfect-smile",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Zip Leaf",
      "domain": "zipleaf.com",
      "url": "https://au.zipleaf.com/Companies/Perfect-Smile",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     }
    ],
    "gbp_status": "ok",
@@ -5932,139 +6736,161 @@ const CITATIONS_DATA = {
    "name": "Sherwood Dental Brisbane",
    "code": "SWD",
    "key_count": 22,
-   "other_count": 53,
+   "other_count": 48,
    "key_live": [
     {
      "name": "Aus Health Pages",
      "domain": "aushealthpages.com.au",
      "url": "https://aushealthpages.com.au/directory/listing/gastroenterology-vi-nguyen",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "Bing",
      "domain": "bingplaces.com",
      "url": "https://www.bing.com/local/details.aspx?lid=YN9316601EA69F1880",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/sherwood-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/sherwood-dental/A11004187",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://business.foursquare.com/places/ea6f73a49f72426466e7532d",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Health Direct",
      "domain": "healthdirect.gov.au",
      "url": "https://www.healthdirect.gov.au/australian-health-services/healthcare-service/sherwood-4075-qld/sherwood-dental/dentists/fdbe2275-9f31-4111-8147-cd5d7b8a02ff",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "Health Engine",
      "domain": "healthengine.com.au",
      "url": "https://healthengine.com.au/dentist/qld/sherwood/sherwood-dental/s57996",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Health Share",
      "domain": "healthshare.com.au",
      "url": "https://www.healthshare.com.au/practices/sherwood-dental/50370-sherwood-4075/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "Healthcare Link",
      "domain": "healthcarelink.com.au",
      "url": "https://www.healthcarelink.com.au/cpd/provider-profile/2845/sherwood-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "Here",
      "domain": "here.com",
      "url": "https://wego.here.com/p/here%3Apds%3Aplace%3A03695a86-7e2ab7748fd628870cebf470a9c793fc?map=-27.53177,152.98082,16",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/sherwood_dental/sherwood/AU106261338-0733799300/businessdetails.aspx",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 April 2026"
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/sherwood-dental-queensland",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/duval-dental/sherwood-qld/QljR",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "My Community Directory",
      "domain": "mycommunitydirectory.com.au",
      "url": "https://www.mycommunitydirectory.com.au/Queensland/Brisbane/Health_Services/Dental___Oral_Health/60759/191642/Sherwood_Dental",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Nextdoor",
      "domain": "nextdoor.com",
      "url": "https://au.nextdoor.com/pages/sherwood-dental-1/?utm_campaign=1771329097068&share_action_id=ca2e8d53-40af-4ca3-9eea-93f14b3d35e9",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "TomTom",
      "domain": "tomtom.com",
      "url": "https://plan.tomtom.com/en/location/id/t8aUbbfwsiSiCnMzV-997A?p=-27.53177,152.98098,19.85z&q=Sherwood%20Dental",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Brisbane+City/place/p/13286639/Sherwood+Dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "True Local",
      "domain": "truelocal.com.au",
      "url": "https://www.truelocal.com.au/qld/sherwood/sherwood-dental-1000001678793",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.net/AU/sherwood-dental-vn147944/?id_new=34f4086c1fc03644c2f2f9f336a83791",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2027"
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/sherwood-dental#",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Yellow Pages",
      "domain": "yellowpages.com.au",
      "url": "https://www.yellowpages.com.au/qld/sherwood/sherwood-dental-14182065-listing.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2027"
     },
     {
      "name": "Yelp",
      "domain": "biz.yelp.com",
      "url": "https://www.yelp.com/biz/sherwood-dental-sherwood",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     }
    ],
    "key_missing": [
@@ -6086,319 +6912,337 @@ const CITATIONS_DATA = {
      "name": "2 Find Local",
      "domain": "2findlocal.com",
      "url": "https://www.2findlocal.com/b/8991076/sherwood-dental-technician-sherwood",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Acompio Australia",
      "domain": "australia.acompio.com",
      "url": "https://australia.acompio.com/Sherwood-Dental-Centre-16152506.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "ausibiz",
      "domain": "ausibiz.com",
      "url": "https://www.ausibiz.com/sherwood-dental-07-3379-9300",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2027"
     },
     {
      "name": "AussieWeb",
      "domain": "aussieweb.com.au",
      "url": "https://www.aussieweb.com.au/business/sherwood+dental+centre/1903087",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "Australian Planet",
      "domain": "australianplanet.com",
      "url": "https://www.australianplanet.com/sherwood-dental-F1207C40018D147",
-     "status": "Awaiting Verification"
-    },
-    {
-     "name": "australianplanet.com",
-     "domain": "australianplanet.com",
-     "url": "https://www.australianplanet.com/sherwood-dental-technician-sherwood-qld-F120FC30E1ED742",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "BirdEye",
      "domain": "getbirdeye.com.au",
      "url": "https://reviews.birdeye.com/sherwood-dental-166617790992278",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 April 2026"
     },
     {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/54655496/sherwood-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Call Up Contact",
      "domain": "callupcontact.com",
      "url": "https://www.callupcontact.com/b/businessprofile/Sherwood_Dental/9975241",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "Central Index",
      "domain": "centralindex.com",
      "url": "https://au.centralindex.com/company/08729f1236e034e197655f8eb4e9c3e2/brisbane-implants/sherwood",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "ChamberofCommerce",
      "domain": "chamberofcommerce.com",
      "url": "https://australia.chamberofcommerce.com/business-directory/queensland/sherwood/dentist/3567106-sherwood-dental",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Cylex",
      "domain": "cylex-australia.com",
      "url": "https://www.cylex-australia.com/company/brisbane-implants-23600224.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "Dentagama",
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/sherwood-dental-care",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "dLook",
      "domain": "dlook.com.au",
      "url": "https://www.dlook.com.au/business/oral-and-maxillofacial-surgeon-in-sherwood-qld-4075/sherwood-dental-technician",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "Doctors",
      "domain": "doctors.com.au",
      "url": "https://doctors.com.au/profile/dentist/qld/sherwood-4075/sherwood-dental/",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Enroll Business",
      "domain": "enrollbusiness.com",
      "url": "https://au.enrollbusiness.com/BusinessProfile/4446146/Sherwood-Dental-Sherwood-QLD-4075#",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "28 April 2026"
     },
     {
      "name": "Find Open",
      "domain": "find-open.com",
      "url": "https://find-open.biz/sherwood-queensland/sherwood-dental-96149",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "Find Postcode",
      "domain": "findpostcode.com.au",
      "url": "https://findpostcode.com.au/local-listings/qld/sherwood/sherwood-dental-clinic",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "Find Us Here",
      "domain": "find-us-here.com",
      "url": "https://www.find-us-here.com/businesses/Sherwood-Dental-Sherwood-Queensland-Australia/34455802/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "FindQLocal",
      "domain": "findglocal.com",
      "url": "https://www.findglocal.com/AU/Sherwood/768488643163691/Sherwood-Dental",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Fyple",
      "domain": "fyple.biz",
      "url": "https://www.fyple.biz/company/sherwood-forest-dental-centre-5nf8uyz/",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "HotFrog",
      "domain": "hotfrog.com.au",
      "url": "https://www.hotfrog.com.au/company/1072182546280448/sherwood-dental/sherwood/arts-supplies-and-services",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "I Global",
      "domain": "iglobal.co",
      "url": "https://www.iglobal.co/australia/sherwood/brisbane-implants",
-     "status": "Payment Needed"
+     "status": "Payment Needed",
+     "created": ""
     },
     {
      "name": "Infols Info",
      "domain": "infoisinfo-au.com",
      "url": "https://brisbane.infoisinfo-au.com/card/sherwood-dental/1582163",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "Local Business Guide",
      "domain": "localbusinessguide.com.au",
      "url": "https://www.localbusinessguide.com.au/listing/sherwood-dental-n3abiq/",
-     "status": "Awaiting Verification"
-    },
-    {
-     "name": "localbusinessguide.com.au",
-     "domain": "localbusinessguide.com.au",
-     "url": "https://www.localbusinessguide.com.au/business/brisbane-implants/",
-     "status": "Awaiting Verification"
-    },
-    {
-     "name": "localbusinessguide.com.au",
-     "domain": "localbusinessguide.com.au",
-     "url": "https://www.localbusinessguide.com.au/business/sherwood-dental/",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "Manta",
      "domain": "manta.com",
      "url": "https://www.manta.com/ic/mx43fzp/au/sherwood-dental",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "MapQuest",
      "domain": "mapquest.com",
      "url": "https://www.mapquest.com/au/queensland/brisbane-implants-795722621",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "Mister What",
      "domain": "misterwhat-au.com",
      "url": "https://www.misterwhat-au.com/sherwood-dental-jo_25ULQOEY",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Open Di",
      "domain": "opendi.com.au",
      "url": "https://www.opendi.com.au/sherwood/816473.html",
-     "status": "Existing Upate"
+     "status": "Existing Upate",
+     "created": ""
     },
     {
      "name": "openstreetmap",
      "domain": "openstreetmap.org",
      "url": "https://www.openstreetmap.org/user/Sherwood%20Dental/notes",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Pink Pages",
      "domain": "pinkpages.com.au",
      "url": "https://pinkpages.com.au/businesses/brisbane-implants-11430241",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "Poter",
      "domain": "poter.com.au",
      "url": "https://www.poter.com.au/store/preview/1029165",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "Seekfind",
      "domain": "seekfind.com.au",
      "url": "https://www.seekfind.com.au/businesses/medical/dentists/sherwood-dental",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": "17 February 2026"
     },
     {
      "name": "Show Me Local",
      "domain": "showmelocal.com",
      "url": "https://au.showmelocal.com/profile.aspx?bid=18234375",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Snapchat",
      "domain": "snapchat.com",
      "url": "https://www.snapchat.com/place/sherwood-dental/7f7d737a-2672-11e9-8bec-6f8515502072",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "StoreBoard",
      "domain": "storeboard.com",
      "url": "https://www.storeboard.com/sherwooddental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "SuperPages",
      "domain": "superpages.com.au",
      "url": "https://superpages.com.au/company/1072182546280448/sherwood-dental/sherwood/arts-supplies-and-services",
-     "status": "Complete"
-    },
-    {
-     "name": "SuperPages",
-     "domain": "superpages.com.au",
-     "url": "https://superpages.com.au/company/1072262499569664/sherwood-dental-technician-prosthetist/sherwood/cosmetics",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Tellows",
      "domain": "tellows.com",
      "url": "https://www.tellows-au.com/num/0733799300",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "Top4",
      "domain": "top4.com.au",
      "url": "https://www.top4.com.au/business/sherwood-dental-69954",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "TripAdvisor",
      "domain": "tripadvisor.com",
      "url": "https://www.tripadvisor.com.au/Profile/sherwooddental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "True Finders",
      "domain": "truefinders.com.au",
      "url": "https://truefinders.com.au/business/sherwooddental.com.au",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2026"
     },
     {
      "name": "Tupalo",
      "domain": "tupalo.com",
      "url": "https://www.tupalo.net/en/brisbane-queensland/sherwood-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2027"
     },
     {
      "name": "Waze",
      "domain": "waze.com",
      "url": "https://www.waze.com/live-map/directions/au/qld/sherwood/sherwood-dental?to=place.ChIJv7hiFSVQkWsRCDFMVjPvgl4",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Whats Your Hours",
      "domain": "whatsyourhours.com",
      "url": "https://www.whatsyourhours.com/australia/sherwood/dentists-1/sherwood-dental-708266",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2027"
     },
     {
      "name": "WhereIs",
      "domain": "whereis.com",
      "url": "https://www.whereis.com/qld/sherwood-4075/yellowId-14182065",
-     "status": "Complete"
-    },
-    {
-     "name": "whereis.com",
-     "domain": "whereis.com",
-     "url": "https://www.whereis.com/qld/sherwood-4075/yellowId-1000001678793",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2027"
     },
     {
      "name": "Whitecoat",
      "domain": "whitecoat.com.au",
      "url": "https://whitecoat.com.au/directory/practice/dentist/QLD/sherwood/sherwood-dental/897132/901",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Yandex",
      "domain": "yandex.com",
      "url": "https://yandex.com/maps/org/sherwood_dental/84479612868/?ll=153.141601%2C-26.958382&z=11",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2027"
     },
     {
      "name": "Zenbu",
      "domain": "zenbu.org",
      "url": "https://au.zenbu.org/entry/1276939-sherwood-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2027"
     },
     {
      "name": "Zip Leaf",
      "domain": "zipleaf.com",
      "url": "https://au.zipleaf.com/Companies/Sherwood-Dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "17 February 2027"
     }
    ],
    "gbp_status": "missing",
@@ -6417,85 +7261,99 @@ const CITATIONS_DATA = {
      "name": "Apple",
      "domain": "businessconnect.apple.com",
      "url": "https://maps.apple.com/place?auid=16156232319164421687",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Bing",
      "domain": "bingplaces.com",
      "url": "http://www.bing.com/maps?ss=ypid.YN3724x10571999814438240773&amp;amp;mkt=en-AU",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/wellness-dental-oakleigh",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/429717913561867",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://g.co/kgs/RbkGE18",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Healthcare Link",
      "domain": "healthcarelink.com.au",
      "url": "https://www.healthcarelink.com.au/employer-profile/29010/wellness-dental-oakleigh/?show_emp_pro=27217",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Here",
      "domain": "here.com",
      "url": "https://mapcreator.here.com/?l=-37.8993,145.0947,20,normal",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/wellness_dental/oakleigh/AU107916144-0456106471/businessdetails.aspx",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "My Community Directory",
      "domain": "mycommunitydirectory.com.au",
      "url": "https://www.mycommunitydirectory.com.au/Victoria/Monash/Health_Services/Dental___Oral_Health/116593/239347/Wellness_Dental_Oakleigh",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Nextdoor",
      "domain": "nextdoor.com",
      "url": "https://au.nextdoor.com/pages/wellness-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Top Rated Online",
      "domain": "top-rated.online",
      "url": "https://www.top-rated.online/cities/Melbourne/place/p/21466431/Wellness+Dental+-+Oakleigh+Dentist",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "True Local",
      "domain": "truelocal.com.au",
      "url": "https://www.truelocal.com.au/business/wellness-dental-oakleigh/oakleigh",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/Wellness-Dental-Oakleigh-VN61441/?id_new=3af735ccd80781ad5dcfc7b00b977908",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/wellness-dental-oakleigh",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     }
    ],
    "key_missing": [
@@ -6525,187 +7383,218 @@ const CITATIONS_DATA = {
      "name": "Around Me",
      "domain": "aroundmeapp.com",
      "url": "http://www.yext.com/partnerpages/aroundme/wellness-dental-oakleigh3166-vic-au-10b9d3",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "AussieWeb",
      "domain": "aussieweb.com.au",
      "url": "https://www.aussieweb.com.au/business/3304255",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "BrownBook",
      "domain": "brownbook.net",
      "url": "https://www.brownbook.net/business/53342702/wellness-dental/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Call Up Contact",
      "domain": "callupcontact.com",
      "url": "https://www.callupcontact.com/b/businessprofile/Wellness_Dental_Oakleigh/9476751",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Central Index",
      "domain": "centralindex.com",
      "url": "https://au.centralindex.com/company/84cc34ac4b9f4b9bab104ce22f78e3f6",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Cylex",
      "domain": "cylex-australia.com",
      "url": "https://www.cylex-australia.com/company/wellness-dental-24975408.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Dentagama",
      "domain": "dentagama.com",
      "url": "https://dentagama.com/dentists/wellness-dental-oakleigh",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "dLook",
      "domain": "dlook.com.au",
      "url": "https://www.dlook.com.au/business/dental-clinic-in-oakleigh-vic-3166/wellness-dental-oakleigh",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Enroll Business",
      "domain": "enrollbusiness.com",
      "url": "https://au.enrollbusiness.com/BusinessProfile/7035159/Wellness%20Dental%20Oakleigh",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Find Open",
      "domain": "find-open.com",
      "url": "wrong live link on yext https://www.cylex-australia.com/company/wellness-dental-24975408.html",
-     "status": ""
+     "status": "",
+     "created": ""
     },
     {
      "name": "Find Postcode",
      "domain": "findpostcode.com.au",
      "url": "https://snipboard.io/fUXCSa.jpg",
-     "status": "Awaiting Verification"
+     "status": "Awaiting Verification",
+     "created": ""
     },
     {
      "name": "Find Us Here",
      "domain": "find-us-here.com",
      "url": "https://www.find-us-here.com/businesses/Wellness-Dental-Oakleigh-Oakleigh-Victoria-Australia/34202883/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "HotFrog",
      "domain": "hotfrog.com.au",
      "url": "https://www.hotfrog.com.au/company/e2281c92f2c94aaf45c12cee78b45f40",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "I Global",
      "domain": "iglobal.co",
      "url": "https://www.iglobal.co/australia/melbourne/wellness-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Infols Info",
      "domain": "glen-eira.infoisinfo-au.com",
      "url": "https://glen-eira.infoisinfo-au.com/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Instagram",
      "domain": "instagram.com",
      "url": "https://www.instagram.com/explore/locations/429717913561867/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Livepages",
      "domain": "livepages.com.au",
      "url": "http://www.livepages.com.au/listing.php?list_action=edit",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Local Business Guide",
      "domain": "localbusinessguide.com.au",
      "url": "https://www.localbusinessguide.com.au/business/wellness-dental-oakleigh/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "MapQuest",
      "domain": "mapquest.com",
      "url": "http://www.mapquest.com/places/-775239650/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "NaviMii",
      "domain": "navmii.com",
      "url": "http://www.yext.com/partnerpages/navmii/wellness-dental-oakleigh3166-vic-au-10b9d3",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Opendi",
      "domain": "opendi.com.au",
      "url": "https://www.opendi.com.au/oakleigh/826672.html",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Pink Pages",
      "domain": "pinkpages.com.au",
      "url": "https://pinkpages.com.au/businesses/wellness-dental-11442524",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Show Me Local",
      "domain": "showmelocal.com",
      "url": "https://www.showmelocal.com/profile.aspx?bid=38116639",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "StoreBoard",
      "domain": "storeboard.com",
      "url": "https://www.storeboard.com/wellnessdentaloakleigh",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "SuperPages",
      "domain": "superpages.com.au",
      "url": "https://www.superpages.com.au/company/e2281c92f2c94aaf45c12cee78b45f400",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Tellows",
      "domain": "tellows.com",
      "url": "https://www.tellows-au.com/num/0242963950/c/8124315",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Top4",
      "domain": "top4.com.au",
      "url": "https://www.top4.com.au/business/wellness-dental-oakleigh-614793",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Tupalo",
      "domain": "tupalo.com",
      "url": "https://www.tupalo.net/en/oakleigh-victoria/wellness-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Tupalo",
      "domain": "tupalo.net",
      "url": "https://www.tupalo.net/en/oakleigh-victoria/wellness-dental",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Whereto",
      "domain": "wheretoapp.com",
      "url": "https://wheretoapp.com/search?poi=6374847f486a3fe0998edb104ff4fd5f",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     },
     {
      "name": "Zenbu",
      "domain": "zenbu.org",
      "url": "https://au.zenbu.org/entry/1347510-wellness-dental-oakleigh",
-     "status": "Complete"
+     "status": "Complete",
+     "created": ""
     }
    ],
    "gbp_status": "ok",
@@ -6724,79 +7613,92 @@ const CITATIONS_DATA = {
      "name": "Cybo",
      "domain": "cybo.com",
      "url": "https://www.cybo.com/AU-biz/winning-dental-sutherland",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "Dentist.com.au",
      "domain": "dentist.com.au",
      "url": "https://www.dentist.com.au/dentist-detail/nsw/sutherland/winning-dental-sutherland/A26020404",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "Facebook",
      "domain": "facebook.com",
      "url": "https://www.facebook.com/people/Winning-Dental-Sutherland/61583528805282",
-     "status": "Existing OK"
+     "status": "Existing OK",
+     "created": ""
     },
     {
      "name": "Foursquare",
      "domain": "foursquare.com",
      "url": "https://business.foursquare.com/places/6a6dbabc9b1b6f1dc2e88f86",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "Google",
      "domain": "google.com",
      "url": "https://sites.google.com/view/winningdentalsutherland",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "Health Engine",
      "domain": "healthengine.com.au",
      "url": "https://healthengine.com.au/dentist/nsw/sutherland/winning-dental-sutherland/s37889",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "Infobel",
      "domain": "infobel.com",
      "url": "https://www.infobel.com/en/australia/dr_austin_nguyen/sydney/AU101799180-0295212265/businessdetails.aspx",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "LinkedIn",
      "domain": "linkedin.com",
      "url": "https://www.linkedin.com/company/winning-dental-sutherland/about/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "Local Search",
      "domain": "localsearch.com.au",
      "url": "https://www.localsearch.com.au/profile/winning-dental-sutherland/cmsa7ikcn000302jw8m9q5r0b",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "My Community Directory",
      "domain": "mycommunitydirectory.com.au",
      "url": "https://www.mycommunitydirectory.com.au/New_South_Wales/Sutherland_Shire/Health_Services/Dental___Oral_Health/128187/249321/Winning_Dental_Sutherland",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "5 August 2026"
     },
     {
      "name": "Nextdoor",
      "domain": "nextdoor.com",
      "url": "https://au.nextdoor.com/page/winning-dental-sutherland-sutherland-nsw/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "VY Maps",
      "domain": "vymaps.com",
      "url": "https://vymaps.com/AU/winning-dental-sutherland-vn167559/",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     },
     {
      "name": "Word of Mouth",
      "domain": "wordofmouth.com.au",
      "url": "https://www.wordofmouth.com.au/reviews/winning-dental-sutherland",
-     "status": "Complete"
+     "status": "Complete",
+     "created": "1 August 2026"
     }
    ],
    "key_missing": [
