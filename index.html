@@ -157,7 +157,7 @@
     var g = gsc[c.code];
     if (!g || !g.current || !g.previous)
       return '<span class="tag pending" title="No Search Console property mapped to this client yet.">unmapped</span>';
-    return trendTagHtml(g.current, g.previous);
+    return trendTagBest(g.current, g.year_ago, g.previous);
   }
 
   function clicksCell(c){
@@ -266,7 +266,7 @@
   cs.forEach(function(c){
     var g = gsc[c.code];
     if (!g || !g.current || !g.previous) return;
-    var v = scoreTrend(g.current, g.previous).verdict;
+    var v = scoreTrendBest(g.current, g.year_ago, g.previous).verdict;
     if (v === 'good') up++; else if (v === 'bad') down++;
   });
   var ranks = cs.map(function(c){
