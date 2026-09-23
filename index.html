@@ -3,8 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Citations — Team Dashboard</title>
+<title>Performance — Team Dashboard</title>
 <link rel="stylesheet" href="style.css">
+<style>
+  .delta { font-family:'IBM Plex Mono',monospace; font-size:0.74rem; display:block; margin-top:2px; }
+  .up { color:var(--teal-deep); } .down { color:var(--red); } .flat { color:var(--ink-soft); }
+  td.num, th.num { text-align:right; }
+</style>
 </head>
 <body>
 <div class="layout">
@@ -22,14 +27,15 @@
     <div class="sidebar-foot">Bright Dental Marketing<br>Team-internal · not client-facing</div>
   </aside>
   <main>
-    <h1>Citation summary</h1>
-    <p class="page-lede">Completed citations per client, split between the 34 key citation sites and all other live citations. A citation counts as complete when a live listing URL exists, regardless of status label.</p>
+    <h1>Client performance</h1>
+    <p class="page-lede">Search performance and citation coverage per client. Search figures compare the last 28 complete days against the previous 28. A citation counts as complete when a live listing URL exists, regardless of status label.</p>
 
     <div class="stat-row">
       <div class="stat good"><span class="num" id="s-clients">—</span><span class="label">clients tracked</span></div>
+      <div class="stat good"><span class="num" id="s-up">—</span><span class="label">improving in search</span></div>
+      <div class="stat risk"><span class="num" id="s-down">—</span><span class="label">declining in search</span></div>
+      <div class="stat"><span class="num" id="s-grid">—</span><span class="label">avg local grid rank</span></div>
       <div class="stat"><span class="num" id="s-key">—</span><span class="label">key citations live</span></div>
-      <div class="stat"><span class="num" id="s-other">—</span><span class="label">other citations live</span></div>
-      <div class="stat risk"><span class="num" id="s-gbp">—</span><span class="label">GBP links wrong or missing</span></div>
     </div>
 
     <h2>By client</h2>
@@ -37,23 +43,22 @@
       <thead>
         <tr>
           <th>Client</th>
-          <th>Key citations (of 34)</th>
-          <th>Other citations</th>
-          <th>GBP link</th>
+          <th class="num">Clicks</th>
+          <th>Search</th>
+          <th class="num">Grid rank</th>
+          <th class="num">Key citations</th>
+          <th class="num">Other</th>
+          <th>GBP</th>
         </tr>
       </thead>
       <tbody id="summary-body"></tbody>
       <tfoot id="summary-foot"></tfoot>
     </table>
-
-    <div class="placeholder-note">
-      <strong>Google Business Profile links need attention.</strong> 9 clients have a <span class="mono">sites.google.com</span> microsite recorded as their Google citation — that is not a GBP listing and should not be counted as one. 6 more have no Google link at all. Pull the correct share link from each client's GBP dashboard and update the tracker sheet.
-      <br><br>
-      Counts come from the uploaded Citations Tracker sheets and are a point-in-time snapshot, not live data. A citation counts as complete when a live listing URL exists, regardless of status label.
-    </div>
   </main>
 </div>
 <script src="config.js"></script>
+<script src="trend.js"></script>
+<script src="grid.js"></script>
 <script src="data.js"></script>
 <script>
 (function(){
@@ -91,6 +96,65 @@
         });
       })
       .catch(function(){});
+  }
+
+  var gsc = {};
+  function loadGsc(){
+    if (!hasBackend) return Promise.resolve();
+    return Promise.all([
+      fetch(SUPABASE_URL+'/rest/v1/gsc_properties?select=property_url,client_code',{headers:hdrs()})
+        .then(function(r){ return r.ok?r.json():[]; }),
+      fetch(SUPABASE_URL+'/rest/v1/gsc_metrics?select=*',{headers:hdrs()})
+        .then(function(r){ return r.ok?r.json():[]; })
+    ]).then(function(res){
+      var byProp={};
+      res[0].forEach(function(p){ if(p.client_code) byProp[p.property_url]=p.client_code; });
+      gsc={};
+      res[1].forEach(function(m){
+        var code=byProp[m.property_url]; if(!code) return;
+        (gsc[code]||(gsc[code]={}))[m.period]=m;
+      });
+    }).catch(function(){});
+  }
+
+  function esc(x){
+    return String(x == null ? '' : x).replace(/[&<>"]/g, function(m){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m];
+    });
+  }
+
+  function gridCell(c){
+    var g = (typeof GRID_DATA !== 'undefined') ? GRID_DATA.clients[c.code] : null;
+    if (!g) return '<span style="color:var(--ink-soft)" title="No BrightLocal grid report located for this client yet.">—</span>';
+    if (g.avg_rank === null){
+      return g.keyword
+        ? '<span style="color:var(--ink-soft)" title="Tracking &quot;' + esc(g.keyword) + '&quot; — average not pulled yet.">pending</span>'
+        : '<span class="tag mismatch" title="Grid report exists but tracks no service-plus-suburb keyword.">no kw</span>';
+    }
+    // Lower is better; the top 3 is the local pack, which is the line
+    // that actually matters.
+    var cls = g.avg_rank <= 3 ? 'up' : (g.avg_rank <= 6 ? 'flat' : 'down');
+    return '<span title="' + esc(g.keyword) + '">' + g.avg_rank.toFixed(1) + '</span>' +
+           '<span class="delta ' + cls + '">' + esc(g.keyword) + '</span>';
+  }
+
+  function searchCell(c){
+    var g = gsc[c.code];
+    if (!g || !g.current || !g.previous)
+      return '<span class="tag pending" title="No Search Console property mapped to this client yet.">unmapped</span>';
+    return trendTagHtml(g.current, g.previous);
+  }
+
+  function clicksCell(c){
+    var g = gsc[c.code];
+    if (!g || !g.current) return '<span style="color:var(--ink-soft)">—</span>';
+    var d = g.previous ? trendPct(g.current.clicks, g.previous.clicks) : null;
+    var tag = '';
+    if (d !== null){
+      var cls = Math.abs(d) <= TREND_BAND ? 'flat' : (d > 0 ? 'up' : 'down');
+      tag = '<span class="delta '+cls+'">'+(d>0?'+':'')+d.toFixed(1)+'%</span>';
+    }
+    return g.current.clicks.toLocaleString() + tag;
   }
 
   function gbpUrlFor(c){
@@ -139,6 +203,9 @@
 
   function draw(){
   var cs = Object.values(CITATIONS_DATA.clients).sort(function(a,b){
+    var ca = gsc[a.code] && gsc[a.code].current ? gsc[a.code].current.clicks : -1;
+    var cb = gsc[b.code] && gsc[b.code].current ? gsc[b.code].current.clicks : -1;
+    if (ca !== cb) return cb - ca;
     return (b.key_count + b.other_count) - (a.key_count + a.other_count);
   });
   function gbpTag(c){
@@ -167,22 +234,38 @@
     tr.innerHTML =
       '<td><a href="client.html?c=' + c.code + '">' + (names[c.code] || c.name) + '</a>' +
         (c.pending ? ' <span class="tag pending">not started</span>' : '') + '</td>' +
+      '<td class="mono">' + clicksCell(c) + '</td>' +
+      '<td>' + searchCell(c) + '</td>' +
+      '<td class="mono">' + gridCell(c) + '</td>' +
       '<td class="mono">' + c._k + ' / 34</td>' +
       '<td class="mono">' + c._o + '</td>' +
       '<td>' + gbpTag(c) + '</td>';
     tb.appendChild(tr);
   });
   document.getElementById('summary-foot').innerHTML =
-    '<tr><th>Total</th><th class="mono">' + tk + ' / ' + (cs.length * 34) +
+    '<tr><th>Total</th><th></th><th></th><th></th><th class="mono">' + tk + ' / ' + (cs.length * 34) +
     '</th><th class="mono">' + to + '</th><th></th></tr>';
   document.getElementById('s-clients').textContent = cs.length;
   document.getElementById('s-key').textContent = tk;
-  document.getElementById('s-other').textContent = to;
-  document.getElementById('s-gbp').textContent =
-    cs.filter(function(c){ return gbpStateFor(c) !== 'ok'; }).length;
+  var up=0, down=0;
+  cs.forEach(function(c){
+    var g = gsc[c.code];
+    if (!g || !g.current || !g.previous) return;
+    var v = scoreTrend(g.current, g.previous).verdict;
+    if (v === 'good') up++; else if (v === 'bad') down++;
+  });
+  var ranks = cs.map(function(c){
+    var g = (typeof GRID_DATA !== 'undefined') ? GRID_DATA.clients[c.code] : null;
+    return (g && g.avg_rank !== null) ? g.avg_rank : null;
+  }).filter(function(x){ return x !== null; });
+  document.getElementById('s-grid').textContent = ranks.length
+    ? (ranks.reduce(function(a,b){ return a+b; }, 0) / ranks.length).toFixed(1)
+    : '—';
+  document.getElementById('s-up').textContent = up;
+  document.getElementById('s-down').textContent = down;
   }
 
-  loadNames().then(function(){ draw(); subscribe(); });
+  Promise.all([loadNames(), loadGsc()]).then(function(){ draw(); subscribe(); });
 })();
 </script>
 </body>
