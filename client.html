@@ -259,7 +259,7 @@
     if (!g || !g.current || !g.previous){ box.style.display = 'none'; return; }
     box.style.display = 'block';
     var c = g.current, v = g.previous;
-    document.getElementById('perf-verdict').innerHTML = trendTagHtml(c, v);
+    document.getElementById('perf-verdict').innerHTML = trendTagBest(c, g.year_ago, v);
 
     function cell(label, cur, prev, opts){
       opts = opts || {};
@@ -283,7 +283,14 @@
         cell('CTR', c.ctr, v.ctr, {fmt:function(x){return (x*100).toFixed(2)+'%';}}) +
         cell('Avg position', c.position, v.position, {lowerIsBetter:true, fmt:function(x){return x.toFixed(1);}}) +
       '</div>' +
-      '<p class="mono" style="margin:10px 0 0;font-size:0.72rem;color:var(--ink-soft)">' +
+      (g.year_ago
+        ? '<p style="margin:10px 0 0;font-size:0.88rem">Against the same 28 days last year (' +
+          esc(g.year_ago.start_date) + ' to ' + esc(g.year_ago.end_date) + '): clicks ' +
+          g.year_ago.clicks.toLocaleString() + ' &rarr; ' + c.clicks.toLocaleString() +
+          (g.year_ago.clicks ? ' (' + (c.clicks >= g.year_ago.clicks ? '+' : '') +
+            (((c.clicks - g.year_ago.clicks) / g.year_ago.clicks) * 100).toFixed(1) + '%)' : '') + '</p>'
+        : '<p style="margin:10px 0 0;font-size:0.88rem;color:var(--ink-soft)">No Search Console data for the same period last year, so the verdict is against the previous 28 days.</p>') +
+      '<p class="mono" style="margin:6px 0 0;font-size:0.72rem;color:var(--ink-soft)">' +
         esc(c.start_date) + ' to ' + esc(c.end_date) + ' vs ' +
         esc(v.start_date) + ' to ' + esc(v.end_date) +
         '   ·   ' + esc(g.property_url) + '</p>';
