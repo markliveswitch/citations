@@ -45,9 +45,19 @@ def windows():
     cur_start = end - timedelta(days=WINDOW - 1)
     prev_end = cur_start - timedelta(days=1)
     prev_start = prev_end - timedelta(days=WINDOW - 1)
+
+    # Same 28 days one year earlier. Shifted by exactly 364 days
+    # rather than a calendar year so the window keeps the same
+    # weekday alignment — a 28-day block that starts on a Monday one
+    # year and a Thursday the next is not comparable, because search
+    # volume for a dental practice is strongly weekday-shaped.
+    ya_start = cur_start - timedelta(days=364)
+    ya_end = end - timedelta(days=364)
+
     return {
         "current": (cur_start.isoformat(), end.isoformat()),
         "previous": (prev_start.isoformat(), prev_end.isoformat()),
+        "year_ago": (ya_start.isoformat(), ya_end.isoformat()),
     }
 
 
@@ -135,7 +145,8 @@ def main():
 
     w = windows()
     print(f"current  {w['current'][0]} .. {w['current'][1]}")
-    print(f"previous {w['previous'][0]} .. {w['previous'][1]}\n")
+    print(f"previous {w['previous'][0]} .. {w['previous'][1]}")
+    print(f"year ago {w['year_ago'][0]} .. {w['year_ago'][1]}\n")
 
     # Register properties without clobbering client_code mappings
     # someone has already made in the dashboard.
@@ -152,7 +163,11 @@ def main():
         for period, (start, end) in w.items():
             m = query(tok, site, start, end)
             if m is None:
-                failed.append(f"{site}:{period}")
+                # A missing year_ago window is expected for any
+                # property added to Search Console in the last ~13
+                # months, and must not turn the whole run red.
+                if period != "year_ago":
+                    failed.append(f"{site}:{period}")
                 continue
             rows.append({
                 "property_url": site, "period": period,
