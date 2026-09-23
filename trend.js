@@ -27,6 +27,28 @@ function trendPct(cur, prev) {
 //
 // Clicks carry double weight. Impressions and position are leading
 // indicators; clicks are the outcome that matters.
+// Year-on-year is the headline verdict. Period-on-period compares a
+// 28-day block against the one before it, which for a dental practice
+// partly measures school holidays and public holidays rather than
+// performance. Year-on-year removes that.
+//
+// Falls back to period-on-period when there is no year-ago data —
+// Search Console keeps ~16 months, so a recently-added property has
+// none. The caller is told which basis was used.
+function scoreTrendBest(c, yearAgo, previous) {
+  if (c && yearAgo) {
+    var t = scoreTrend(c, yearAgo);
+    t.basis = 'year on year';
+    return t;
+  }
+  var f = scoreTrend(c, previous);
+  f.basis = previous ? 'vs previous 28 days' : 'no comparison';
+  if (c && !yearAgo && previous && f.verdict !== 'none' && f.verdict !== 'low') {
+    f.why += '  No year-ago data for this property, so this is against the previous 28 days.';
+  }
+  return f;
+}
+
 function scoreTrend(c, v) {
   if (!c || !v) {
     return { verdict: 'none', label: 'no data', composite: null,
@@ -80,9 +102,21 @@ function scoreTrend(c, v) {
 
 function trendTagHtml(c, v) {
   var t = scoreTrend(c, v);
+  return trendTagFrom(t);
+}
+
+// Preferred entry point: pass all three windows and it picks the
+// best available basis.
+function trendTagBest(c, yearAgo, previous) {
+  return trendTagFrom(scoreTrendBest(c, yearAgo, previous));
+}
+
+function trendTagFrom(t) {
   var cls = t.verdict === 'good' ? 'live'
           : t.verdict === 'bad' ? 'mismatch'
           : 'pending';
   var safe = String(t.why).replace(/"/g, '&quot;');
-  return '<span class="tag ' + cls + '" title="' + safe + '">' + t.label + '</span>';
+  var suffix = (t.basis && t.basis !== 'year on year' && t.verdict !== 'none')
+    ? ' <span class="mono" style="font-size:0.62rem;color:var(--ink-soft)">28d</span>' : '';
+  return '<span class="tag ' + cls + '" title="' + safe + '">' + t.label + '</span>' + suffix;
 }
