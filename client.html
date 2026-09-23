@@ -40,6 +40,8 @@
   textarea.cmt-in { width:100%; font-family:'IBM Plex Sans',sans-serif; font-size:0.88rem;
     padding:8px 9px; border:1px solid var(--line); border-radius:3px; background:#fff; resize:vertical; }
   .cmt-count { font-family:'IBM Plex Mono',monospace; font-size:0.68rem; color:var(--teal-deep); }
+  .delta { font-family:'IBM Plex Mono',monospace; font-size:0.76rem; display:block; margin-top:2px; }
+  .up { color:var(--teal-deep); } .down { color:var(--red); } .flat { color:var(--ink-soft); }
   .lbl { display:block; font-family:'IBM Plex Mono',monospace; font-size:0.66rem; text-transform:uppercase;
     letter-spacing:0.04em; color:var(--ink-soft); margin-bottom:4px; }
 </style>
@@ -83,6 +85,22 @@
         <div class="stat risk"><span class="num" id="d-gap">—</span><span class="label">key citations missing</span></div>
         <div class="stat"><span class="num" id="d-other">—</span><span class="label">other citations live</span></div>
         <div class="stat"><span class="num" id="d-total">—</span><span class="label">total live citations</span></div>
+      </div>
+
+      <div class="gbp-box" id="perf-box" style="display:none">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px">
+          <strong>Search performance</strong>
+          <span id="perf-verdict"></span>
+        </div>
+        <div id="perf-body"></div>
+      </div>
+
+      <div class="gbp-box" id="grid-box" style="display:none">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px">
+          <strong>Local Search Grid</strong>
+          <span id="grid-verdict"></span>
+        </div>
+        <div id="grid-body"></div>
       </div>
 
       <div class="gbp-box" id="gbp-box">
@@ -145,6 +163,8 @@
 </dialog>
 
 <script src="config.js"></script>
+<script src="trend.js"></script>
+<script src="grid.js"></script>
 <script src="data.js"></script>
 <script>
 (function(){
@@ -207,6 +227,119 @@
     var s = snapshot[code];
     if (s && (s.key_live.length || s.other_live.length)) return s;
     return { key_live: BASE[code].key_live, other_live: BASE[code].other_live };
+  }
+
+  var gsc = {};   // CODE -> {current, previous}
+
+  // Search Console lives in its own tables keyed by property URL, so
+  // it has to be joined back to the client through gsc_properties.
+  function loadGsc(){
+    if (!hasBackend) return Promise.resolve();
+    return Promise.all([
+      fetch(SUPABASE_URL + '/rest/v1/gsc_properties?select=property_url,client_code',
+            { headers: headers(false) }).then(function(r){ return r.ok ? r.json() : []; }),
+      fetch(SUPABASE_URL + '/rest/v1/gsc_metrics?select=*',
+            { headers: headers(false) }).then(function(r){ return r.ok ? r.json() : []; })
+    ]).then(function(res){
+      var byProp = {};
+      res[0].forEach(function(p){ if (p.client_code) byProp[p.property_url] = p.client_code; });
+      gsc = {};
+      res[1].forEach(function(m){
+        var code = byProp[m.property_url];
+        if (!code) return;
+        (gsc[code] || (gsc[code] = {}))[m.period] = m;
+        gsc[code].property_url = m.property_url;
+      });
+    }).catch(function(){});
+  }
+
+  function renderPerf(code){
+    var box = document.getElementById('perf-box');
+    var g = gsc[code];
+    if (!g || !g.current || !g.previous){ box.style.display = 'none'; return; }
+    box.style.display = 'block';
+    var c = g.current, v = g.previous;
+    document.getElementById('perf-verdict').innerHTML = trendTagHtml(c, v);
+
+    function cell(label, cur, prev, opts){
+      opts = opts || {};
+      var d = trendPct(cur, prev);
+      var shown = opts.fmt ? opts.fmt(cur) : cur.toLocaleString();
+      var tag = '';
+      if (d !== null){
+        var good = opts.lowerIsBetter ? d < 0 : d > 0;
+        var cls = Math.abs(d) <= TREND_BAND ? 'flat' : (good ? 'up' : 'down');
+        tag = '<span class="delta ' + cls + '">' + (d > 0 ? '+' : '') + d.toFixed(1) + '%</span>';
+      }
+      return '<div style="flex:1;min-width:110px">' +
+        '<span class="lbl">' + label + '</span>' +
+        '<span class="mono" style="font-size:1.05rem">' + shown + '</span>' + tag + '</div>';
+    }
+
+    document.getElementById('perf-body').innerHTML =
+      '<div style="display:flex;gap:18px;flex-wrap:wrap">' +
+        cell('Clicks', c.clicks, v.clicks) +
+        cell('Impressions', c.impressions, v.impressions) +
+        cell('CTR', c.ctr, v.ctr, {fmt:function(x){return (x*100).toFixed(2)+'%';}}) +
+        cell('Avg position', c.position, v.position, {lowerIsBetter:true, fmt:function(x){return x.toFixed(1);}}) +
+      '</div>' +
+      '<p class="mono" style="margin:10px 0 0;font-size:0.72rem;color:var(--ink-soft)">' +
+        esc(c.start_date) + ' to ' + esc(c.end_date) + ' vs ' +
+        esc(v.start_date) + ' to ' + esc(v.end_date) +
+        '   ·   ' + esc(g.property_url) + '</p>';
+  }
+
+  // Average rank across the grid, lower is better. Banded rather
+  // than shown raw because "4.3" means little without a reference:
+  // the top 3 is what appears in the local pack, so that is the line
+  // that matters commercially.
+  function gridBand(r){
+    if (r <= 3) return { cls:'live',     label:'in the pack' };
+    if (r <= 6) return { cls:'pending',  label:'just outside' };
+    return           { cls:'mismatch', label:'off the pack' };
+  }
+
+  function renderGrid(code){
+    var box = document.getElementById('grid-box');
+    var g = (typeof GRID_DATA !== 'undefined') ? GRID_DATA.clients[code] : null;
+    if (!g){ box.style.display = 'none'; return; }
+    box.style.display = 'block';
+
+    if (g.avg_rank === null){
+      document.getElementById('grid-verdict').innerHTML =
+        '<span class="tag pending">' + (g.keyword ? 'not pulled yet' : 'no suburb keyword') + '</span>';
+      document.getElementById('grid-body').innerHTML = g.keyword
+        ? '<p style="margin:0;color:var(--ink-soft);font-size:0.9rem">Tracking <span class="mono">' +
+          esc(g.keyword) + '</span> in BrightLocal. Average rank not yet pulled.</p>'
+        : '<p style="margin:0;color:var(--red);font-size:0.9rem"><strong>' + esc(g.note || 'No suburb keyword tracked') +
+          '.</strong> This client has a grid report but no service-plus-suburb keyword on it, so there is no local rank to report.</p>';
+      return;
+    }
+
+    var b = gridBand(g.avg_rank);
+    document.getElementById('grid-verdict').innerHTML =
+      '<span class="tag ' + b.cls + '">' + b.label + '</span>';
+
+    var spread = (g.low > 0)
+      ? 'Rank falls away at ' + g.low + ' of ' + g.points + ' points, so visibility drops with distance.'
+      : (g.high === g.points)
+        ? 'Top ranking at every point on the grid.'
+        : (g.high === 0)
+          ? 'No point reaches the top 3 — the ceiling looks structural rather than geographic.'
+          : g.high + ' of ' + g.points + ' points reach the top 3.';
+
+    document.getElementById('grid-body').innerHTML =
+      '<div style="display:flex;gap:18px;flex-wrap:wrap">' +
+        '<div style="flex:1;min-width:120px"><span class="lbl">Average rank</span>' +
+          '<span class="mono" style="font-size:1.35rem">' + g.avg_rank.toFixed(1) + '</span></div>' +
+        '<div style="flex:1;min-width:120px"><span class="lbl">Keyword</span>' +
+          '<span class="mono" style="font-size:0.92rem">' + esc(g.keyword) + '</span></div>' +
+        '<div style="flex:1;min-width:110px"><span class="lbl">Grid points</span>' +
+          '<span class="mono" style="font-size:0.92rem">' + g.points + '</span></div>' +
+      '</div>' +
+      '<p style="margin:10px 0 0;font-size:0.88rem">' + esc(spread) + '</p>' +
+      '<p class="mono" style="margin:6px 0 0;font-size:0.72rem;color:var(--ink-soft)">' +
+        'BrightLocal grid run ' + esc(g.run_date) + '   ·   lower is better</p>';
   }
 
   function loadOverrides(){
@@ -439,6 +572,8 @@
     document.getElementById('d-other').textContent = ol.length;
     document.getElementById('d-total').textContent = kl.length + ol.length;
 
+    renderPerf(code);
+    renderGrid(code);
     var gu = gbpFor(code), gs = gbpState(gu), box = document.getElementById('gbp-box');
     box.className = 'gbp-box ' + (gs==='ok' ? 'ok' : 'bad');
     document.getElementById('gbp-body').innerHTML =
@@ -481,7 +616,7 @@
   // reloads whatever the Action last wrote, and tells you when that was.
   document.getElementById('sync-btn').onclick = function(){
     var b = this; b.disabled = true; b.textContent = 'Syncing…';
-    Promise.all([loadSnapshot(), loadOverrides(), loadComments()])
+    Promise.all([loadSnapshot(), loadOverrides(), loadComments(), loadGsc()])
       .then(function(){
         render(current);
         var si = syncInfo[current];
@@ -680,7 +815,7 @@
     conn.className='conn off'; conn.textContent='read-only · no backend';
     start();
   } else {
-    Promise.all([loadSnapshot(), loadOverrides(), loadComments()]).then(function(){
+    Promise.all([loadSnapshot(), loadOverrides(), loadComments(), loadGsc()]).then(function(){
       online = true; conn.className='conn live'; conn.textContent='live · synced';
       refreshPickerLabels(); subscribe(); start();
     }).catch(function(err){
