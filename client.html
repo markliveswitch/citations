@@ -293,10 +293,20 @@
   // than shown raw because "4.3" means little without a reference:
   // the top 3 is what appears in the local pack, so that is the line
   // that matters commercially.
-  function gridBand(r){
-    if (r <= 3) return { cls:'live',     label:'in the pack' };
-    if (r <= 6) return { cls:'pending',  label:'just outside' };
-    return           { cls:'mismatch', label:'off the pack' };
+  // Coverage is checked BEFORE rank. BrightLocal folds "not found"
+  // points into the average as a penalty, so a business that ranks
+  // 1st wherever it appears but is missing from a fifth of the grid
+  // scores like a mid-table one. Those need opposite fixes, so they
+  // must not share a label.
+  function gridBand(g){
+    // Absent everywhere. avg_rank is 0 here, which must NEVER be read
+    // as "first place" — it means the business appeared at no point.
+    if (g.found_at === 0) return { cls:'mismatch', label:'not ranking' };
+    var missing = (g.points || 0) - (g.found_at != null ? g.found_at : g.points);
+    if (missing > 0) return { cls:'mismatch', label:'gaps in coverage' };
+    if (g.avg_rank <= 3) return { cls:'live',    label:'in the pack' };
+    if (g.avg_rank <= 6) return { cls:'pending', label:'just outside' };
+    return                      { cls:'mismatch', label:'off the pack' };
   }
 
   function renderGrid(code){
@@ -307,35 +317,41 @@
 
     if (g.avg_rank === null){
       document.getElementById('grid-verdict').innerHTML =
-        '<span class="tag pending">' + (g.keyword ? 'not pulled yet' : 'no suburb keyword') + '</span>';
+        '<span class="tag pending">' + (g.keyword ? 'no rank recorded' : 'no suburb keyword') + '</span>';
       document.getElementById('grid-body').innerHTML = g.keyword
-        ? '<p style="margin:0;color:var(--ink-soft);font-size:0.9rem">Tracking <span class="mono">' +
-          esc(g.keyword) + '</span> in BrightLocal. Average rank not yet pulled.</p>'
+        ? '<p style="margin:0;color:var(--ink-soft);font-size:0.9rem">Tracks <span class="mono">' +
+          esc(g.keyword) + '</span> in BrightLocal. No average rank recorded.</p>'
         : '<p style="margin:0;color:var(--red);font-size:0.9rem"><strong>' + esc(g.note || 'No suburb keyword tracked') +
           '.</strong> This client has a grid report but no service-plus-suburb keyword on it, so there is no local rank to report.</p>';
       return;
     }
 
-    var b = gridBand(g.avg_rank);
+    var b = gridBand(g);
     document.getElementById('grid-verdict').innerHTML =
       '<span class="tag ' + b.cls + '">' + b.label + '</span>';
 
-    var spread = (g.low > 0)
-      ? 'Rank falls away at ' + g.low + ' of ' + g.points + ' points, so visibility drops with distance.'
+    var missing = g.points - (g.found_at != null ? g.found_at : g.points);
+    var spread = g.note ? g.note
+      : missing > 0
+        ? 'Does not appear at all at ' + missing + ' of ' + g.points + ' points.'
       : (g.high === g.points)
         ? 'Top ranking at every point on the grid.'
-        : (g.high === 0)
-          ? 'No point reaches the top 3 — the ceiling looks structural rather than geographic.'
-          : g.high + ' of ' + g.points + ' points reach the top 3.';
+      : (g.high === 0)
+        ? 'No point reaches the top 3 — the ceiling looks structural rather than geographic.'
+      : (g.low > 0)
+        ? 'Rank falls away at ' + g.low + ' of ' + g.points + ' points, so visibility drops with distance.'
+        : g.high + ' of ' + g.points + ' points reach the top 3.';
 
     document.getElementById('grid-body').innerHTML =
       '<div style="display:flex;gap:18px;flex-wrap:wrap">' +
         '<div style="flex:1;min-width:120px"><span class="lbl">Average rank</span>' +
-          '<span class="mono" style="font-size:1.35rem">' + g.avg_rank.toFixed(1) + '</span></div>' +
+          '<span class="mono" style="font-size:1.35rem">' +
+            (g.found_at === 0 ? 'not ranked' : g.avg_rank.toFixed(1)) + '</span></div>' +
         '<div style="flex:1;min-width:120px"><span class="lbl">Keyword</span>' +
           '<span class="mono" style="font-size:0.92rem">' + esc(g.keyword) + '</span></div>' +
-        '<div style="flex:1;min-width:110px"><span class="lbl">Grid points</span>' +
-          '<span class="mono" style="font-size:0.92rem">' + g.points + '</span></div>' +
+        '<div style="flex:1;min-width:110px"><span class="lbl">Appears at</span>' +
+          '<span class="mono" style="font-size:0.92rem">' +
+            (g.found_at != null ? g.found_at : g.points) + ' / ' + g.points + '</span></div>' +
       '</div>' +
       '<p style="margin:10px 0 0;font-size:0.88rem">' + esc(spread) + '</p>' +
       '<p class="mono" style="margin:6px 0 0;font-size:0.72rem;color:var(--ink-soft)">' +
