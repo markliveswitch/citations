@@ -61,6 +61,7 @@
           <th class="num">Impressions</th>
           <th class="num">CTR</th>
           <th class="num">Avg position</th>
+          <th class="num">Clicks YoY</th>
           <th>Trend</th>
         </tr>
       </thead>
@@ -136,6 +137,18 @@
     return body + '<span class="delta '+cls+'">'+sign+d.toFixed(1)+'%</span>';
   }
 
+  // Clicks against the same 28 days last year. Blank where Search
+  // Console holds no data that far back for the property.
+  function yoyCell(m){
+    if (!m || !m.current || !m.year_ago)
+      return '<span style="color:var(--ink-soft)" title="No Search Console data for the same period last year.">&mdash;</span>';
+    var d = pct(m.current.clicks, m.year_ago.clicks);
+    if (d === null) return '<span style="color:var(--ink-soft)">&mdash;</span>';
+    var cls = Math.abs(d) <= TREND_BAND ? 'flat' : (d > 0 ? 'up' : 'down');
+    return m.year_ago.clicks.toLocaleString() +
+      '<span class="delta ' + cls + '">' + (d > 0 ? '+' : '') + d.toFixed(1) + '%</span>';
+  }
+
   function render(){
     var mapped = props.filter(function(p){ return p.client_code; });
     var tb = document.getElementById('rows'); tb.innerHTML='';
@@ -149,7 +162,8 @@
     var any = withData[0] && metrics[withData[0].property_url];
     document.getElementById('windows').textContent = any
       ? 'Current ' + any.current.start_date + ' to ' + any.current.end_date +
-        '   ·   Previous ' + any.previous.start_date + ' to ' + any.previous.end_date
+        '   ·   Previous ' + any.previous.start_date + ' to ' + any.previous.end_date +
+        (any.year_ago ? '   ·   Year ago ' + any.year_ago.start_date + ' to ' + any.year_ago.end_date : '')
       : '';
 
     var tot = {c:0,i:0,pc:0,pi:0};
@@ -165,15 +179,16 @@
         '<td class="num">'+deltaCell(c.impressions, v.impressions)+'</td>'+
         '<td class="num">'+deltaCell(c.ctr, v.ctr, {fmt:function(x){return (x*100).toFixed(2)+'%';}})+'</td>'+
         '<td class="num">'+deltaCell(c.position, v.position, {lowerIsBetter:true, fmt:function(x){return x.toFixed(1);}})+'</td>'+
-        '<td>'+trendTagHtml(c, v)+'</td>';
+        '<td class="num">'+yoyCell(metrics[p.property_url])+'</td>'+
+        '<td>'+trendTagBest(c, metrics[p.property_url].year_ago, v)+'</td>';
       tb.appendChild(tr);
     });
 
-    if (!withData.length) tb.innerHTML = '<tr><td colspan="6" style="color:var(--ink-soft)">Nothing mapped with data yet.</td></tr>';
+    if (!withData.length) tb.innerHTML = '<tr><td colspan="7" style="color:var(--ink-soft)">Nothing mapped with data yet.</td></tr>';
 
     document.getElementById('foot').innerHTML = withData.length
       ? '<tr><th>Total</th><th class="num">'+deltaCell(tot.c, tot.pc)+'</th>'+
-        '<th class="num">'+deltaCell(tot.i, tot.pi)+'</th><th></th><th></th><th></th></tr>'
+        '<th class="num">'+deltaCell(tot.i, tot.pi)+'</th><th></th><th></th><th></th><th></th></tr>'
       : '';
 
     // mapping table
