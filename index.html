@@ -127,15 +127,30 @@
     var g = (typeof GRID_DATA !== 'undefined') ? GRID_DATA.clients[c.code] : null;
     if (!g) return '<span style="color:var(--ink-soft)" title="No BrightLocal grid report located for this client yet.">—</span>';
     if (g.avg_rank === null){
+      // No number yet. Show a dash like any other client without
+      // data rather than "pending", which reads as in-progress.
       return g.keyword
-        ? '<span style="color:var(--ink-soft)" title="Tracking &quot;' + esc(g.keyword) + '&quot; — average not pulled yet.">pending</span>'
+        ? '<span style="color:var(--ink-soft)" title="Tracks &quot;' + esc(g.keyword) + '&quot; in BrightLocal; no average pulled.">—</span>'
         : '<span class="tag mismatch" title="Grid report exists but tracks no service-plus-suburb keyword.">no kw</span>';
     }
     // Lower is better; the top 3 is the local pack, which is the line
     // that actually matters.
-    var cls = g.avg_rank <= 3 ? 'up' : (g.avg_rank <= 6 ? 'flat' : 'down');
+    // avg_rank 0 means absent from every point, NOT first place.
+    if (g.found_at === 0){
+      return '<span class="tag mismatch" title="Does not appear at any point on the grid for &quot;' +
+             esc(g.keyword) + '&quot;.">not ranking</span>';
+    }
+    var missing = (g.points || 0) - (g.found_at != null ? g.found_at : g.points);
+    // A coverage gap is flagged ahead of the rank: BrightLocal counts
+    // "not found" points into the average, so the number alone hides it.
+    var cls = missing > 0 ? 'down'
+            : g.avg_rank <= 3 ? 'up'
+            : g.avg_rank <= 6 ? 'flat' : 'down';
+    var sub = missing > 0
+      ? 'missing at ' + missing + ' pts'
+      : esc(g.keyword);
     return '<span title="' + esc(g.keyword) + '">' + g.avg_rank.toFixed(1) + '</span>' +
-           '<span class="delta ' + cls + '">' + esc(g.keyword) + '</span>';
+           '<span class="delta ' + cls + '">' + sub + '</span>';
   }
 
   function searchCell(c){
@@ -256,7 +271,9 @@
   });
   var ranks = cs.map(function(c){
     var g = (typeof GRID_DATA !== 'undefined') ? GRID_DATA.clients[c.code] : null;
-    return (g && g.avg_rank !== null) ? g.avg_rank : null;
+    // Exclude clients that do not rank at all: their avg_rank is 0 and
+    // would drag the mean down as if they were performing brilliantly.
+    return (g && g.avg_rank !== null && g.found_at !== 0) ? g.avg_rank : null;
   }).filter(function(x){ return x !== null; });
   document.getElementById('s-grid').textContent = ranks.length
     ? (ranks.reduce(function(a,b){ return a+b; }, 0) / ranks.length).toFixed(1)
